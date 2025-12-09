@@ -966,6 +966,33 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
         title=f"Robot Simulation - {'With Noise' if enable_noise else 'No Noise'}"
     )
 
+    # Real-time plotting setup
+    import matplotlib.pyplot as plt
+    plt.ion()  # Interactive mode
+    fig, axes = plt.subplots(2, 2, figsize=(10, 8))
+    fig.suptitle(f'SLAM Performance Metrics - {"With Noise" if enable_noise else "No Noise"}', fontsize=14, fontweight='bold')
+
+    ax_pos_error = axes[0, 0]
+    ax_heading_error = axes[0, 1]
+    ax_landmarks = axes[1, 0]
+    ax_uncertainty = axes[1, 1]
+
+    # Initialize empty plot data
+    times = []
+    pos_errors = []
+    heading_errors = []
+    landmarks_mapped = []
+    uncertainties = []
+
+    # Setup plot styling
+    for ax in axes.flat:
+        ax.grid(True, alpha=0.3)
+
+    plt.tight_layout()
+    plt.show(block=False)
+
+    print("Real-time plots enabled! Plots window will update every 0.5 seconds.\n")
+
     # Simulation loop
     counter = 0
     max_steps = num_laps * 6000  # Adjusted for 60 FPS
@@ -980,6 +1007,59 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
         sim.update_visualization()
         showm.render()
 
+        # Update plots every 30 frames (~0.5 seconds)
+        if counter % 30 == 0 and counter > 0:
+            # Calculate metrics
+            true_pos = np.array([sim.robot.x, sim.robot.y])
+            est_pos = sim.ekf_slam.robot_pose[:2]
+            pos_error = np.linalg.norm(true_pos - est_pos)
+
+            true_heading = sim.robot.theta
+            est_heading = sim.ekf_slam.robot_pose[2]
+            heading_error = abs(np.degrees(true_heading - est_heading))
+
+            uncertainty = np.sqrt(np.trace(sim.ekf_slam.robot_covariance[:2, :2]))
+
+            # Collect metrics
+            times.append(sim.time)
+            pos_errors.append(pos_error)
+            heading_errors.append(heading_error)
+            landmarks_mapped.append(sim.ekf_slam.num_landmarks)
+            uncertainties.append(uncertainty)
+
+            # Update plots
+            ax_pos_error.clear()
+            ax_pos_error.plot(times, pos_errors, 'b-', linewidth=2)
+            ax_pos_error.set_title('Position Error', fontweight='bold')
+            ax_pos_error.set_xlabel('Time (s)')
+            ax_pos_error.set_ylabel('Error (m)')
+            ax_pos_error.grid(True, alpha=0.3)
+
+            ax_heading_error.clear()
+            ax_heading_error.plot(times, heading_errors, 'r-', linewidth=2)
+            ax_heading_error.set_title('Heading Error', fontweight='bold')
+            ax_heading_error.set_xlabel('Time (s)')
+            ax_heading_error.set_ylabel('Error (deg)')
+            ax_heading_error.grid(True, alpha=0.3)
+
+            ax_landmarks.clear()
+            ax_landmarks.plot(times, landmarks_mapped, 'g-', linewidth=2)
+            ax_landmarks.set_title('Landmarks Mapped', fontweight='bold')
+            ax_landmarks.set_xlabel('Time (s)')
+            ax_landmarks.set_ylabel('Count')
+            ax_landmarks.grid(True, alpha=0.3)
+
+            ax_uncertainty.clear()
+            ax_uncertainty.plot(times, uncertainties, 'm-', linewidth=2)
+            ax_uncertainty.set_title('Position Uncertainty', fontweight='bold')
+            ax_uncertainty.set_xlabel('Time (s)')
+            ax_uncertainty.set_ylabel('Uncertainty (m)')
+            ax_uncertainty.grid(True, alpha=0.3)
+
+            plt.tight_layout()
+            fig.canvas.draw()
+            fig.canvas.flush_events()
+
         counter += 1
 
         # Stop after target laps
@@ -989,6 +1069,11 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
             print(f"Laps: {sim.laps_completed}")
             print(f"Final position: ({sim.robot.x:.1f}, {sim.robot.y:.1f})")
             print(f"Log saved to: logs/slam_log.txt")
+
+            # Close matplotlib window
+            plt.ioff()
+            plt.close(fig)
+
             sim.close()  # Close log file
             showm.exit()
 

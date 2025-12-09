@@ -1,0 +1,16 @@
+# Core dependencies
+numpy>=1.24.0
+scipy>=1.10.0
+
+# 3D Visualization
+fury>=0.9.0
+vtk>=9.2.0
+
+# Plotting and visualization
+matplotlib>=3.7.0
+
+# Data handling
+pandas>=2.0.0
+
+# Optional but recommended
+tqdm>=4.65.0  # Progress bars (if used)
