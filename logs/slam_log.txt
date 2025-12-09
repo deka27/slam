@@ -1,0 +1,4787 @@
+SLAM Tracking Log
+============================================================
+
+
+============================================================
+Time: 0.02s
+Ground Truth:  x= -99.49, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -99.49, y= -50.00, θ=   0.0°
+Error:         Δx=  0.00, Δy=  0.00, Δθ=  0.0°
+Uncertainty (σ): x=1.00m, y=1.01m, θ=19.2°
+Detections: 4 landmarks
+  LM1: range=19.0m, bearing= -30.5°
+  LM2: range=36.7m, bearing=  14.2°
+  LM3: range=55.2m, bearing= -13.9°
+Mapped landmarks: 0
+============================================================
+
+============================================================
+Time: 0.05s
+Ground Truth:  x= -98.98, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -98.98, y= -50.00, θ=   0.0°
+Error:         Δx=  0.00, Δy=  0.00, Δθ=  0.0°
+Uncertainty (σ): x=1.22m, y=1.27m, θ=20.3°
+Detections: 4 landmarks
+  LM1: range=18.7m, bearing= -29.8°
+  LM2: range=36.3m, bearing=  12.9°
+  LM3: range=54.6m, bearing= -11.8°
+Mapped landmarks: 4
+============================================================
+
+============================================================
+Time: 0.09s
+Ground Truth:  x= -98.62, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -98.81, y= -50.12, θ=   1.6°
+Error:         Δx= -0.19, Δy= -0.12, Δθ=  1.6°
+Uncertainty (σ): x=1.20m, y=1.34m, θ=6.9°
+Detections: 4 landmarks
+  LM1: range=18.6m, bearing= -36.8°
+  LM2: range=35.9m, bearing=  13.1°
+  LM3: range=54.4m, bearing= -10.9°
+Mapped landmarks: 4
+============================================================
+
+============================================================
+Time: 2.02s
+Ground Truth:  x= -71.24, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -71.26, y= -48.94, θ=   3.8°
+Error:         Δx= -0.03, Δy=  1.06, Δθ=  3.8°
+Uncertainty (σ): x=1.17m, y=1.17m, θ=6.5°
+Detections: 4 landmarks
+  LM2: range=12.4m, bearing=  55.3°
+  LM3: range=28.2m, bearing= -28.3°
+  LM4: range=43.8m, bearing=  10.8°
+Mapped landmarks: 5
+============================================================
+
+============================================================
+Time: 2.06s
+Ground Truth:  x= -70.73, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -70.68, y= -48.83, θ=   6.7°
+Error:         Δx=  0.04, Δy=  1.17, Δθ=  6.7°
+Uncertainty (σ): x=1.17m, y=1.17m, θ=6.5°
+Detections: 4 landmarks
+  LM2: range=12.0m, bearing=  60.7°
+  LM3: range=27.3m, bearing= -22.1°
+  LM4: range=43.4m, bearing=  14.8°
+Mapped landmarks: 5
+============================================================
+
+============================================================
+Time: 2.09s
+Ground Truth:  x= -70.22, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -70.07, y= -48.89, θ=   2.8°
+Error:         Δx=  0.14, Δy=  1.11, Δθ=  2.8°
+Uncertainty (σ): x=1.17m, y=1.17m, θ=6.5°
+Detections: 4 landmarks
+  LM2: range=11.8m, bearing=  56.3°
+  LM3: range=27.0m, bearing= -20.7°
+  LM4: range=42.9m, bearing=  12.8°
+Mapped landmarks: 5
+============================================================
+
+============================================================
+Time: 4.03s
+Ground Truth:  x= -42.83, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -42.70, y= -48.93, θ=   2.3°
+Error:         Δx=  0.13, Δy=  1.07, Δθ=  2.3°
+Uncertainty (σ): x=1.11m, y=1.12m, θ=6.5°
+Detections: 4 landmarks
+  LM4: range=17.6m, bearing=  37.1°
+  LM5: range=34.9m, bearing= -18.6°
+  LM6: range=53.3m, bearing=   3.5°
+Mapped landmarks: 7
+============================================================
+
+============================================================
+Time: 4.06s
+Ground Truth:  x= -42.32, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -42.25, y= -48.78, θ=   2.5°
+Error:         Δx=  0.07, Δy=  1.22, Δθ=  2.5°
+Uncertainty (σ): x=1.11m, y=1.12m, θ=6.5°
+Detections: 4 landmarks
+  LM4: range=17.1m, bearing=  40.0°
+  LM5: range=34.6m, bearing= -19.2°
+  LM6: range=52.9m, bearing=   4.4°
+Mapped landmarks: 7
+============================================================
+
+============================================================
+Time: 4.10s
+Ground Truth:  x= -41.81, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -41.78, y= -48.66, θ=   1.4°
+Error:         Δx=  0.03, Δy=  1.34, Δθ=  1.4°
+Uncertainty (σ): x=1.11m, y=1.12m, θ=6.5°
+Detections: 4 landmarks
+  LM4: range=16.7m, bearing=  39.5°
+  LM5: range=33.9m, bearing= -21.8°
+  LM6: range=52.4m, bearing=   8.6°
+Mapped landmarks: 7
+============================================================
+
+============================================================
+Time: 6.00s
+Ground Truth:  x= -15.01, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -14.84, y= -48.84, θ=  -0.5°
+Error:         Δx=  0.17, Δy=  1.16, Δθ= -0.5°
+Uncertainty (σ): x=1.09m, y=1.10m, θ=6.5°
+Detections: 5 landmarks
+  LM5: range=11.6m, bearing= -62.6°
+  LM6: range=26.5m, bearing=  24.3°
+  LM7: range=42.3m, bearing= -14.4°
+Mapped landmarks: 8
+============================================================
+
+============================================================
+Time: 6.04s
+Ground Truth:  x= -14.50, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -14.38, y= -48.75, θ=   1.0°
+Error:         Δx=  0.12, Δy=  1.25, Δθ=  1.0°
+Uncertainty (σ): x=1.09m, y=1.10m, θ=6.5°
+Detections: 5 landmarks
+  LM5: range=11.5m, bearing= -59.9°
+  LM6: range=25.7m, bearing=  21.0°
+  LM7: range=41.7m, bearing= -15.2°
+Mapped landmarks: 9
+============================================================
+
+============================================================
+Time: 6.07s
+Ground Truth:  x= -13.99, y= -50.00, θ=   0.0°
+SLAM Estimate: x= -13.83, y= -48.96, θ=  -0.8°
+Error:         Δx=  0.16, Δy=  1.04, Δθ= -0.8°
+Uncertainty (σ): x=1.07m, y=1.09m, θ=6.5°
+Detections: 5 landmarks
+  LM5: range=11.0m, bearing= -66.5°
+  LM6: range=25.6m, bearing=  28.4°
+  LM7: range=41.5m, bearing= -17.4°
+Mapped landmarks: 9
+============================================================
+
+============================================================
+Time: 8.01s
+Ground Truth:  x=  13.32, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  13.34, y= -50.45, θ=  -1.6°
+Error:         Δx=  0.02, Δy= -0.45, Δθ= -1.6°
+Uncertainty (σ): x=1.05m, y=1.07m, θ=6.5°
+Detections: 4 landmarks
+  LM7: range=16.4m, bearing= -40.5°
+  LM8: range=33.5m, bearing=  16.0°
+  LM9: range=51.8m, bearing= -13.7°
+Mapped landmarks: 10
+============================================================
+
+============================================================
+Time: 8.04s
+Ground Truth:  x=  13.83, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  13.85, y= -50.73, θ=   0.8°
+Error:         Δx=  0.02, Δy= -0.73, Δθ=  0.8°
+Uncertainty (σ): x=1.05m, y=1.07m, θ=6.5°
+Detections: 4 landmarks
+  LM7: range=16.0m, bearing= -44.2°
+  LM8: range=33.0m, bearing=  12.1°
+  LM9: range=51.6m, bearing= -16.0°
+Mapped landmarks: 10
+============================================================
+
+============================================================
+Time: 8.08s
+Ground Truth:  x=  14.34, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  14.26, y= -50.69, θ=   3.6°
+Error:         Δx= -0.08, Δy= -0.69, Δθ=  3.6°
+Uncertainty (σ): x=1.05m, y=1.07m, θ=6.5°
+Detections: 4 landmarks
+  LM7: range=15.5m, bearing= -42.4°
+  LM8: range=32.5m, bearing=  19.7°
+  LM9: range=51.1m, bearing= -13.5°
+Mapped landmarks: 10
+============================================================
+
+============================================================
+Time: 10.01s
+Ground Truth:  x=  41.73, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  41.76, y= -50.44, θ=  -1.8°
+Error:         Δx=  0.03, Δy= -0.44, Δθ= -1.8°
+Uncertainty (σ): x=0.99m, y=1.01m, θ=6.5°
+Detections: 7 landmarks
+  LM8: range=10.8m, bearing=  70.7°
+  LM9: range=24.9m, bearing= -20.5°
+  LM10: range=40.4m, bearing=  13.6°
+Mapped landmarks: 14
+============================================================
+
+============================================================
+Time: 10.05s
+Ground Truth:  x=  42.16, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  42.18, y= -50.37, θ=   0.8°
+Error:         Δx=  0.02, Δy= -0.37, Δθ=  0.8°
+Uncertainty (σ): x=0.99m, y=1.01m, θ=6.5°
+Detections: 7 landmarks
+  LM8: range=10.5m, bearing=  72.8°
+  LM9: range=24.1m, bearing= -24.5°
+  LM10: range=40.0m, bearing=  16.0°
+Mapped landmarks: 14
+============================================================
+
+============================================================
+Time: 10.08s
+Ground Truth:  x=  42.67, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  42.71, y= -50.36, θ=  -1.6°
+Error:         Δx=  0.04, Δy= -0.36, Δθ= -1.6°
+Uncertainty (σ): x=0.99m, y=1.01m, θ=6.5°
+Detections: 7 landmarks
+  LM8: range=10.5m, bearing=  76.7°
+  LM9: range=24.0m, bearing= -27.0°
+  LM10: range=39.6m, bearing=  14.0°
+Mapped landmarks: 14
+============================================================
+
+============================================================
+Time: 12.02s
+Ground Truth:  x=  70.14, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  70.19, y= -50.82, θ=  -0.2°
+Error:         Δx=  0.05, Δy= -0.82, Δθ= -0.2°
+Uncertainty (σ): x=0.95m, y=0.97m, θ=6.5°
+Detections: 9 landmarks
+  LM10: range=14.8m, bearing=  43.6°
+  LM11: range=31.6m, bearing= -21.9°
+  LM12: range=36.9m, bearing=  16.9°
+Mapped landmarks: 18
+============================================================
+
+============================================================
+Time: 12.05s
+Ground Truth:  x=  70.49, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  70.63, y= -50.75, θ=   1.0°
+Error:         Δx=  0.14, Δy= -0.75, Δθ=  1.0°
+Uncertainty (σ): x=0.95m, y=0.97m, θ=6.5°
+Detections: 9 landmarks
+  LM10: range=14.5m, bearing=  44.0°
+  LM11: range=31.6m, bearing= -15.1°
+  LM12: range=36.5m, bearing=  17.9°
+Mapped landmarks: 18
+============================================================
+
+============================================================
+Time: 12.09s
+Ground Truth:  x=  71.00, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  71.01, y= -50.51, θ=  -0.8°
+Error:         Δx=  0.00, Δy= -0.51, Δθ= -0.8°
+Uncertainty (σ): x=0.95m, y=0.97m, θ=6.5°
+Detections: 10 landmarks
+  LM10: range=14.3m, bearing=  44.5°
+  LM11: range=31.0m, bearing= -19.3°
+  LM12: range=35.8m, bearing=  19.1°
+Mapped landmarks: 18
+============================================================
+
+============================================================
+Time: 14.02s
+Ground Truth:  x=  97.90, y= -49.92, θ=   1.6°
+SLAM Estimate: x=  97.84, y= -50.97, θ=  -0.6°
+Error:         Δx= -0.06, Δy= -1.05, Δθ= -2.2°
+Uncertainty (σ): x=0.92m, y=0.93m, θ=6.5°
+Detections: 13 landmarks
+  LM11: range=10.7m, bearing= -81.1°
+  LM12: range=12.9m, bearing=  52.1°
+  LM13: range=16.4m, bearing= -35.4°
+Mapped landmarks: 23
+============================================================
+
+============================================================
+Time: 14.06s
+Ground Truth:  x=  98.31, y= -49.91, θ=   1.8°
+SLAM Estimate: x=  98.22, y= -50.90, θ=   1.7°
+Error:         Δx= -0.09, Δy= -0.99, Δθ= -0.1°
+Uncertainty (σ): x=0.92m, y=0.93m, θ=6.5°
+Detections: 13 landmarks
+  LM11: range=10.6m, bearing= -82.1°
+  LM12: range=12.7m, bearing=  50.4°
+  LM13: range=16.3m, bearing= -35.4°
+Mapped landmarks: 23
+============================================================
+
+============================================================
+Time: 14.09s
+Ground Truth:  x=  98.72, y= -49.90, θ=   2.0°
+SLAM Estimate: x=  98.69, y= -50.88, θ=   1.1°
+Error:         Δx= -0.03, Δy= -0.98, Δθ= -0.9°
+Uncertainty (σ): x=0.92m, y=0.93m, θ=6.5°
+Detections: 13 landmarks
+  LM11: range=10.4m, bearing= -86.3°
+  LM12: range=12.3m, bearing=  51.2°
+  LM13: range=15.8m, bearing= -36.0°
+Mapped landmarks: 23
+============================================================
+
+============================================================
+Time: 16.03s
+Ground Truth:  x= 117.09, y= -46.75, θ=  19.6°
+SLAM Estimate: x= 117.10, y= -47.90, θ=  20.4°
+Error:         Δx=  0.01, Δy= -1.15, Δθ=  0.8°
+Uncertainty (σ): x=0.90m, y=0.92m, θ=6.5°
+Detections: 12 landmarks
+  LM14: range=10.0m, bearing=  84.1°
+  LM15: range=16.1m, bearing= -30.2°
+  LM16: range=18.7m, bearing=  40.8°
+Mapped landmarks: 25
+============================================================
+
+============================================================
+Time: 16.06s
+Ground Truth:  x= 117.40, y= -46.64, θ=  20.0°
+SLAM Estimate: x= 117.39, y= -47.82, θ=  19.6°
+Error:         Δx= -0.01, Δy= -1.18, Δθ= -0.4°
+Uncertainty (σ): x=0.90m, y=0.92m, θ=6.5°
+Detections: 12 landmarks
+  LM14: range=10.2m, bearing=  86.7°
+  LM15: range=15.7m, bearing= -37.3°
+  LM16: range=18.4m, bearing=  44.1°
+Mapped landmarks: 25
+============================================================
+
+============================================================
+Time: 16.10s
+Ground Truth:  x= 117.71, y= -46.52, θ=  20.3°
+SLAM Estimate: x= 117.83, y= -47.73, θ=  20.1°
+Error:         Δx=  0.12, Δy= -1.21, Δθ= -0.2°
+Uncertainty (σ): x=0.90m, y=0.92m, θ=6.5°
+Detections: 12 landmarks
+  LM14: range=10.1m, bearing=  88.0°
+  LM15: range=15.4m, bearing= -33.5°
+  LM16: range=18.1m, bearing=  41.0°
+Mapped landmarks: 25
+============================================================
+
+============================================================
+Time: 18.00s
+Ground Truth:  x= 132.84, y= -37.58, θ=  41.1°
+SLAM Estimate: x= 132.83, y= -39.05, θ=  39.5°
+Error:         Δx= -0.01, Δy= -1.47, Δθ= -1.5°
+Uncertainty (σ): x=0.89m, y=0.90m, θ=6.5°
+Detections: 12 landmarks
+  LM17: range=16.4m, bearing= -37.0°
+  LM18: range=15.8m, bearing=  43.7°
+  LM19: range=23.0m, bearing= -14.1°
+Mapped landmarks: 28
+============================================================
+
+============================================================
+Time: 18.04s
+Ground Truth:  x= 133.07, y= -37.38, θ=  41.5°
+SLAM Estimate: x= 133.22, y= -38.76, θ=  42.6°
+Error:         Δx=  0.15, Δy= -1.39, Δθ=  1.1°
+Uncertainty (σ): x=0.89m, y=0.90m, θ=6.5°
+Detections: 12 landmarks
+  LM17: range=16.2m, bearing= -28.2°
+  LM18: range=15.8m, bearing=  46.6°
+  LM19: range=22.9m, bearing= -15.0°
+Mapped landmarks: 28
+============================================================
+
+============================================================
+Time: 18.07s
+Ground Truth:  x= 133.30, y= -37.17, θ=  41.8°
+SLAM Estimate: x= 133.26, y= -38.60, θ=  40.3°
+Error:         Δx= -0.04, Δy= -1.43, Δθ= -1.6°
+Uncertainty (σ): x=0.89m, y=0.90m, θ=6.5°
+Detections: 12 landmarks
+  LM17: range=16.1m, bearing= -35.7°
+  LM18: range=15.4m, bearing=  45.9°
+  LM19: range=22.5m, bearing= -15.3°
+Mapped landmarks: 28
+============================================================
+
+============================================================
+Time: 20.01s
+Ground Truth:  x= 144.24, y= -23.10, θ=  62.5°
+SLAM Estimate: x= 144.40, y= -24.58, θ=  61.4°
+Error:         Δx=  0.16, Δy= -1.49, Δθ= -1.1°
+Uncertainty (σ): x=0.88m, y=0.89m, θ=6.5°
+Detections: 12 landmarks
+  LM19: range=10.4m, bearing= -85.3°
+  LM20: range=11.0m, bearing=  70.3°
+  LM21: range=23.3m, bearing= -13.8°
+Mapped landmarks: 30
+============================================================
+
+============================================================
+Time: 20.04s
+Ground Truth:  x= 144.39, y= -22.83, θ=  62.9°
+SLAM Estimate: x= 144.75, y= -24.30, θ=  61.5°
+Error:         Δx=  0.37, Δy= -1.47, Δθ= -1.4°
+Uncertainty (σ): x=0.88m, y=0.89m, θ=6.5°
+Detections: 12 landmarks
+  LM19: range=10.3m, bearing= -86.0°
+  LM20: range=10.8m, bearing=  69.8°
+  LM21: range=23.3m, bearing= -15.7°
+Mapped landmarks: 30
+============================================================
+
+============================================================
+Time: 20.08s
+Ground Truth:  x= 144.52, y= -22.55, θ=  63.3°
+SLAM Estimate: x= 144.71, y= -24.02, θ=  62.6°
+Error:         Δx=  0.18, Δy= -1.46, Δθ= -0.7°
+Uncertainty (σ): x=0.88m, y=0.89m, θ=6.5°
+Detections: 11 landmarks
+  LM20: range=10.6m, bearing=  71.7°
+  LM21: range=23.0m, bearing= -13.4°
+  LM22: range=20.9m, bearing=  32.5°
+Mapped landmarks: 30
+============================================================
+
+============================================================
+Time: 22.01s
+Ground Truth:  x= 149.61, y=  -5.44, θ=  83.8°
+SLAM Estimate: x= 149.94, y=  -6.80, θ=  83.0°
+Error:         Δx=  0.33, Δy= -1.36, Δθ= -0.7°
+Uncertainty (σ): x=0.88m, y=0.89m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=10.2m, bearing= -84.2°
+  LM22: range=10.4m, bearing=  80.8°
+  LM23: range=17.4m, bearing= -28.5°
+Mapped landmarks: 30
+============================================================
+
+============================================================
+Time: 22.05s
+Ground Truth:  x= 149.64, y=  -5.13, θ=  84.1°
+SLAM Estimate: x= 150.06, y=  -6.48, θ=  82.0°
+Error:         Δx=  0.42, Δy= -1.35, Δθ= -2.1°
+Uncertainty (σ): x=0.88m, y=0.89m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=10.3m, bearing= -84.6°
+  LM22: range=10.5m, bearing=  78.8°
+  LM23: range=17.2m, bearing= -31.4°
+Mapped landmarks: 30
+============================================================
+
+============================================================
+Time: 22.08s
+Ground Truth:  x= 149.67, y=  -4.83, θ=  84.5°
+SLAM Estimate: x= 150.07, y=  -6.20, θ=  83.4°
+Error:         Δx=  0.40, Δy= -1.37, Δθ= -1.0°
+Uncertainty (σ): x=0.88m, y=0.89m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=10.2m, bearing= -81.1°
+  LM22: range=10.3m, bearing=  83.0°
+  LM23: range=16.8m, bearing= -28.8°
+Mapped landmarks: 30
+============================================================
+
+============================================================
+Time: 24.02s
+Ground Truth:  x= 148.20, y=  12.92, θ= 105.1°
+SLAM Estimate: x= 148.74, y=  11.54, θ= 103.6°
+Error:         Δx=  0.54, Δy= -1.38, Δθ= -1.5°
+Uncertainty (σ): x=0.88m, y=0.89m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=22.1m, bearing= -15.4°
+  LM26: range=31.3m, bearing=  36.0°
+  LM27: range=40.9m, bearing=  12.4°
+Mapped landmarks: 32
+============================================================
+
+============================================================
+Time: 24.05s
+Ground Truth:  x= 148.12, y=  13.24, θ= 105.5°
+SLAM Estimate: x= 148.82, y=  12.05, θ= 105.3°
+Error:         Δx=  0.70, Δy= -1.18, Δθ= -0.2°
+Uncertainty (σ): x=0.88m, y=0.89m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=21.8m, bearing= -13.7°
+  LM26: range=31.2m, bearing=  38.8°
+  LM27: range=40.6m, bearing=   4.3°
+Mapped landmarks: 32
+============================================================
+
+============================================================
+Time: 24.09s
+Ground Truth:  x= 148.03, y=  13.53, θ= 105.8°
+SLAM Estimate: x= 148.75, y=  12.32, θ= 103.7°
+Error:         Δx=  0.71, Δy= -1.21, Δθ= -2.1°
+Uncertainty (σ): x=0.88m, y=0.89m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=21.6m, bearing= -14.9°
+  LM26: range=31.2m, bearing=  43.3°
+  LM27: range=40.3m, bearing=  10.7°
+Mapped landmarks: 32
+============================================================
+
+============================================================
+Time: 26.03s
+Ground Truth:  x= 140.24, y=  29.51, θ= 126.4°
+SLAM Estimate: x= 141.09, y=  28.27, θ= 125.4°
+Error:         Δx=  0.85, Δy= -1.25, Δθ= -0.9°
+Uncertainty (σ): x=0.88m, y=0.88m, θ=6.5°
+Detections: 7 landmarks
+  LM26: range=17.2m, bearing=  45.0°
+  LM27: range=22.8m, bearing= -11.4°
+  LM28: range=20.7m, bearing=  43.0°
+Mapped landmarks: 32
+============================================================
+
+============================================================
+Time: 26.06s
+Ground Truth:  x= 140.06, y=  29.76, θ= 126.7°
+SLAM Estimate: x= 140.95, y=  28.39, θ= 125.5°
+Error:         Δx=  0.89, Δy= -1.37, Δθ= -1.2°
+Uncertainty (σ): x=0.88m, y=0.88m, θ=6.5°
+Detections: 7 landmarks
+  LM26: range=17.2m, bearing=  46.6°
+  LM27: range=22.4m, bearing= -19.4°
+  LM28: range=20.4m, bearing=  38.8°
+Mapped landmarks: 32
+============================================================
+
+============================================================
+Time: 26.09s
+Ground Truth:  x= 139.84, y=  30.04, θ= 127.1°
+SLAM Estimate: x= 140.78, y=  28.94, θ= 127.8°
+Error:         Δx=  0.94, Δy= -1.10, Δθ=  0.7°
+Uncertainty (σ): x=0.88m, y=0.88m, θ=6.5°
+Detections: 7 landmarks
+  LM26: range=16.7m, bearing=  43.5°
+  LM27: range=22.1m, bearing= -13.1°
+  LM28: range=20.1m, bearing=  43.2°
+Mapped landmarks: 32
+============================================================
+
+============================================================
+Time: 28.03s
+Ground Truth:  x= 126.74, y=  42.14, θ= 147.7°
+SLAM Estimate: x= 127.80, y=  41.23, θ= 147.3°
+Error:         Δx=  1.06, Δy= -0.91, Δθ= -0.4°
+Uncertainty (σ): x=0.88m, y=0.88m, θ=6.5°
+Detections: 6 landmarks
+  LM28: range=10.2m, bearing=  84.0°
+  LM29: range=11.6m, bearing= -65.3°
+  LM30: range=17.4m, bearing=  43.4°
+Mapped landmarks: 33
+============================================================
+
+============================================================
+Time: 28.07s
+Ground Truth:  x= 126.48, y=  42.30, θ= 148.1°
+SLAM Estimate: x= 127.53, y=  41.33, θ= 148.6°
+Error:         Δx=  1.04, Δy= -0.97, Δθ=  0.5°
+Uncertainty (σ): x=0.88m, y=0.88m, θ=6.5°
+Detections: 6 landmarks
+  LM28: range=10.0m, bearing=  87.3°
+  LM29: range=11.3m, bearing= -60.9°
+  LM30: range=17.0m, bearing=  46.7°
+Mapped landmarks: 33
+============================================================
+
+============================================================
+Time: 30.00s
+Ground Truth:  x= 109.97, y=  48.89, θ= 168.5°
+SLAM Estimate: x= 111.13, y=  48.25, θ= 166.7°
+Error:         Δx=  1.16, Δy= -0.64, Δθ= -1.8°
+Uncertainty (σ): x=0.87m, y=0.88m, θ=6.5°
+Detections: 4 landmarks
+  LM31: range=20.6m, bearing= -21.6°
+  LM32: range=37.4m, bearing=  25.6°
+  LM33: range=53.9m, bearing=  -0.0°
+Mapped landmarks: 34
+============================================================
+
+============================================================
+Time: 30.04s
+Ground Truth:  x= 109.67, y=  48.96, θ= 168.8°
+SLAM Estimate: x= 110.86, y=  48.33, θ= 168.0°
+Error:         Δx=  1.19, Δy= -0.63, Δθ= -0.8°
+Uncertainty (σ): x=0.87m, y=0.88m, θ=6.5°
+Detections: 4 landmarks
+  LM31: range=20.1m, bearing= -22.1°
+  LM32: range=37.0m, bearing=  28.1°
+  LM33: range=53.9m, bearing=   0.6°
+Mapped landmarks: 34
+============================================================
+
+============================================================
+Time: 30.07s
+Ground Truth:  x= 109.37, y=  49.01, θ= 169.2°
+SLAM Estimate: x= 110.61, y=  48.45, θ= 166.5°
+Error:         Δx=  1.24, Δy= -0.57, Δθ= -2.6°
+Uncertainty (σ): x=0.87m, y=0.88m, θ=6.5°
+Detections: 4 landmarks
+  LM31: range=20.1m, bearing= -21.3°
+  LM32: range=36.9m, bearing=  23.3°
+  LM33: range=53.3m, bearing=  -1.7°
+Mapped landmarks: 34
+============================================================
+
+============================================================
+Time: 32.01s
+Ground Truth:  x=  87.47, y=  50.37, θ=-179.6°
+SLAM Estimate: x=  88.65, y=  50.18, θ= 179.9°
+Error:         Δx=  1.18, Δy= -0.18, Δθ= -0.5°
+Uncertainty (σ): x=0.87m, y=0.87m, θ=6.5°
+Detections: 4 landmarks
+  LM32: range=17.2m, bearing=  36.8°
+  LM33: range=31.8m, bearing= -19.2°
+  LM34: range=50.3m, bearing=  14.6°
+Mapped landmarks: 35
+============================================================
+
+============================================================
+Time: 32.04s
+Ground Truth:  x=  86.96, y=  50.37, θ=-179.5°
+SLAM Estimate: x=  88.08, y=  50.28, θ= 178.7°
+Error:         Δx=  1.12, Δy= -0.08, Δθ= -1.7°
+Uncertainty (σ): x=0.87m, y=0.87m, θ=6.5°
+Detections: 4 landmarks
+  LM32: range=16.8m, bearing=  41.9°
+  LM33: range=31.3m, bearing= -16.6°
+  LM34: range=49.9m, bearing=   7.3°
+Mapped landmarks: 35
+============================================================
+
+============================================================
+Time: 32.08s
+Ground Truth:  x=  86.60, y=  50.36, θ=-179.5°
+SLAM Estimate: x=  87.77, y=  50.31, θ= 178.5°
+Error:         Δx=  1.17, Δy= -0.05, Δθ= -2.1°
+Uncertainty (σ): x=0.87m, y=0.87m, θ=6.5°
+Detections: 4 landmarks
+  LM32: range=16.4m, bearing=  37.2°
+  LM33: range=31.0m, bearing= -15.8°
+  LM34: range=49.7m, bearing=  16.6°
+Mapped landmarks: 35
+============================================================
+
+============================================================
+Time: 34.02s
+Ground Truth:  x=  59.14, y=  49.99, θ=-179.6°
+SLAM Estimate: x=  60.19, y=  50.14, θ= 178.1°
+Error:         Δx=  1.05, Δy=  0.14, Δθ= -2.3°
+Uncertainty (σ): x=0.86m, y=0.87m, θ=6.5°
+Detections: 5 landmarks
+  LM33: range=10.5m, bearing= -79.2°
+  LM34: range=23.3m, bearing=  30.5°
+  LM35: range=41.4m, bearing= -14.2°
+Mapped landmarks: 37
+============================================================
+
+============================================================
+Time: 34.05s
+Ground Truth:  x=  58.63, y=  49.99, θ=-179.7°
+SLAM Estimate: x=  59.68, y=  50.15, θ= 179.1°
+Error:         Δx=  1.05, Δy=  0.16, Δθ= -1.2°
+Uncertainty (σ): x=0.86m, y=0.87m, θ=6.5°
+Detections: 5 landmarks
+  LM33: range=10.2m, bearing= -80.5°
+  LM34: range=22.9m, bearing=  25.0°
+  LM35: range=40.9m, bearing= -15.3°
+Mapped landmarks: 37
+============================================================
+
+============================================================
+Time: 34.08s
+Ground Truth:  x=  58.19, y=  49.99, θ=-179.7°
+SLAM Estimate: x=  59.23, y=  50.33, θ= 177.7°
+Error:         Δx=  1.03, Δy=  0.34, Δθ= -2.6°
+Uncertainty (σ): x=0.86m, y=0.87m, θ=6.5°
+Detections: 5 landmarks
+  LM33: range=10.4m, bearing= -84.0°
+  LM34: range=22.4m, bearing=  29.5°
+  LM35: range=40.6m, bearing= -17.1°
+Mapped landmarks: 37
+============================================================
+
+============================================================
+Time: 36.02s
+Ground Truth:  x=  30.81, y=  49.98, θ= 179.9°
+SLAM Estimate: x=  31.86, y=  50.64, θ= 178.7°
+Error:         Δx=  1.05, Δy=  0.65, Δθ= -1.2°
+Uncertainty (σ): x=0.86m, y=0.87m, θ=6.5°
+Detections: 4 landmarks
+  LM35: range=15.6m, bearing= -40.6°
+  LM36: range=30.3m, bearing=  21.6°
+  LM37: range=48.6m, bearing=  -7.8°
+Mapped landmarks: 38
+============================================================
+
+============================================================
+Time: 36.06s
+Ground Truth:  x=  30.30, y=  49.98, θ= 179.9°
+SLAM Estimate: x=  31.41, y=  50.78, θ= 176.8°
+Error:         Δx=  1.11, Δy=  0.79, Δθ= -3.1°
+Uncertainty (σ): x=0.86m, y=0.87m, θ=6.5°
+Detections: 4 landmarks
+  LM35: range=15.3m, bearing= -44.7°
+  LM36: range=29.8m, bearing=  21.8°
+  LM37: range=48.0m, bearing= -13.7°
+Mapped landmarks: 38
+============================================================
+
+============================================================
+Time: 36.09s
+Ground Truth:  x=  29.79, y=  49.98, θ= 179.9°
+SLAM Estimate: x=  30.83, y=  50.62, θ= 179.5°
+Error:         Δx=  1.04, Δy=  0.64, Δθ= -0.4°
+Uncertainty (σ): x=0.86m, y=0.87m, θ=6.5°
+Detections: 4 landmarks
+  LM35: range=14.6m, bearing= -42.8°
+  LM36: range=29.1m, bearing=  20.9°
+  LM37: range=47.7m, bearing= -18.8°
+Mapped landmarks: 38
+============================================================
+
+============================================================
+Time: 38.03s
+Ground Truth:  x=   2.48, y=  50.00, θ=-180.0°
+SLAM Estimate: x=   3.42, y=  50.99, θ= 179.3°
+Error:         Δx=  0.94, Δy=  0.99, Δθ= -0.7°
+Uncertainty (σ): x=0.85m, y=0.87m, θ=6.5°
+Detections: 5 landmarks
+  LM36: range=10.1m, bearing=  93.0°
+  LM37: range=21.8m, bearing= -26.9°
+  LM38: range=39.6m, bearing=  17.3°
+Mapped landmarks: 40
+============================================================
+
+============================================================
+Time: 38.06s
+Ground Truth:  x=   1.97, y=  50.00, θ=-180.0°
+SLAM Estimate: x=   2.85, y=  50.96, θ= 179.0°
+Error:         Δx=  0.89, Δy=  0.96, Δθ= -1.0°
+Uncertainty (σ): x=0.85m, y=0.87m, θ=6.5°
+Detections: 4 landmarks
+  LM37: range=21.3m, bearing= -30.2°
+  LM38: range=38.9m, bearing=  20.5°
+  LM39: range=55.3m, bearing=  -6.3°
+Mapped landmarks: 40
+============================================================
+
+============================================================
+Time: 38.10s
+Ground Truth:  x=   1.46, y=  50.00, θ=-180.0°
+SLAM Estimate: x=   2.44, y=  50.86, θ= 176.6°
+Error:         Δx=  0.98, Δy=  0.86, Δθ= -3.5°
+Uncertainty (σ): x=0.85m, y=0.88m, θ=6.5°
+Detections: 4 landmarks
+  LM37: range=20.8m, bearing= -26.6°
+  LM38: range=38.4m, bearing=  13.7°
+  LM39: range=54.7m, bearing=  -9.4°
+Mapped landmarks: 40
+============================================================
+
+============================================================
+Time: 40.00s
+Ground Truth:  x= -25.34, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -24.50, y=  50.92, θ=-178.6°
+Error:         Δx=  0.84, Δy=  0.92, Δθ=  1.4°
+Uncertainty (σ): x=0.85m, y=0.88m, θ=6.5°
+Detections: 5 landmarks
+  LM38: range=14.5m, bearing=  43.5°
+  LM39: range=28.9m, bearing= -21.1°
+  LM40: range=47.2m, bearing=  13.1°
+Mapped landmarks: 42
+============================================================
+
+============================================================
+Time: 40.04s
+Ground Truth:  x= -25.85, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -25.00, y=  50.90, θ=-179.0°
+Error:         Δx=  0.85, Δy=  0.90, Δθ=  1.0°
+Uncertainty (σ): x=0.85m, y=0.88m, θ=6.5°
+Detections: 5 landmarks
+  LM38: range=14.3m, bearing=  47.4°
+  LM39: range=28.4m, bearing= -18.7°
+  LM40: range=46.6m, bearing=  10.0°
+Mapped landmarks: 42
+============================================================
+
+============================================================
+Time: 40.07s
+Ground Truth:  x= -26.36, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -25.57, y=  51.08, θ=-179.2°
+Error:         Δx=  0.80, Δy=  1.08, Δθ=  0.8°
+Uncertainty (σ): x=0.85m, y=0.88m, θ=6.5°
+Detections: 5 landmarks
+  LM38: range=13.9m, bearing=  51.5°
+  LM39: range=27.8m, bearing= -18.0°
+  LM40: range=46.2m, bearing=  11.4°
+Mapped landmarks: 42
+============================================================
+
+============================================================
+Time: 42.01s
+Ground Truth:  x= -53.75, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -53.03, y=  50.39, θ= 178.1°
+Error:         Δx=  0.72, Δy=  0.39, Δθ= -1.9°
+Uncertainty (σ): x=0.84m, y=0.88m, θ=6.5°
+Detections: 5 landmarks
+  LM40: range=20.3m, bearing=  29.2°
+  LM41: range=38.2m, bearing= -16.6°
+  LM42: range=50.8m, bearing=  11.1°
+Mapped landmarks: 44
+============================================================
+
+============================================================
+Time: 42.04s
+Ground Truth:  x= -54.26, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -53.47, y=  50.31, θ=-179.8°
+Error:         Δx=  0.79, Δy=  0.31, Δθ=  0.2°
+Uncertainty (σ): x=0.84m, y=0.89m, θ=6.5°
+Detections: 5 landmarks
+  LM40: range=20.2m, bearing=  29.3°
+  LM41: range=37.5m, bearing= -12.8°
+  LM42: range=50.2m, bearing=  10.5°
+Mapped landmarks: 44
+============================================================
+
+============================================================
+Time: 42.08s
+Ground Truth:  x= -54.77, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -54.13, y=  50.78, θ=-178.7°
+Error:         Δx=  0.64, Δy=  0.78, Δθ=  1.3°
+Uncertainty (σ): x=0.84m, y=0.89m, θ=6.5°
+Detections: 5 landmarks
+  LM40: range=19.5m, bearing=  26.9°
+  LM41: range=37.1m, bearing= -11.9°
+  LM42: range=49.8m, bearing=   9.7°
+Mapped landmarks: 44
+============================================================
+
+============================================================
+Time: 44.01s
+Ground Truth:  x= -82.16, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -81.45, y=  49.18, θ=-179.3°
+Error:         Δx=  0.71, Δy= -0.82, Δθ=  0.7°
+Uncertainty (σ): x=0.83m, y=0.87m, θ=6.5°
+Detections: 9 landmarks
+  LM41: range=13.2m, bearing= -45.2°
+  LM42: range=23.7m, bearing=  25.2°
+  LM43: range=28.2m, bearing= -18.8°
+Mapped landmarks: 48
+============================================================
+
+============================================================
+Time: 44.05s
+Ground Truth:  x= -82.59, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -81.94, y=  49.19, θ= 177.7°
+Error:         Δx=  0.65, Δy= -0.81, Δθ= -2.3°
+Uncertainty (σ): x=0.83m, y=0.87m, θ=6.5°
+Detections: 9 landmarks
+  LM41: range=13.0m, bearing= -55.3°
+  LM42: range=23.2m, bearing=  27.7°
+  LM43: range=27.8m, bearing= -18.7°
+Mapped landmarks: 49
+============================================================
+
+============================================================
+Time: 44.08s
+Ground Truth:  x= -83.10, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -82.37, y=  49.11, θ=-179.8°
+Error:         Δx=  0.73, Δy= -0.89, Δθ=  0.2°
+Uncertainty (σ): x=0.83m, y=0.87m, θ=6.5°
+Detections: 9 landmarks
+  LM41: range=12.6m, bearing= -55.0°
+  LM42: range=22.8m, bearing=  28.6°
+  LM43: range=27.4m, bearing= -23.3°
+Mapped landmarks: 49
+============================================================
+
+============================================================
+Time: 46.02s
+Ground Truth:  x=-106.73, y=  49.25, θ=-171.9°
+SLAM Estimate: x=-105.84, y=  48.10, θ=-171.9°
+Error:         Δx=  0.90, Δy= -1.15, Δθ=  0.1°
+Uncertainty (σ): x=0.83m, y=0.87m, θ=6.5°
+Detections: 9 landmarks
+  LM43: range=10.6m, bearing= -83.7°
+  LM44: range=19.6m, bearing=  36.9°
+  LM45: range=37.9m, bearing=  -0.5°
+Mapped landmarks: 51
+============================================================
+
+============================================================
+Time: 46.05s
+Ground Truth:  x=-107.04, y=  49.21, θ=-171.7°
+SLAM Estimate: x=-106.23, y=  48.04, θ=-171.0°
+Error:         Δx=  0.81, Δy= -1.17, Δθ=  0.7°
+Uncertainty (σ): x=0.83m, y=0.87m, θ=6.5°
+Detections: 9 landmarks
+  LM43: range=10.6m, bearing= -90.7°
+  LM44: range=19.1m, bearing=  39.2°
+  LM45: range=37.6m, bearing=   3.0°
+Mapped landmarks: 51
+============================================================
+
+============================================================
+Time: 46.09s
+Ground Truth:  x=-107.34, y=  49.17, θ=-171.3°
+SLAM Estimate: x=-106.52, y=  47.87, θ=-171.5°
+Error:         Δx=  0.81, Δy= -1.29, Δθ= -0.2°
+Uncertainty (σ): x=0.83m, y=0.87m, θ=6.5°
+Detections: 8 landmarks
+  LM44: range=19.2m, bearing=  41.8°
+  LM45: range=37.2m, bearing=   2.5°
+  LM46: range=33.9m, bearing=  37.7°
+Mapped landmarks: 51
+============================================================
+
+============================================================
+Time: 48.03s
+Ground Truth:  x=-124.31, y=  43.52, θ=-151.2°
+SLAM Estimate: x=-123.49, y=  42.16, θ=-150.8°
+Error:         Δx=  0.82, Δy= -1.36, Δθ=  0.4°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 10 landmarks
+  LM44: range=9.9m, bearing=  90.1°
+  LM45: range=19.6m, bearing= -17.5°
+  LM46: range=20.0m, bearing=  40.1°
+Mapped landmarks: 53
+============================================================
+
+============================================================
+Time: 48.06s
+Ground Truth:  x=-124.58, y=  43.37, θ=-150.8°
+SLAM Estimate: x=-123.64, y=  41.90, θ=-150.0°
+Error:         Δx=  0.93, Δy= -1.47, Δθ=  0.8°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 9 landmarks
+  LM45: range=19.1m, bearing= -22.3°
+  LM46: range=19.6m, bearing=  44.1°
+  LM47: range=35.5m, bearing=   4.0°
+Mapped landmarks: 53
+============================================================
+
+============================================================
+Time: 48.09s
+Ground Truth:  x=-124.84, y=  43.22, θ=-150.5°
+SLAM Estimate: x=-124.02, y=  41.84, θ=-149.2°
+Error:         Δx=  0.82, Δy= -1.39, Δθ=  1.3°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 9 landmarks
+  LM45: range=19.1m, bearing= -27.5°
+  LM46: range=19.5m, bearing=  46.3°
+  LM47: range=35.2m, bearing=   1.9°
+Mapped landmarks: 53
+============================================================
+
+============================================================
+Time: 50.03s
+Ground Truth:  x=-138.50, y=  31.77, θ=-129.4°
+SLAM Estimate: x=-137.47, y=  30.23, θ=-128.7°
+Error:         Δx=  1.03, Δy= -1.53, Δθ=  0.8°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 10 landmarks
+  LM46: range=10.1m, bearing=  87.4°
+  LM47: range=17.9m, bearing= -24.9°
+  LM48: range=18.5m, bearing=  46.2°
+Mapped landmarks: 55
+============================================================
+
+============================================================
+Time: 50.07s
+Ground Truth:  x=-138.71, y=  31.51, θ=-129.1°
+SLAM Estimate: x=-137.65, y=  30.04, θ=-128.7°
+Error:         Δx=  1.06, Δy= -1.47, Δθ=  0.4°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 10 landmarks
+  LM46: range=10.0m, bearing=  92.4°
+  LM47: range=17.5m, bearing= -28.5°
+  LM48: range=18.3m, bearing=  43.9°
+Mapped landmarks: 55
+============================================================
+
+============================================================
+Time: 50.10s
+Ground Truth:  x=-138.90, y=  31.27, θ=-128.7°
+SLAM Estimate: x=-137.76, y=  29.74, θ=-129.4°
+Error:         Δx=  1.14, Δy= -1.53, Δθ= -0.7°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 10 landmarks
+  LM46: range=10.1m, bearing=  88.6°
+  LM47: range=17.1m, bearing= -30.5°
+  LM48: range=18.0m, bearing=  43.4°
+Mapped landmarks: 55
+============================================================
+
+============================================================
+Time: 52.00s
+Ground Truth:  x=-147.32, y=  15.87, θ=-108.4°
+SLAM Estimate: x=-146.24, y=  14.63, θ=-106.4°
+Error:         Δx=  1.08, Δy= -1.24, Δθ=  2.0°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 9 landmarks
+  LM0: range=73.0m, bearing=  59.8°
+  LM49: range=22.8m, bearing= -15.7°
+  LM50: range=22.7m, bearing=  40.9°
+Mapped landmarks: 57
+============================================================
+
+============================================================
+Time: 52.04s
+Ground Truth:  x=-147.42, y=  15.58, θ=-108.0°
+SLAM Estimate: x=-146.43, y=  14.28, θ=-108.2°
+Error:         Δx=  0.99, Δy= -1.29, Δθ= -0.2°
+Uncertainty (σ): x=0.80m, y=0.84m, θ=6.5°
+Detections: 9 landmarks
+  LM0: range=72.9m, bearing=  59.9°
+  LM49: range=22.5m, bearing= -12.5°
+  LM50: range=22.5m, bearing=  39.5°
+Mapped landmarks: 57
+============================================================
+
+============================================================
+Time: 52.07s
+Ground Truth:  x=-147.51, y=  15.29, θ=-107.7°
+SLAM Estimate: x=-146.49, y=  14.02, θ=-107.5°
+Error:         Δx=  1.02, Δy= -1.26, Δθ=  0.1°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 9 landmarks
+  LM0: range=72.7m, bearing=  58.5°
+  LM49: range=22.4m, bearing= -20.2°
+  LM50: range=22.1m, bearing=  40.5°
+Mapped landmarks: 57
+============================================================
+
+============================================================
+Time: 54.01s
+Ground Truth:  x=-149.85, y=  -2.34, θ= -87.3°
+SLAM Estimate: x=-148.72, y=  -3.47, θ= -87.4°
+Error:         Δx=  1.13, Δy= -1.13, Δθ= -0.2°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=62.5m, bearing=  46.7°
+  LM49: range=10.4m, bearing= -84.5°
+  LM50: range=10.8m, bearing=  68.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 54.04s
+Ground Truth:  x=-149.83, y=  -2.65, θ= -86.9°
+SLAM Estimate: x=-148.74, y=  -3.85, θ= -86.8°
+Error:         Δx=  1.09, Δy= -1.20, Δθ=  0.1°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 9 landmarks
+  LM0: range=62.2m, bearing=  57.7°
+  LM50: range=10.8m, bearing=  74.8°
+  LM51: range=14.5m, bearing= -39.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 54.08s
+Ground Truth:  x=-149.81, y=  -2.95, θ= -86.5°
+SLAM Estimate: x=-148.79, y=  -4.17, θ= -86.7°
+Error:         Δx=  1.03, Δy= -1.22, Δθ= -0.2°
+Uncertainty (σ): x=0.82m, y=0.86m, θ=6.5°
+Detections: 9 landmarks
+  LM0: range=61.7m, bearing=  47.7°
+  LM50: range=10.6m, bearing=  75.9°
+  LM51: range=14.3m, bearing= -36.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 56.02s
+Ground Truth:  x=-145.56, y= -20.37, θ= -65.9°
+SLAM Estimate: x=-145.07, y= -20.62, θ= -65.2°
+Error:         Δx=  0.49, Δy= -0.25, Δθ=  0.7°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=49.5m, bearing=  41.6°
+  LM1: range=73.9m, bearing=  37.1°
+  LM52: range=10.1m, bearing=  88.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 56.05s
+Ground Truth:  x=-145.44, y= -20.65, θ= -65.5°
+SLAM Estimate: x=-144.96, y= -20.96, θ= -65.4°
+Error:         Δx=  0.48, Δy= -0.31, Δθ=  0.1°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=49.3m, bearing=  42.3°
+  LM1: range=73.5m, bearing=  29.7°
+  LM53: range=21.2m, bearing= -16.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 56.08s
+Ground Truth:  x=-145.31, y= -20.93, θ= -65.1°
+SLAM Estimate: x=-144.68, y= -21.14, θ= -65.2°
+Error:         Δx=  0.63, Δy= -0.21, Δθ= -0.1°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=49.0m, bearing=  46.7°
+  LM1: range=73.4m, bearing=  36.4°
+  LM53: range=20.8m, bearing= -27.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 58.02s
+Ground Truth:  x=-135.09, y= -35.48, θ= -44.6°
+SLAM Estimate: x=-134.85, y= -35.85, θ= -44.0°
+Error:         Δx=  0.24, Δy= -0.37, Δθ=  0.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=35.4m, bearing=  37.0°
+  LM1: range=57.4m, bearing=  24.0°
+  LM2: range=71.0m, bearing=  47.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 58.06s
+Ground Truth:  x=-134.87, y= -35.69, θ= -44.2°
+SLAM Estimate: x=-134.65, y= -36.17, θ= -44.6°
+Error:         Δx=  0.23, Δy= -0.48, Δθ= -0.4°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=35.1m, bearing=  35.6°
+  LM1: range=57.1m, bearing=  17.6°
+  LM2: range=70.7m, bearing=  40.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 58.09s
+Ground Truth:  x=-134.65, y= -35.91, θ= -43.9°
+SLAM Estimate: x=-134.36, y= -36.19, θ= -43.9°
+Error:         Δx=  0.29, Δy= -0.28, Δθ=  0.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=34.8m, bearing=  37.1°
+  LM1: range=56.8m, bearing=  23.8°
+  LM2: range=70.5m, bearing=  37.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 60.03s
+Ground Truth:  x=-119.91, y= -45.76, θ= -23.4°
+SLAM Estimate: x=-119.61, y= -46.16, θ= -24.0°
+Error:         Δx=  0.30, Δy= -0.41, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=20.8m, bearing=  41.0°
+  LM1: range=39.4m, bearing=  -0.3°
+  LM2: range=56.1m, bearing=  24.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 60.06s
+Ground Truth:  x=-119.60, y= -45.89, θ= -23.0°
+SLAM Estimate: x=-119.41, y= -46.24, θ= -22.6°
+Error:         Δx=  0.20, Δy= -0.36, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=20.7m, bearing=  35.4°
+  LM1: range=39.1m, bearing=  -2.3°
+  LM2: range=55.7m, bearing=  34.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 60.10s
+Ground Truth:  x=-119.30, y= -46.02, θ= -22.7°
+SLAM Estimate: x=-119.12, y= -46.40, θ= -22.2°
+Error:         Δx=  0.18, Δy= -0.39, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=20.4m, bearing=  37.2°
+  LM1: range=38.8m, bearing=  -1.3°
+  LM2: range=55.3m, bearing=  29.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 62.03s
+Ground Truth:  x=-101.39, y= -50.02, θ=  -4.2°
+SLAM Estimate: x=-101.15, y= -50.28, θ=  -2.8°
+Error:         Δx=  0.24, Δy= -0.26, Δθ=  1.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM0: range=10.3m, bearing=  83.9°
+  LM1: range=20.8m, bearing= -17.5°
+  LM2: range=38.4m, bearing=  20.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 62.07s
+Ground Truth:  x=-101.01, y= -50.05, θ=  -4.0°
+SLAM Estimate: x=-100.79, y= -50.41, θ=  -5.3°
+Error:         Δx=  0.22, Δy= -0.36, Δθ= -1.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM0: range=10.5m, bearing=  87.3°
+  LM1: range=20.2m, bearing= -32.0°
+  LM2: range=38.2m, bearing=  17.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 64.01s
+Ground Truth:  x= -75.75, y= -50.20, θ=   1.0°
+SLAM Estimate: x= -75.55, y= -50.36, θ=   0.1°
+Error:         Δx=  0.20, Δy= -0.17, Δθ= -0.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM2: range=15.5m, bearing=  39.4°
+  LM3: range=32.1m, bearing= -16.5°
+  LM4: range=48.1m, bearing=   8.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 64.04s
+Ground Truth:  x= -75.24, y= -50.19, θ=   1.0°
+SLAM Estimate: x= -74.99, y= -50.55, θ=   0.5°
+Error:         Δx=  0.24, Δy= -0.36, Δθ= -0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM2: range=15.1m, bearing=  41.8°
+  LM3: range=31.6m, bearing= -19.3°
+  LM4: range=47.8m, bearing=   9.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 64.07s
+Ground Truth:  x= -74.81, y= -50.18, θ=   1.0°
+SLAM Estimate: x= -74.61, y= -50.45, θ=   1.8°
+Error:         Δx=  0.20, Δy= -0.27, Δθ=  0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM2: range=15.2m, bearing=  41.2°
+  LM3: range=31.1m, bearing= -16.1°
+  LM4: range=47.3m, bearing=  11.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 66.01s
+Ground Truth:  x= -47.34, y= -49.96, θ=  -0.0°
+SLAM Estimate: x= -47.09, y= -50.21, θ=   0.5°
+Error:         Δx=  0.25, Δy= -0.25, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM3: range=10.6m, bearing= -78.9°
+  LM4: range=21.3m, bearing=  29.4°
+  LM5: range=39.2m, bearing= -12.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 66.05s
+Ground Truth:  x= -46.83, y= -49.96, θ=  -0.0°
+SLAM Estimate: x= -46.55, y= -50.12, θ=  -0.5°
+Error:         Δx=  0.28, Δy= -0.16, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM3: range=10.4m, bearing= -85.1°
+  LM4: range=20.8m, bearing=  28.1°
+  LM5: range=38.6m, bearing= -16.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 66.08s
+Ground Truth:  x= -46.40, y= -49.96, θ=  -0.0°
+SLAM Estimate: x= -46.10, y= -50.25, θ=   2.1°
+Error:         Δx=  0.30, Δy= -0.29, Δθ=  2.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM3: range=10.2m, bearing= -85.6°
+  LM4: range=20.4m, bearing=  32.3°
+  LM5: range=38.3m, bearing= -17.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 68.02s
+Ground Truth:  x= -19.01, y= -50.00, θ=  -0.0°
+SLAM Estimate: x= -18.90, y= -50.33, θ=   0.1°
+Error:         Δx=  0.11, Δy= -0.33, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM5: range=14.0m, bearing= -41.7°
+  LM6: range=30.3m, bearing=  22.0°
+  LM7: range=46.2m, bearing= -10.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 68.05s
+Ground Truth:  x= -18.50, y= -50.00, θ=  -0.0°
+SLAM Estimate: x= -18.22, y= -50.30, θ=  -2.3°
+Error:         Δx=  0.28, Δy= -0.31, Δθ= -2.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM5: range=13.6m, bearing= -48.9°
+  LM6: range=29.6m, bearing=  15.4°
+  LM7: range=45.8m, bearing= -15.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 68.09s
+Ground Truth:  x= -17.99, y= -50.00, θ=  -0.0°
+SLAM Estimate: x= -17.72, y= -50.16, θ=   0.6°
+Error:         Δx=  0.27, Δy= -0.16, Δθ=  0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM5: range=13.3m, bearing= -49.9°
+  LM6: range=29.4m, bearing=  20.0°
+  LM7: range=45.3m, bearing= -10.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 70.02s
+Ground Truth:  x=   9.32, y= -50.00, θ=   0.0°
+SLAM Estimate: x=   9.68, y= -50.43, θ=   2.3°
+Error:         Δx=  0.36, Δy= -0.43, Δθ=  2.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM6: range=10.4m, bearing=  90.5°
+  LM7: range=19.7m, bearing= -33.0°
+  LM8: range=37.3m, bearing=  15.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 70.06s
+Ground Truth:  x=   9.83, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  10.03, y= -50.54, θ=   0.2°
+Error:         Δx=  0.20, Δy= -0.54, Δθ=  0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM7: range=19.4m, bearing= -30.5°
+  LM8: range=36.8m, bearing=  12.2°
+  LM9: range=55.6m, bearing=  -4.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 70.09s
+Ground Truth:  x=  10.34, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  10.53, y= -50.18, θ=  -1.0°
+Error:         Δx=  0.19, Δy= -0.18, Δθ= -1.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM7: range=18.8m, bearing= -31.2°
+  LM8: range=36.4m, bearing=  14.0°
+  LM9: range=55.0m, bearing= -10.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 72.03s
+Ground Truth:  x=  37.65, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  37.89, y= -50.20, θ=   1.0°
+Error:         Δx=  0.24, Δy= -0.20, Δθ=  1.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM8: range=12.6m, bearing=  46.6°
+  LM9: range=28.4m, bearing= -15.9°
+  LM10: range=44.5m, bearing=  11.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 72.06s
+Ground Truth:  x=  38.16, y= -50.00, θ=  -0.0°
+SLAM Estimate: x=  38.39, y= -50.40, θ=   1.1°
+Error:         Δx=  0.23, Δy= -0.40, Δθ=  1.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM8: range=12.4m, bearing=  52.4°
+  LM9: range=28.0m, bearing= -22.7°
+  LM10: range=43.9m, bearing=  14.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 72.10s
+Ground Truth:  x=  38.67, y= -50.00, θ=  -0.0°
+SLAM Estimate: x=  38.89, y= -50.41, θ=  -0.9°
+Error:         Δx=  0.22, Δy= -0.41, Δθ= -0.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM8: range=12.1m, bearing=  57.5°
+  LM9: range=27.6m, bearing= -21.3°
+  LM10: range=43.6m, bearing=  18.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 74.00s
+Ground Truth:  x=  65.55, y= -50.00, θ=  -0.0°
+SLAM Estimate: x=  65.75, y= -50.43, θ=   0.3°
+Error:         Δx=  0.21, Δy= -0.43, Δθ=  0.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM10: range=18.5m, bearing=  37.6°
+  LM11: range=36.3m, bearing= -12.6°
+  LM12: range=41.4m, bearing=  15.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 74.04s
+Ground Truth:  x=  65.98, y= -50.00, θ=  -0.0°
+SLAM Estimate: x=  66.09, y= -50.46, θ=  -1.7°
+Error:         Δx=  0.11, Δy= -0.46, Δθ= -1.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM10: range=17.9m, bearing=  33.0°
+  LM11: range=35.7m, bearing= -19.2°
+  LM12: range=40.8m, bearing=  12.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 74.07s
+Ground Truth:  x=  66.49, y= -50.00, θ=  -0.0°
+SLAM Estimate: x=  66.71, y= -50.45, θ=   0.5°
+Error:         Δx=  0.23, Δy= -0.45, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM10: range=17.8m, bearing=  36.8°
+  LM11: range=35.3m, bearing= -14.2°
+  LM12: range=40.3m, bearing=  13.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 76.01s
+Ground Truth:  x=  93.95, y= -49.99, θ=   0.4°
+SLAM Estimate: x=  94.22, y= -50.69, θ=  -0.1°
+Error:         Δx=  0.26, Δy= -0.70, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 13 landmarks
+  LM11: range=12.0m, bearing= -63.4°
+  LM12: range=15.7m, bearing=  43.5°
+  LM13: range=19.8m, bearing= -27.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 76.04s
+Ground Truth:  x=  94.31, y= -49.98, θ=   0.5°
+SLAM Estimate: x=  94.56, y= -50.60, θ=   0.4°
+Error:         Δx=  0.26, Δy= -0.61, Δθ= -0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 13 landmarks
+  LM11: range=11.9m, bearing= -63.5°
+  LM12: range=15.2m, bearing=  48.3°
+  LM13: range=19.7m, bearing= -28.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 76.08s
+Ground Truth:  x=  94.82, y= -49.98, θ=   0.6°
+SLAM Estimate: x=  94.96, y= -50.51, θ=  -0.3°
+Error:         Δx=  0.14, Δy= -0.53, Δθ= -0.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 13 landmarks
+  LM11: range=11.6m, bearing= -64.2°
+  LM12: range=14.9m, bearing=  47.3°
+  LM13: range=19.0m, bearing= -22.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 78.01s
+Ground Truth:  x= 114.25, y= -47.66, θ=  16.2°
+SLAM Estimate: x= 114.50, y= -48.43, θ=  17.6°
+Error:         Δx=  0.25, Δy= -0.78, Δθ=  1.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 11 landmarks
+  LM14: range=10.5m, bearing=  70.4°
+  LM15: range=18.6m, bearing= -26.5°
+  LM16: range=20.9m, bearing=  38.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 78.05s
+Ground Truth:  x= 114.54, y= -47.57, θ=  16.6°
+SLAM Estimate: x= 114.79, y= -48.31, θ=  16.7°
+Error:         Δx=  0.25, Δy= -0.74, Δθ=  0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 11 landmarks
+  LM14: range=10.5m, bearing=  72.3°
+  LM15: range=18.5m, bearing= -26.2°
+  LM16: range=20.7m, bearing=  41.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 78.08s
+Ground Truth:  x= 114.84, y= -47.48, θ=  16.9°
+SLAM Estimate: x= 115.03, y= -48.17, θ=  15.7°
+Error:         Δx=  0.19, Δy= -0.69, Δθ= -1.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 11 landmarks
+  LM14: range=10.6m, bearing=  72.2°
+  LM15: range=18.1m, bearing= -26.4°
+  LM16: range=20.6m, bearing=  42.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 80.02s
+Ground Truth:  x= 130.77, y= -39.28, θ=  37.9°
+SLAM Estimate: x= 131.18, y= -40.02, θ=  38.4°
+Error:         Δx=  0.41, Δy= -0.74, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM16: range=10.4m, bearing=  81.7°
+  LM17: range=18.7m, bearing= -31.3°
+  LM18: range=17.9m, bearing=  44.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 80.05s
+Ground Truth:  x= 131.01, y= -39.09, θ=  38.3°
+SLAM Estimate: x= 131.42, y= -39.89, θ=  38.3°
+Error:         Δx=  0.40, Δy= -0.80, Δθ=  0.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM16: range=10.3m, bearing=  84.5°
+  LM17: range=18.7m, bearing= -24.1°
+  LM18: range=17.6m, bearing=  41.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 80.09s
+Ground Truth:  x= 131.25, y= -38.90, θ=  38.7°
+SLAM Estimate: x= 131.46, y= -39.66, θ=  39.0°
+Error:         Δx=  0.21, Δy= -0.76, Δθ=  0.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM16: range=10.2m, bearing=  81.8°
+  LM17: range=18.5m, bearing= -27.4°
+  LM18: range=17.3m, bearing=  51.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 82.03s
+Ground Truth:  x= 142.94, y= -25.44, θ=  59.5°
+SLAM Estimate: x= 143.41, y= -26.21, θ=  59.7°
+Error:         Δx=  0.46, Δy= -0.77, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 11 landmarks
+  LM19: range=10.8m, bearing= -71.9°
+  LM20: range=12.1m, bearing=  66.1°
+  LM21: range=26.4m, bearing=  -8.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 82.06s
+Ground Truth:  x= 143.10, y= -25.17, θ=  59.8°
+SLAM Estimate: x= 143.39, y= -26.01, θ=  59.2°
+Error:         Δx=  0.29, Δy= -0.83, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 11 landmarks
+  LM19: range=10.8m, bearing= -73.3°
+  LM20: range=11.8m, bearing=  66.4°
+  LM21: range=26.0m, bearing= -13.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 82.09s
+Ground Truth:  x= 143.25, y= -24.91, θ=  60.2°
+SLAM Estimate: x= 143.59, y= -25.64, θ=  61.2°
+Error:         Δx=  0.33, Δy= -0.73, Δθ=  1.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 11 landmarks
+  LM19: range=10.5m, bearing= -72.6°
+  LM20: range=11.7m, bearing=  64.7°
+  LM21: range=25.6m, bearing=  -6.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 84.03s
+Ground Truth:  x= 149.24, y=  -8.11, θ=  80.7°
+SLAM Estimate: x= 149.65, y=  -8.87, θ=  81.7°
+Error:         Δx=  0.41, Δy= -0.75, Δθ=  1.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=11.1m, bearing= -71.3°
+  LM22: range=11.1m, bearing=  63.3°
+  LM23: range=19.8m, bearing= -20.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 84.07s
+Ground Truth:  x= 149.29, y=  -7.79, θ=  81.1°
+SLAM Estimate: x= 149.64, y=  -8.61, θ=  80.9°
+Error:         Δx=  0.35, Δy= -0.82, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=11.0m, bearing= -65.1°
+  LM22: range=11.0m, bearing=  66.2°
+  LM23: range=19.4m, bearing= -26.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 84.10s
+Ground Truth:  x= 149.34, y=  -7.48, θ=  81.4°
+SLAM Estimate: x= 149.71, y=  -8.33, θ=  82.0°
+Error:         Δx=  0.37, Δy= -0.85, Δθ=  0.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=10.8m, bearing= -74.4°
+  LM22: range=11.0m, bearing=  64.4°
+  LM23: range=19.0m, bearing= -21.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 86.00s
+Ground Truth:  x= 148.89, y=  10.01, θ= 101.7°
+SLAM Estimate: x= 149.30, y=   9.22, θ= 101.2°
+Error:         Δx=  0.41, Δy= -0.80, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM24: range=9.9m, bearing=  90.4°
+  LM25: range=25.1m, bearing= -15.7°
+  LM26: range=33.9m, bearing=  35.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 86.04s
+Ground Truth:  x= 148.83, y=  10.31, θ= 102.1°
+SLAM Estimate: x= 149.17, y=   9.47, θ= 102.3°
+Error:         Δx=  0.35, Δy= -0.84, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM24: range=10.1m, bearing=  86.9°
+  LM25: range=24.8m, bearing= -14.3°
+  LM26: range=33.6m, bearing=  35.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 86.07s
+Ground Truth:  x= 148.76, y=  10.64, θ= 102.4°
+SLAM Estimate: x= 149.10, y=   9.86, θ= 101.9°
+Error:         Δx=  0.34, Δy= -0.78, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM24: range=10.2m, bearing=  88.3°
+  LM25: range=24.6m, bearing= -11.2°
+  LM26: range=33.4m, bearing=  33.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 88.01s
+Ground Truth:  x= 141.93, y=  27.05, θ= 122.9°
+SLAM Estimate: x= 142.40, y=  26.26, θ= 122.2°
+Error:         Δx=  0.47, Δy= -0.79, Δθ= -0.7°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=10.4m, bearing= -70.2°
+  LM26: range=19.4m, bearing=  39.8°
+  LM27: range=25.5m, bearing= -10.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 88.04s
+Ground Truth:  x= 141.76, y=  27.31, θ= 123.3°
+SLAM Estimate: x= 142.27, y=  26.64, θ= 122.8°
+Error:         Δx=  0.51, Δy= -0.67, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=10.6m, bearing= -74.4°
+  LM26: range=19.2m, bearing=  39.4°
+  LM27: range=25.2m, bearing= -13.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 88.08s
+Ground Truth:  x= 141.60, y=  27.57, θ= 123.6°
+SLAM Estimate: x= 142.05, y=  26.87, θ= 123.1°
+Error:         Δx=  0.46, Δy= -0.69, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=10.5m, bearing= -78.5°
+  LM26: range=18.9m, bearing=  41.0°
+  LM27: range=25.0m, bearing= -12.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 90.01s
+Ground Truth:  x= 129.19, y=  40.48, θ= 144.3°
+SLAM Estimate: x= 129.61, y=  39.87, θ= 144.9°
+Error:         Δx=  0.42, Δy= -0.61, Δθ=  0.7°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM26: range=10.3m, bearing=  89.7°
+  LM27: range=10.6m, bearing= -70.0°
+  LM28: range=10.9m, bearing=  69.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 90.05s
+Ground Truth:  x= 128.94, y=  40.66, θ= 144.6°
+SLAM Estimate: x= 129.48, y=  40.05, θ= 143.6°
+Error:         Δx=  0.53, Δy= -0.61, Δθ= -1.1°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 7 landmarks
+  LM27: range=10.6m, bearing= -76.5°
+  LM28: range=10.9m, bearing=  70.1°
+  LM29: range=13.0m, bearing= -49.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 90.08s
+Ground Truth:  x= 128.69, y=  40.83, θ= 145.0°
+SLAM Estimate: x= 129.19, y=  40.21, θ= 145.8°
+Error:         Δx=  0.50, Δy= -0.63, Δθ=  0.8°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 7 landmarks
+  LM27: range=10.6m, bearing= -70.3°
+  LM28: range=10.6m, bearing=  72.4°
+  LM29: range=12.9m, bearing= -45.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 92.02s
+Ground Truth:  x= 112.55, y=  48.30, θ= 165.5°
+SLAM Estimate: x= 113.11, y=  47.77, θ= 164.9°
+Error:         Δx=  0.56, Δy= -0.53, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM30: range=10.2m, bearing=  88.1°
+  LM31: range=23.0m, bearing= -15.5°
+  LM32: range=39.8m, bearing=  25.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 92.05s
+Ground Truth:  x= 112.26, y=  48.37, θ= 165.9°
+SLAM Estimate: x= 112.88, y=  47.84, θ= 165.3°
+Error:         Δx=  0.62, Δy= -0.53, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM30: range=10.2m, bearing=  92.4°
+  LM31: range=22.6m, bearing= -16.2°
+  LM32: range=39.4m, bearing=  22.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 92.09s
+Ground Truth:  x= 111.96, y=  48.45, θ= 166.2°
+SLAM Estimate: x= 112.46, y=  47.97, θ= 165.7°
+Error:         Δx=  0.50, Δy= -0.48, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM31: range=22.5m, bearing= -18.8°
+  LM32: range=39.1m, bearing=  25.4°
+  LM33: range=56.1m, bearing=  -1.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 94.03s
+Ground Truth:  x=  91.50, y=  50.37, θ= 179.7°
+SLAM Estimate: x=  92.15, y=  49.72, θ= 179.1°
+Error:         Δx=  0.66, Δy= -0.66, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM32: range=20.6m, bearing=  32.9°
+  LM33: range=35.7m, bearing= -13.8°
+  LM34: range=54.6m, bearing=  17.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 94.06s
+Ground Truth:  x=  91.06, y=  50.38, θ= 179.8°
+SLAM Estimate: x=  91.69, y=  49.93, θ= 176.8°
+Error:         Δx=  0.63, Δy= -0.44, Δθ= -3.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM32: range=20.2m, bearing=  31.7°
+  LM33: range=35.4m, bearing= -12.2°
+  LM34: range=54.0m, bearing=   6.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 94.09s
+Ground Truth:  x=  90.55, y=  50.38, θ= 179.9°
+SLAM Estimate: x=  91.09, y=  49.75, θ=-179.2°
+Error:         Δx=  0.54, Δy= -0.63, Δθ=  0.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM32: range=19.7m, bearing=  30.3°
+  LM33: range=34.8m, bearing= -16.1°
+  LM34: range=53.6m, bearing=  12.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 96.03s
+Ground Truth:  x=  63.17, y=  50.02, θ=-179.5°
+SLAM Estimate: x=  63.73, y=  49.75, θ=-179.3°
+Error:         Δx=  0.57, Δy= -0.28, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM33: range=11.8m, bearing= -63.0°
+  LM34: range=27.1m, bearing=  23.3°
+  LM35: range=45.3m, bearing= -13.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 96.07s
+Ground Truth:  x=  62.81, y=  50.02, θ=-179.5°
+SLAM Estimate: x=  63.44, y=  49.69, θ=-179.7°
+Error:         Δx=  0.63, Δy= -0.33, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM33: range=11.7m, bearing= -62.9°
+  LM34: range=26.9m, bearing=  22.7°
+  LM35: range=44.9m, bearing= -15.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 98.00s
+Ground Truth:  x=  35.35, y=  49.97, θ= 179.9°
+SLAM Estimate: x=  35.84, y=  49.63, θ= 179.1°
+Error:         Δx=  0.49, Δy= -0.35, Δθ= -0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM35: range=19.1m, bearing= -34.4°
+  LM36: range=34.5m, bearing=  18.2°
+  LM37: range=52.9m, bearing=  -9.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 98.04s
+Ground Truth:  x=  34.84, y=  49.98, θ= 179.9°
+SLAM Estimate: x=  35.36, y=  49.85, θ= 179.8°
+Error:         Δx=  0.52, Δy= -0.12, Δθ= -0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM35: range=18.9m, bearing= -30.6°
+  LM36: range=34.1m, bearing=  22.7°
+  LM37: range=52.6m, bearing=  -8.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 98.07s
+Ground Truth:  x=  34.40, y=  49.98, θ= 179.9°
+SLAM Estimate: x=  35.03, y=  49.68, θ= 177.1°
+Error:         Δx=  0.62, Δy= -0.29, Δθ= -2.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM35: range=18.6m, bearing= -35.1°
+  LM36: range=33.6m, bearing=  21.0°
+  LM37: range=52.1m, bearing= -13.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 100.01s
+Ground Truth:  x=   7.02, y=  50.00, θ= 180.0°
+SLAM Estimate: x=   7.54, y=  49.84, θ=-178.7°
+Error:         Δx=  0.52, Δy= -0.16, Δθ=  1.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM36: range=11.1m, bearing=  63.9°
+  LM37: range=25.8m, bearing= -26.6°
+  LM38: range=44.1m, bearing=  14.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 100.04s
+Ground Truth:  x=   6.51, y=  50.00, θ= 180.0°
+SLAM Estimate: x=   7.14, y=  49.72, θ=-178.8°
+Error:         Δx=  0.63, Δy= -0.28, Δθ=  1.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM36: range=11.1m, bearing=  63.7°
+  LM37: range=25.3m, bearing= -19.9°
+  LM38: range=43.5m, bearing=  13.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 100.08s
+Ground Truth:  x=   6.00, y=  50.00, θ= 180.0°
+SLAM Estimate: x=   6.53, y=  49.91, θ=-177.9°
+Error:         Δx=  0.54, Δy= -0.10, Δθ=  2.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM36: range=10.7m, bearing=  70.4°
+  LM37: range=24.8m, bearing= -25.4°
+  LM38: range=42.9m, bearing=  15.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 102.02s
+Ground Truth:  x= -21.31, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -20.80, y=  50.04, θ=-179.6°
+Error:         Δx=  0.52, Δy=  0.04, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM38: range=17.7m, bearing=  27.6°
+  LM39: range=32.5m, bearing= -18.8°
+  LM40: range=51.3m, bearing=  15.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 102.05s
+Ground Truth:  x= -21.82, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -21.32, y=  50.15, θ=-178.9°
+Error:         Δx=  0.50, Δy=  0.15, Δθ=  1.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM38: range=17.2m, bearing=  36.3°
+  LM39: range=32.1m, bearing= -11.7°
+  LM40: range=50.6m, bearing=   8.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 102.08s
+Ground Truth:  x= -22.33, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -21.80, y=  49.82, θ= 178.5°
+Error:         Δx=  0.53, Δy= -0.18, Δθ= -1.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM38: range=16.7m, bearing=  35.8°
+  LM39: range=31.7m, bearing= -21.2°
+  LM40: range=50.1m, bearing=  15.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 104.02s
+Ground Truth:  x= -49.64, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -49.12, y=  49.85, θ=-179.3°
+Error:         Δx=  0.52, Δy= -0.15, Δθ=  0.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM39: range=10.6m, bearing= -76.8°
+  LM40: range=24.0m, bearing=  27.0°
+  LM41: range=41.9m, bearing= -16.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 104.06s
+Ground Truth:  x= -50.15, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -49.70, y=  49.67, θ=-177.6°
+Error:         Δx=  0.45, Δy= -0.33, Δθ=  2.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM39: range=10.3m, bearing= -78.4°
+  LM40: range=23.6m, bearing=  26.0°
+  LM41: range=41.8m, bearing= -14.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 104.09s
+Ground Truth:  x= -50.66, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -50.06, y=  49.80, θ= 179.5°
+Error:         Δx=  0.61, Δy= -0.20, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM39: range=10.2m, bearing= -81.9°
+  LM40: range=23.2m, bearing=  29.1°
+  LM41: range=41.2m, bearing= -11.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 106.03s
+Ground Truth:  x= -78.05, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -77.50, y=  49.57, θ= 179.0°
+Error:         Δx=  0.55, Δy= -0.43, Δθ= -1.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM41: range=16.0m, bearing= -39.6°
+  LM42: range=27.5m, bearing=  22.6°
+  LM43: range=32.3m, bearing= -17.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 106.06s
+Ground Truth:  x= -78.56, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -78.03, y=  49.62, θ= 179.8°
+Error:         Δx=  0.53, Δy= -0.38, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM41: range=15.6m, bearing= -35.7°
+  LM42: range=26.9m, bearing=  24.9°
+  LM43: range=31.6m, bearing= -12.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 106.10s
+Ground Truth:  x= -79.07, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -78.62, y=  49.79, θ= 178.7°
+Error:         Δx=  0.45, Δy= -0.21, Δθ= -1.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 8 landmarks
+  LM41: range=15.4m, bearing= -43.4°
+  LM42: range=26.6m, bearing=  23.6°
+  LM43: range=31.3m, bearing= -12.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 108.00s
+Ground Truth:  x=-103.72, y=  49.60, θ=-174.7°
+SLAM Estimate: x=-103.24, y=  49.38, θ=-174.0°
+Error:         Δx=  0.48, Δy= -0.22, Δθ=  0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM42: range=9.7m, bearing=  80.5°
+  LM43: range=11.0m, bearing= -68.6°
+  LM44: range=21.9m, bearing=  37.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 108.03s
+Ground Truth:  x=-104.05, y=  49.57, θ=-174.4°
+SLAM Estimate: x=-103.50, y=  49.21, θ=-174.0°
+Error:         Δx=  0.55, Δy= -0.36, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM42: range=9.7m, bearing=  87.5°
+  LM43: range=11.1m, bearing= -71.5°
+  LM44: range=21.4m, bearing=  36.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 108.07s
+Ground Truth:  x=-104.35, y=  49.54, θ=-174.2°
+SLAM Estimate: x=-103.71, y=  49.10, θ=-174.9°
+Error:         Δx=  0.64, Δy= -0.44, Δθ= -0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM42: range=10.0m, bearing=  92.6°
+  LM43: range=11.2m, bearing= -74.3°
+  LM44: range=21.4m, bearing=  32.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 110.01s
+Ground Truth:  x=-121.60, y=  44.90, θ=-154.7°
+SLAM Estimate: x=-121.09, y=  44.56, θ=-154.0°
+Error:         Δx=  0.51, Δy= -0.33, Δθ=  0.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM44: range=10.3m, bearing=  76.9°
+  LM45: range=22.3m, bearing=  -9.6°
+  LM46: range=22.2m, bearing=  40.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 110.04s
+Ground Truth:  x=-121.93, y=  44.74, θ=-154.3°
+SLAM Estimate: x=-121.36, y=  44.46, θ=-155.1°
+Error:         Δx=  0.57, Δy= -0.28, Δθ= -0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM44: range=10.3m, bearing=  78.0°
+  LM45: range=22.2m, bearing= -12.4°
+  LM46: range=21.9m, bearing=  40.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 110.07s
+Ground Truth:  x=-122.20, y=  44.61, θ=-154.0°
+SLAM Estimate: x=-121.56, y=  44.24, θ=-155.7°
+Error:         Δx=  0.64, Δy= -0.37, Δθ= -1.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM44: range=10.3m, bearing=  77.3°
+  LM45: range=22.0m, bearing= -17.1°
+  LM46: range=21.8m, bearing=  41.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 112.01s
+Ground Truth:  x=-136.53, y=  34.01, θ=-132.9°
+SLAM Estimate: x=-136.10, y=  33.73, θ=-133.8°
+Error:         Δx=  0.43, Δy= -0.28, Δθ= -1.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM46: range=10.7m, bearing=  74.9°
+  LM47: range=20.5m, bearing= -19.7°
+  LM48: range=20.8m, bearing=  41.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 112.05s
+Ground Truth:  x=-136.74, y=  33.78, θ=-132.5°
+SLAM Estimate: x=-136.26, y=  33.54, θ=-133.4°
+Error:         Δx=  0.48, Δy= -0.24, Δθ= -0.9°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM46: range=10.5m, bearing=  71.3°
+  LM47: range=20.2m, bearing= -19.4°
+  LM48: range=20.6m, bearing=  38.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 112.08s
+Ground Truth:  x=-136.96, y=  33.54, θ=-132.1°
+SLAM Estimate: x=-136.39, y=  33.25, θ=-131.6°
+Error:         Δx=  0.57, Δy= -0.29, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM46: range=10.3m, bearing=  73.3°
+  LM47: range=19.9m, bearing= -26.5°
+  LM48: range=20.3m, bearing=  41.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 114.02s
+Ground Truth:  x=-146.41, y=  18.36, θ=-111.5°
+SLAM Estimate: x=-145.91, y=  18.08, θ=-112.1°
+Error:         Δx=  0.50, Δy= -0.28, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=74.4m, bearing=  57.9°
+  LM48: range=10.3m, bearing=  83.5°
+  LM49: range=25.5m, bearing= -11.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 114.05s
+Ground Truth:  x=-146.52, y=  18.07, θ=-111.1°
+SLAM Estimate: x=-146.04, y=  17.80, θ=-110.6°
+Error:         Δx=  0.48, Δy= -0.28, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=74.3m, bearing=  64.9°
+  LM48: range=10.2m, bearing=  83.3°
+  LM49: range=25.3m, bearing= -11.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 114.09s
+Ground Truth:  x=-146.63, y=  17.79, θ=-110.7°
+SLAM Estimate: x=-146.07, y=  17.62, θ=-111.9°
+Error:         Δx=  0.56, Δy= -0.17, Δθ= -1.1°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=74.1m, bearing=  61.4°
+  LM48: range=10.2m, bearing=  88.6°
+  LM49: range=25.1m, bearing= -16.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 116.02s
+Ground Truth:  x=-149.90, y=   0.31, θ= -90.3°
+SLAM Estimate: x=-149.48, y=   0.07, θ= -90.2°
+Error:         Δx=  0.42, Δy= -0.24, Δθ=  0.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=64.1m, bearing=  51.5°
+  LM49: range=10.7m, bearing= -69.5°
+  LM50: range=11.9m, bearing=  64.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 116.06s
+Ground Truth:  x=-149.90, y=   0.00, θ= -89.9°
+SLAM Estimate: x=-149.46, y=  -0.26, θ= -89.6°
+Error:         Δx=  0.45, Δy= -0.26, Δθ=  0.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=63.8m, bearing=  52.8°
+  LM49: range=10.8m, bearing= -73.0°
+  LM50: range=11.7m, bearing=  63.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 116.09s
+Ground Truth:  x=-149.90, y=  -0.30, θ= -89.5°
+SLAM Estimate: x=-149.46, y=  -0.50, θ= -90.7°
+Error:         Δx=  0.44, Δy= -0.20, Δθ= -1.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=63.6m, bearing=  53.5°
+  LM49: range=10.6m, bearing= -78.5°
+  LM50: range=11.5m, bearing=  62.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 118.03s
+Ground Truth:  x=-146.59, y= -17.90, θ= -69.0°
+SLAM Estimate: x=-146.25, y= -18.10, θ= -70.0°
+Error:         Δx=  0.34, Δy= -0.21, Δθ= -1.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=51.5m, bearing=  45.5°
+  LM1: range=76.1m, bearing=  43.2°
+  LM52: range=10.3m, bearing=  71.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 118.06s
+Ground Truth:  x=-146.48, y= -18.18, θ= -68.6°
+SLAM Estimate: x=-146.06, y= -18.36, θ= -69.2°
+Error:         Δx=  0.41, Δy= -0.18, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=51.4m, bearing=  45.1°
+  LM1: range=75.9m, bearing=  40.8°
+  LM52: range=10.4m, bearing=  78.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 118.10s
+Ground Truth:  x=-146.36, y= -18.47, θ= -68.3°
+SLAM Estimate: x=-146.04, y= -18.67, θ= -67.8°
+Error:         Δx=  0.33, Δy= -0.20, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=51.0m, bearing=  44.9°
+  LM1: range=75.4m, bearing=  34.5°
+  LM52: range=10.4m, bearing=  78.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 120.00s
+Ground Truth:  x=-137.17, y= -33.30, θ= -48.0°
+SLAM Estimate: x=-136.92, y= -33.66, θ= -46.8°
+Error:         Δx=  0.25, Δy= -0.36, Δθ=  1.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=37.7m, bearing=  37.2°
+  LM1: range=60.4m, bearing=  24.2°
+  LM2: range=73.3m, bearing=  44.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 120.04s
+Ground Truth:  x=-136.96, y= -33.53, θ= -47.6°
+SLAM Estimate: x=-136.69, y= -33.71, θ= -48.3°
+Error:         Δx=  0.27, Δy= -0.18, Δθ= -0.7°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=37.5m, bearing=  37.7°
+  LM1: range=60.0m, bearing=  20.9°
+  LM2: range=73.0m, bearing=  44.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 120.07s
+Ground Truth:  x=-136.72, y= -33.79, θ= -47.3°
+SLAM Estimate: x=-136.44, y= -34.07, θ= -46.7°
+Error:         Δx=  0.28, Δy= -0.28, Δθ=  0.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=37.3m, bearing=  35.8°
+  LM1: range=59.6m, bearing=  19.9°
+  LM2: range=72.7m, bearing=  43.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 122.01s
+Ground Truth:  x=-122.59, y= -44.50, θ= -26.8°
+SLAM Estimate: x=-122.24, y= -44.78, θ= -26.6°
+Error:         Δx=  0.35, Δy= -0.28, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=22.9m, bearing=  41.1°
+  LM1: range=42.1m, bearing=   2.2°
+  LM2: range=58.4m, bearing=  27.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 122.04s
+Ground Truth:  x=-122.31, y= -44.63, θ= -26.4°
+SLAM Estimate: x=-121.98, y= -45.04, θ= -26.6°
+Error:         Δx=  0.33, Δy= -0.41, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=22.7m, bearing=  39.9°
+  LM1: range=42.1m, bearing=   0.4°
+  LM2: range=58.1m, bearing=  27.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 122.08s
+Ground Truth:  x=-122.04, y= -44.77, θ= -26.1°
+SLAM Estimate: x=-121.75, y= -45.23, θ= -25.8°
+Error:         Δx=  0.28, Δy= -0.46, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=22.7m, bearing=  44.3°
+  LM1: range=41.7m, bearing=   9.5°
+  LM2: range=58.0m, bearing=  34.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 124.01s
+Ground Truth:  x=-104.95, y= -49.69, θ=  -6.5°
+SLAM Estimate: x=-104.72, y= -49.92, θ=  -4.6°
+Error:         Δx=  0.22, Δy= -0.23, Δθ=  2.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=11.1m, bearing=  70.3°
+  LM1: range=24.2m, bearing= -21.0°
+  LM2: range=41.8m, bearing=  18.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 124.05s
+Ground Truth:  x=-104.64, y= -49.72, θ=  -6.3°
+SLAM Estimate: x=-104.39, y= -49.93, θ=  -5.4°
+Error:         Δx=  0.25, Δy= -0.21, Δθ=  0.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=10.9m, bearing=  71.2°
+  LM1: range=23.8m, bearing= -15.5°
+  LM2: range=41.6m, bearing=  28.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 124.08s
+Ground Truth:  x=-104.34, y= -49.76, θ=  -6.0°
+SLAM Estimate: x=-104.11, y= -50.05, θ=  -9.5°
+Error:         Δx=  0.23, Δy= -0.29, Δθ= -3.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=10.7m, bearing=  72.8°
+  LM1: range=23.4m, bearing= -23.1°
+  LM2: range=41.2m, bearing=  12.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 126.02s
+Ground Truth:  x= -79.78, y= -50.27, θ=   1.0°
+SLAM Estimate: x= -79.54, y= -50.26, θ=   0.4°
+Error:         Δx=  0.24, Δy=  0.01, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM2: range=18.7m, bearing=  31.8°
+  LM3: range=35.8m, bearing= -12.1°
+  LM4: range=52.2m, bearing=   8.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 126.05s
+Ground Truth:  x= -79.42, y= -50.26, θ=   1.0°
+SLAM Estimate: x= -79.03, y= -50.64, θ=   0.5°
+Error:         Δx=  0.39, Δy= -0.38, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM2: range=18.5m, bearing=  33.9°
+  LM3: range=35.5m, bearing= -15.0°
+  LM4: range=51.9m, bearing=  11.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 126.09s
+Ground Truth:  x= -78.91, y= -50.25, θ=   1.0°
+SLAM Estimate: x= -78.64, y= -50.66, θ=   0.7°
+Error:         Δx=  0.27, Δy= -0.41, Δθ= -0.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM2: range=18.0m, bearing=  32.9°
+  LM3: range=35.1m, bearing= -14.3°
+  LM4: range=51.5m, bearing=  13.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 128.03s
+Ground Truth:  x= -51.45, y= -49.96, θ=   0.1°
+SLAM Estimate: x= -51.22, y= -50.27, θ=  -0.6°
+Error:         Δx=  0.23, Δy= -0.30, Δθ= -0.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM3: range=12.1m, bearing= -61.1°
+  LM4: range=25.0m, bearing=  23.2°
+  LM5: range=43.0m, bearing= -17.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 128.06s
+Ground Truth:  x= -51.02, y= -49.96, θ=   0.1°
+SLAM Estimate: x= -50.68, y= -50.13, θ=   1.5°
+Error:         Δx=  0.33, Δy= -0.17, Δθ=  1.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM3: range=11.6m, bearing= -58.9°
+  LM4: range=24.4m, bearing=  24.8°
+  LM5: range=42.8m, bearing= -14.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 128.09s
+Ground Truth:  x= -50.58, y= -49.96, θ=   0.1°
+SLAM Estimate: x= -50.27, y= -50.29, θ=   0.9°
+Error:         Δx=  0.31, Δy= -0.33, Δθ=  0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM3: range=11.3m, bearing= -64.7°
+  LM4: range=24.1m, bearing=  25.3°
+  LM5: range=42.2m, bearing=  -7.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 130.03s
+Ground Truth:  x= -23.12, y= -49.99, θ=  -0.1°
+SLAM Estimate: x= -22.75, y= -50.49, θ=  -1.8°
+Error:         Δx=  0.37, Δy= -0.50, Δθ= -1.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM5: range=16.9m, bearing= -31.2°
+  LM6: range=34.1m, bearing=  16.9°
+  LM7: range=50.5m, bearing= -14.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 130.07s
+Ground Truth:  x= -22.61, y= -50.00, θ=  -0.1°
+SLAM Estimate: x= -22.34, y= -50.30, θ=  -1.2°
+Error:         Δx=  0.27, Δy= -0.30, Δθ= -1.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM5: range=16.6m, bearing= -35.2°
+  LM6: range=33.7m, bearing=  24.3°
+  LM7: range=49.9m, bearing= -12.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 132.00s
+Ground Truth:  x=   4.78, y= -50.00, θ=   0.0°
+SLAM Estimate: x=   5.11, y= -50.38, θ=  -1.1°
+Error:         Δx=  0.33, Δy= -0.38, Δθ= -1.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM6: range=11.3m, bearing=  64.7°
+  LM7: range=23.5m, bearing= -22.8°
+  LM8: range=41.8m, bearing=  14.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 132.04s
+Ground Truth:  x=   5.29, y= -50.00, θ=   0.0°
+SLAM Estimate: x=   5.63, y= -50.51, θ=   0.0°
+Error:         Δx=  0.34, Δy= -0.51, Δθ=  0.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM6: range=10.9m, bearing=  67.9°
+  LM7: range=23.5m, bearing= -26.1°
+  LM8: range=41.2m, bearing=  14.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 132.07s
+Ground Truth:  x=   5.80, y= -50.00, θ=   0.0°
+SLAM Estimate: x=   6.09, y= -50.19, θ=  -0.4°
+Error:         Δx=  0.29, Δy= -0.18, Δθ= -0.4°
+Uncertainty (σ): x=0.81m, y=0.81m, θ=6.5°
+Detections: 5 landmarks
+  LM6: range=10.9m, bearing=  72.0°
+  LM7: range=22.7m, bearing= -23.7°
+  LM8: range=40.5m, bearing=  15.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 134.01s
+Ground Truth:  x=  33.11, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  33.45, y= -50.44, θ=  -0.4°
+Error:         Δx=  0.34, Δy= -0.44, Δθ= -0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM8: range=15.9m, bearing=  39.4°
+  LM9: range=32.9m, bearing= -21.1°
+  LM10: range=48.9m, bearing=  12.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 134.04s
+Ground Truth:  x=  33.62, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  33.89, y= -50.38, θ=  -0.6°
+Error:         Δx=  0.27, Δy= -0.39, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM8: range=15.5m, bearing=  42.6°
+  LM9: range=32.3m, bearing= -18.6°
+  LM10: range=48.4m, bearing=  15.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 134.08s
+Ground Truth:  x=  34.13, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  34.43, y= -50.39, θ=  -1.9°
+Error:         Δx=  0.30, Δy= -0.40, Δθ= -1.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM8: range=15.0m, bearing=  42.9°
+  LM9: range=31.8m, bearing= -14.8°
+  LM10: range=47.9m, bearing=  10.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 136.02s
+Ground Truth:  x=  61.44, y= -50.00, θ=  -0.0°
+SLAM Estimate: x=  61.72, y= -50.49, θ=   0.6°
+Error:         Δx=  0.28, Δy= -0.49, Δθ=  0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM9: range=10.5m, bearing= -71.7°
+  LM10: range=21.9m, bearing=  29.7°
+  LM11: range=39.9m, bearing= -12.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 136.05s
+Ground Truth:  x=  61.95, y= -50.00, θ=  -0.0°
+SLAM Estimate: x=  62.28, y= -50.55, θ=  -0.5°
+Error:         Δx=  0.33, Δy= -0.55, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM9: range=10.3m, bearing= -75.1°
+  LM10: range=21.5m, bearing=  28.0°
+  LM11: range=39.6m, bearing= -12.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 136.08s
+Ground Truth:  x=  62.46, y= -50.00, θ=  -0.0°
+SLAM Estimate: x=  62.70, y= -50.54, θ=  -0.9°
+Error:         Δx=  0.24, Δy= -0.54, Δθ= -0.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM9: range=10.3m, bearing= -73.4°
+  LM10: range=21.2m, bearing=  30.4°
+  LM11: range=39.1m, bearing= -21.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 138.02s
+Ground Truth:  x=  89.77, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  90.05, y= -50.51, θ=  -0.5°
+Error:         Δx=  0.28, Δy= -0.51, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM11: range=14.6m, bearing= -39.0°
+  LM12: range=18.8m, bearing=  35.1°
+  LM13: range=23.6m, bearing= -24.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 138.06s
+Ground Truth:  x=  90.28, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  90.53, y= -50.58, θ=  -0.7°
+Error:         Δx=  0.25, Δy= -0.58, Δθ= -0.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM11: range=14.3m, bearing= -43.6°
+  LM12: range=18.6m, bearing=  30.2°
+  LM13: range=23.3m, bearing= -22.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 138.09s
+Ground Truth:  x=  90.79, y= -50.00, θ=   0.1°
+SLAM Estimate: x=  90.99, y= -50.55, θ=   0.7°
+Error:         Δx=  0.20, Δy= -0.55, Δθ=  0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM11: range=13.9m, bearing= -53.9°
+  LM12: range=18.1m, bearing=  36.8°
+  LM13: range=22.6m, bearing= -26.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 140.03s
+Ground Truth:  x= 111.66, y= -48.34, θ=  13.2°
+SLAM Estimate: x= 111.93, y= -48.99, θ=  13.6°
+Error:         Δx=  0.27, Δy= -0.65, Δθ=  0.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 11 landmarks
+  LM14: range=11.7m, bearing=  61.0°
+  LM15: range=21.2m, bearing= -20.5°
+  LM16: range=23.0m, bearing=  41.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 140.06s
+Ground Truth:  x= 111.96, y= -48.26, θ=  13.6°
+SLAM Estimate: x= 112.24, y= -48.93, θ=  14.0°
+Error:         Δx=  0.28, Δy= -0.67, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 11 landmarks
+  LM14: range=11.3m, bearing=  61.7°
+  LM15: range=20.9m, bearing= -21.1°
+  LM16: range=22.8m, bearing=  37.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 140.10s
+Ground Truth:  x= 112.25, y= -48.19, θ=  14.0°
+SLAM Estimate: x= 112.49, y= -48.79, θ=  13.6°
+Error:         Δx=  0.23, Δy= -0.59, Δθ= -0.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 11 landmarks
+  LM14: range=11.4m, bearing=  60.5°
+  LM15: range=20.5m, bearing= -26.4°
+  LM16: range=22.5m, bearing=  37.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 142.00s
+Ground Truth:  x= 128.36, y= -41.03, θ=  34.4°
+SLAM Estimate: x= 128.68, y= -41.75, θ=  34.7°
+Error:         Δx=  0.32, Δy= -0.72, Δθ=  0.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM16: range=10.8m, bearing=  72.2°
+  LM17: range=21.7m, bearing= -17.4°
+  LM18: range=19.7m, bearing=  38.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 142.03s
+Ground Truth:  x= 128.61, y= -40.86, θ=  34.7°
+SLAM Estimate: x= 128.87, y= -41.53, θ=  34.9°
+Error:         Δx=  0.26, Δy= -0.67, Δθ=  0.1°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM16: range=10.8m, bearing=  73.6°
+  LM17: range=21.4m, bearing= -21.4°
+  LM18: range=19.6m, bearing=  47.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 142.07s
+Ground Truth:  x= 128.87, y= -40.68, θ=  35.1°
+SLAM Estimate: x= 129.11, y= -41.34, θ=  34.6°
+Error:         Δx=  0.24, Δy= -0.65, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM16: range=10.8m, bearing=  68.2°
+  LM17: range=21.2m, bearing= -17.4°
+  LM18: range=19.4m, bearing=  41.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 144.01s
+Ground Truth:  x= 141.35, y= -27.96, θ=  56.1°
+SLAM Estimate: x= 141.65, y= -28.67, θ=  57.3°
+Error:         Δx=  0.30, Δy= -0.71, Δθ=  1.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM18: range=10.2m, bearing=  87.2°
+  LM19: range=12.2m, bearing= -44.7°
+  LM20: range=13.8m, bearing=  57.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 144.04s
+Ground Truth:  x= 141.53, y= -27.68, θ=  56.4°
+SLAM Estimate: x= 141.96, y= -28.41, θ=  56.2°
+Error:         Δx=  0.43, Δy= -0.72, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM18: range=10.2m, bearing=  88.7°
+  LM19: range=12.1m, bearing= -61.7°
+  LM20: range=13.5m, bearing=  53.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 144.07s
+Ground Truth:  x= 141.70, y= -27.43, θ=  56.8°
+SLAM Estimate: x= 142.11, y= -28.27, θ=  57.0°
+Error:         Δx=  0.40, Δy= -0.84, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM18: range=10.1m, bearing=  88.5°
+  LM19: range=11.9m, bearing= -56.6°
+  LM20: range=13.4m, bearing=  56.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 146.01s
+Ground Truth:  x= 148.65, y= -11.09, θ=  77.3°
+SLAM Estimate: x= 149.11, y= -11.83, θ=  76.4°
+Error:         Δx=  0.46, Δy= -0.74, Δθ= -0.9°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=12.6m, bearing= -49.1°
+  LM22: range=12.6m, bearing=  55.2°
+  LM23: range=22.7m, bearing= -14.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 146.05s
+Ground Truth:  x= 148.72, y= -10.79, θ=  77.7°
+SLAM Estimate: x= 149.12, y= -11.55, θ=  77.3°
+Error:         Δx=  0.40, Δy= -0.76, Δθ= -0.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=12.4m, bearing= -54.9°
+  LM22: range=12.4m, bearing=  56.0°
+  LM23: range=22.4m, bearing= -14.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 146.08s
+Ground Truth:  x= 148.80, y= -10.44, θ=  78.0°
+SLAM Estimate: x= 149.17, y= -11.22, θ=  77.8°
+Error:         Δx=  0.37, Δy= -0.77, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=12.1m, bearing= -55.1°
+  LM22: range=12.2m, bearing=  57.8°
+  LM23: range=22.0m, bearing= -23.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 148.02s
+Ground Truth:  x= 149.35, y=   7.40, θ=  98.6°
+SLAM Estimate: x= 149.68, y=   6.57, θ=  97.3°
+Error:         Δx=  0.33, Δy= -0.83, Δθ= -1.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM24: range=10.7m, bearing=  71.1°
+  LM25: range=27.9m, bearing=  -3.5°
+  LM26: range=36.1m, bearing=  36.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 148.05s
+Ground Truth:  x= 149.31, y=   7.71, θ=  99.0°
+SLAM Estimate: x= 149.68, y=   6.76, θ=  98.9°
+Error:         Δx=  0.37, Δy= -0.94, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM24: range=10.6m, bearing=  74.7°
+  LM25: range=27.3m, bearing=  -6.0°
+  LM26: range=35.9m, bearing=  37.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 148.09s
+Ground Truth:  x= 149.26, y=   8.01, θ=  99.4°
+SLAM Estimate: x= 149.74, y=   7.27, θ=  98.7°
+Error:         Δx=  0.48, Δy= -0.74, Δθ= -0.7°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM24: range=10.6m, bearing=  69.3°
+  LM25: range=27.0m, bearing=  -3.4°
+  LM26: range=35.6m, bearing=  40.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 150.02s
+Ground Truth:  x= 143.32, y=  24.77, θ= 119.8°
+SLAM Estimate: x= 143.89, y=  24.10, θ= 119.3°
+Error:         Δx=  0.57, Δy= -0.67, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=11.8m, bearing= -59.4°
+  LM26: range=21.3m, bearing=  40.1°
+  LM27: range=28.3m, bearing=  -5.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 150.06s
+Ground Truth:  x= 143.17, y=  25.03, θ= 120.2°
+SLAM Estimate: x= 143.65, y=  24.29, θ= 120.5°
+Error:         Δx=  0.48, Δy= -0.74, Δθ=  0.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=11.6m, bearing= -58.4°
+  LM26: range=21.2m, bearing=  42.2°
+  LM27: range=27.9m, bearing=  -6.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 150.09s
+Ground Truth:  x= 143.01, y=  25.30, θ= 120.6°
+SLAM Estimate: x= 143.47, y=  24.53, θ= 119.1°
+Error:         Δx=  0.46, Δy= -0.76, Δθ= -1.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=11.6m, bearing= -63.7°
+  LM26: range=20.8m, bearing=  35.9°
+  LM27: range=27.7m, bearing=  -2.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 152.03s
+Ground Truth:  x= 131.30, y=  38.87, θ= 141.2°
+SLAM Estimate: x= 131.77, y=  38.12, θ= 142.3°
+Error:         Δx=  0.47, Δy= -0.75, Δθ=  1.1°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM26: range=10.4m, bearing=  81.9°
+  LM27: range=11.9m, bearing= -61.8°
+  LM28: range=12.0m, bearing=  66.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 152.06s
+Ground Truth:  x= 131.06, y=  39.06, θ= 141.6°
+SLAM Estimate: x= 131.44, y=  38.40, θ= 141.6°
+Error:         Δx=  0.38, Δy= -0.67, Δθ=  0.1°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM26: range=10.4m, bearing=  77.2°
+  LM27: range=11.8m, bearing= -59.7°
+  LM28: range=11.9m, bearing=  63.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 152.10s
+Ground Truth:  x= 130.82, y=  39.25, θ= 141.9°
+SLAM Estimate: x= 131.31, y=  38.57, θ= 141.2°
+Error:         Δx=  0.48, Δy= -0.68, Δθ= -0.8°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM26: range=10.3m, bearing=  81.3°
+  LM27: range=11.7m, bearing= -60.5°
+  LM28: range=11.8m, bearing=  66.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 154.00s
+Ground Truth:  x= 115.44, y=  47.45, θ= 162.1°
+SLAM Estimate: x= 115.84, y=  46.75, θ= 160.1°
+Error:         Δx=  0.40, Δy= -0.70, Δθ= -2.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM30: range=10.5m, bearing=  70.1°
+  LM31: range=25.9m, bearing= -11.0°
+  LM32: range=42.4m, bearing=  25.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 154.04s
+Ground Truth:  x= 115.13, y=  47.55, θ= 162.5°
+SLAM Estimate: x= 115.39, y=  47.00, θ= 163.9°
+Error:         Δx=  0.27, Δy= -0.55, Δθ=  1.4°
+Uncertainty (σ): x=0.80m, y=0.81m, θ=6.5°
+Detections: 5 landmarks
+  LM30: range=10.3m, bearing=  73.5°
+  LM31: range=25.5m, bearing= -15.0°
+  LM32: range=42.0m, bearing=  28.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 154.07s
+Ground Truth:  x= 114.81, y=  47.65, θ= 162.8°
+SLAM Estimate: x= 115.34, y=  46.87, θ= 163.4°
+Error:         Δx=  0.53, Δy= -0.78, Δθ=  0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM30: range=10.6m, bearing=  75.0°
+  LM31: range=25.3m, bearing= -13.5°
+  LM32: range=41.7m, bearing=  22.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 156.01s
+Ground Truth:  x=  95.29, y=  50.32, θ= 178.6°
+SLAM Estimate: x=  95.81, y=  49.74, θ= 179.0°
+Error:         Δx=  0.52, Δy= -0.58, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM31: range=10.1m, bearing= -73.5°
+  LM32: range=23.9m, bearing=  28.4°
+  LM33: range=39.4m, bearing= -15.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 156.04s
+Ground Truth:  x=  94.89, y=  50.33, θ= 178.7°
+SLAM Estimate: x=  95.37, y=  49.84, θ= 179.1°
+Error:         Δx=  0.48, Δy= -0.49, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM31: range=10.0m, bearing= -74.9°
+  LM32: range=23.7m, bearing=  29.2°
+  LM33: range=39.0m, bearing=  -9.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 156.08s
+Ground Truth:  x=  94.48, y=  50.34, θ= 178.9°
+SLAM Estimate: x=  94.96, y=  49.82, θ= 178.0°
+Error:         Δx=  0.48, Δy= -0.52, Δθ= -0.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM31: range=10.1m, bearing= -76.8°
+  LM32: range=23.2m, bearing=  30.4°
+  LM33: range=38.6m, bearing= -17.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 158.01s
+Ground Truth:  x=  67.78, y=  50.08, θ=-179.3°
+SLAM Estimate: x=  68.30, y=  49.34, θ=-179.8°
+Error:         Δx=  0.52, Δy= -0.74, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM33: range=14.6m, bearing= -47.0°
+  LM34: range=31.3m, bearing=  21.6°
+  LM35: range=49.7m, bearing= -17.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 158.05s
+Ground Truth:  x=  67.35, y=  50.07, θ=-179.3°
+SLAM Estimate: x=  67.77, y=  49.42, θ=-178.8°
+Error:         Δx=  0.42, Δy= -0.65, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM33: range=14.4m, bearing= -43.7°
+  LM34: range=31.1m, bearing=  17.4°
+  LM35: range=49.3m, bearing= -15.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 158.08s
+Ground Truth:  x=  66.84, y=  50.06, θ=-179.3°
+SLAM Estimate: x=  67.31, y=  49.49, θ=-180.0°
+Error:         Δx=  0.47, Δy= -0.58, Δθ= -0.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM33: range=14.0m, bearing= -49.3°
+  LM34: range=30.4m, bearing=  21.8°
+  LM35: range=48.9m, bearing= -13.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 160.02s
+Ground Truth:  x=  39.38, y=  49.97, θ= 179.9°
+SLAM Estimate: x=  39.89, y=  49.49, θ= 178.3°
+Error:         Δx=  0.51, Δy= -0.48, Δθ= -1.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM34: range=10.3m, bearing=  82.7°
+  LM35: range=22.9m, bearing= -27.0°
+  LM36: range=38.4m, bearing=  19.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 160.05s
+Ground Truth:  x=  39.02, y=  49.97, θ= 179.9°
+SLAM Estimate: x=  39.62, y=  49.49, θ= 178.9°
+Error:         Δx=  0.60, Δy= -0.48, Δθ= -1.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM34: range=10.1m, bearing=  89.3°
+  LM35: range=22.6m, bearing= -33.8°
+  LM36: range=37.9m, bearing=  16.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 160.09s
+Ground Truth:  x=  38.51, y=  49.97, θ= 179.9°
+SLAM Estimate: x=  39.00, y=  49.41, θ= 178.8°
+Error:         Δx=  0.50, Δy= -0.56, Δθ= -1.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM34: range=10.1m, bearing=  91.0°
+  LM35: range=22.0m, bearing= -29.1°
+  LM36: range=37.7m, bearing=  15.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 162.03s
+Ground Truth:  x=  11.05, y=  50.00, θ= 180.0°
+SLAM Estimate: x=  11.55, y=  49.76, θ= 178.0°
+Error:         Δx=  0.50, Δy= -0.24, Δθ= -2.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM36: range=13.2m, bearing=  45.0°
+  LM37: range=29.6m, bearing= -13.1°
+  LM38: range=47.9m, bearing=  11.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 162.06s
+Ground Truth:  x=  10.61, y=  50.00, θ= 180.0°
+SLAM Estimate: x=  11.20, y=  49.46, θ= 178.4°
+Error:         Δx=  0.59, Δy= -0.54, Δθ= -1.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM36: range=13.1m, bearing=  49.1°
+  LM37: range=29.0m, bearing= -23.0°
+  LM38: range=47.5m, bearing=  16.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 162.09s
+Ground Truth:  x=  10.18, y=  50.00, θ= 180.0°
+SLAM Estimate: x=  10.73, y=  49.78, θ=-179.6°
+Error:         Δx=  0.55, Δy= -0.23, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM36: range=12.7m, bearing=  51.2°
+  LM37: range=28.9m, bearing= -21.1°
+  LM38: range=47.0m, bearing=  10.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 164.03s
+Ground Truth:  x= -17.28, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -16.77, y=  49.70, θ=-179.7°
+Error:         Δx=  0.51, Δy= -0.30, Δθ=  0.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM38: range=20.9m, bearing=  28.6°
+  LM39: range=36.5m, bearing= -15.0°
+  LM40: range=55.1m, bearing=   5.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 164.07s
+Ground Truth:  x= -17.79, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -17.23, y=  49.60, θ= 179.3°
+Error:         Δx=  0.56, Δy= -0.40, Δθ= -0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM38: range=20.6m, bearing=  32.9°
+  LM39: range=36.2m, bearing= -13.9°
+  LM40: range=54.5m, bearing=   9.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 166.00s
+Ground Truth:  x= -45.11, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -44.54, y=  49.90, θ=-178.8°
+Error:         Δx=  0.57, Δy= -0.10, Δθ=  1.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM39: range=12.5m, bearing= -58.7°
+  LM40: range=28.2m, bearing=  21.4°
+  LM41: range=46.4m, bearing= -11.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 166.04s
+Ground Truth:  x= -45.62, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -45.13, y=  49.85, θ=-179.8°
+Error:         Δx=  0.48, Δy= -0.15, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM39: range=12.2m, bearing= -55.6°
+  LM40: range=27.8m, bearing=  20.6°
+  LM41: range=45.9m, bearing= -12.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 166.07s
+Ground Truth:  x= -46.13, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -45.56, y=  49.85, θ=-179.3°
+Error:         Δx=  0.57, Δy= -0.15, Δθ=  0.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM39: range=12.1m, bearing= -63.9°
+  LM40: range=27.4m, bearing=  16.5°
+  LM41: range=45.6m, bearing= -12.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 168.01s
+Ground Truth:  x= -73.44, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -72.79, y=  49.61, θ= 179.7°
+Error:         Δx=  0.65, Δy= -0.39, Δθ= -0.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM41: range=19.7m, bearing= -32.6°
+  LM42: range=31.8m, bearing=  21.0°
+  LM43: range=36.7m, bearing= -15.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 168.04s
+Ground Truth:  x= -73.95, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -73.39, y=  49.81, θ=-179.2°
+Error:         Δx=  0.56, Δy= -0.19, Δθ=  0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM41: range=19.4m, bearing= -33.7°
+  LM42: range=31.4m, bearing=  24.3°
+  LM43: range=36.2m, bearing= -10.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 168.08s
+Ground Truth:  x= -74.46, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -73.89, y=  49.74, θ= 178.3°
+Error:         Δx=  0.57, Δy= -0.26, Δθ= -1.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM41: range=18.9m, bearing= -32.7°
+  LM42: range=30.7m, bearing=  21.6°
+  LM43: range=35.5m, bearing= -18.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 170.02s
+Ground Truth:  x=-100.74, y=  49.81, θ=-176.9°
+SLAM Estimate: x=-100.17, y=  49.58, θ=-176.4°
+Error:         Δx=  0.58, Δy= -0.23, Δθ=  0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM42: range=10.5m, bearing=  74.2°
+  LM43: range=12.5m, bearing= -53.3°
+  LM44: range=24.3m, bearing=  36.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 170.05s
+Ground Truth:  x=-101.13, y=  49.79, θ=-176.7°
+SLAM Estimate: x=-100.60, y=  49.55, θ=-177.3°
+Error:         Δx=  0.53, Δy= -0.24, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM42: range=10.4m, bearing=  73.4°
+  LM43: range=12.4m, bearing= -57.4°
+  LM44: range=23.9m, bearing=  37.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 170.08s
+Ground Truth:  x=-101.48, y=  49.77, θ=-176.4°
+SLAM Estimate: x=-100.98, y=  49.50, θ=-177.8°
+Error:         Δx=  0.50, Δy= -0.27, Δθ= -1.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM42: range=10.4m, bearing=  78.3°
+  LM43: range=12.1m, bearing= -59.3°
+  LM44: range=23.5m, bearing=  37.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 172.02s
+Ground Truth:  x=-119.15, y=  45.97, θ=-157.8°
+SLAM Estimate: x=-118.59, y=  45.77, θ=-158.8°
+Error:         Δx=  0.56, Δy= -0.20, Δθ= -1.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM44: range=11.4m, bearing=  65.0°
+  LM45: range=24.9m, bearing= -13.2°
+  LM46: range=24.3m, bearing=  35.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 172.06s
+Ground Truth:  x=-119.43, y=  45.85, θ=-157.5°
+SLAM Estimate: x=-118.97, y=  45.65, θ=-157.2°
+Error:         Δx=  0.46, Δy= -0.20, Δθ=  0.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM44: range=11.2m, bearing=  63.3°
+  LM45: range=24.6m, bearing= -18.2°
+  LM46: range=24.1m, bearing=  38.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 172.09s
+Ground Truth:  x=-119.76, y=  45.71, θ=-157.1°
+SLAM Estimate: x=-119.25, y=  45.48, θ=-154.6°
+Error:         Δx=  0.51, Δy= -0.24, Δθ=  2.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM44: range=11.1m, bearing=  72.8°
+  LM45: range=24.3m, bearing=  -9.4°
+  LM46: range=23.8m, bearing=  39.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 174.03s
+Ground Truth:  x=-134.67, y=  35.90, θ=-136.0°
+SLAM Estimate: x=-134.15, y=  35.72, θ=-136.0°
+Error:         Δx=  0.52, Δy= -0.18, Δθ= -0.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 11 landmarks
+  LM45: range=10.6m, bearing= -80.3°
+  LM46: range=11.7m, bearing=  68.0°
+  LM47: range=23.1m, bearing= -15.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 174.06s
+Ground Truth:  x=-134.89, y=  35.69, θ=-135.6°
+SLAM Estimate: x=-134.34, y=  35.48, θ=-135.3°
+Error:         Δx=  0.55, Δy= -0.20, Δθ=  0.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 11 landmarks
+  LM45: range=10.3m, bearing= -79.9°
+  LM46: range=11.4m, bearing=  66.3°
+  LM47: range=22.6m, bearing= -15.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 174.10s
+Ground Truth:  x=-135.11, y=  35.47, θ=-135.2°
+SLAM Estimate: x=-134.74, y=  35.26, θ=-135.8°
+Error:         Δx=  0.37, Δy= -0.21, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 11 landmarks
+  LM45: range=10.3m, bearing= -81.9°
+  LM46: range=11.5m, bearing=  62.5°
+  LM47: range=22.5m, bearing= -15.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 176.00s
+Ground Truth:  x=-145.23, y=  21.10, θ=-114.9°
+SLAM Estimate: x=-144.80, y=  20.92, θ=-114.0°
+Error:         Δx=  0.43, Δy= -0.18, Δθ=  0.9°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 11 landmarks
+  LM0: range=75.7m, bearing=  62.2°
+  LM47: range=10.3m, bearing= -82.9°
+  LM48: range=11.1m, bearing=  76.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 176.03s
+Ground Truth:  x=-145.36, y=  20.82, θ=-114.6°
+SLAM Estimate: x=-144.90, y=  20.69, θ=-114.8°
+Error:         Δx=  0.46, Δy= -0.13, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 11 landmarks
+  LM0: range=75.9m, bearing=  59.9°
+  LM47: range=10.4m, bearing= -86.9°
+  LM48: range=10.8m, bearing=  66.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 176.07s
+Ground Truth:  x=-145.49, y=  20.54, θ=-114.2°
+SLAM Estimate: x=-145.00, y=  20.40, θ=-114.6°
+Error:         Δx=  0.49, Δy= -0.14, Δθ= -0.4°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=75.6m, bearing=  63.4°
+  LM48: range=10.8m, bearing=  69.0°
+  LM49: range=27.8m, bearing=  -6.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 178.01s
+Ground Truth:  x=-149.80, y=   3.27, θ= -93.6°
+SLAM Estimate: x=-149.38, y=   3.06, θ= -93.5°
+Error:         Δx=  0.42, Δy= -0.21, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=65.7m, bearing=  54.5°
+  LM49: range=12.3m, bearing= -57.0°
+  LM50: range=13.6m, bearing=  51.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 178.04s
+Ground Truth:  x=-149.81, y=   2.96, θ= -93.3°
+SLAM Estimate: x=-149.34, y=   2.83, θ= -92.2°
+Error:         Δx=  0.48, Δy= -0.13, Δθ=  1.1°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=65.6m, bearing=  54.7°
+  LM49: range=12.0m, bearing= -54.2°
+  LM50: range=13.4m, bearing=  57.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 178.07s
+Ground Truth:  x=-149.83, y=   2.66, θ= -93.0°
+SLAM Estimate: x=-149.43, y=   2.51, θ= -93.3°
+Error:         Δx=  0.41, Δy= -0.14, Δθ= -0.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=65.5m, bearing=  50.7°
+  LM49: range=11.8m, bearing= -58.7°
+  LM50: range=13.1m, bearing=  53.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 180.01s
+Ground Truth:  x=-147.59, y= -15.01, θ= -72.4°
+SLAM Estimate: x=-147.20, y= -15.21, θ= -72.7°
+Error:         Δx=  0.39, Δy= -0.20, Δθ= -0.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=53.6m, bearing=  46.9°
+  LM1: range=78.5m, bearing=  41.4°
+  LM52: range=11.2m, bearing=  71.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 180.05s
+Ground Truth:  x=-147.49, y= -15.35, θ= -72.0°
+SLAM Estimate: x=-147.05, y= -15.49, θ= -74.3°
+Error:         Δx=  0.43, Δy= -0.14, Δθ= -2.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=53.4m, bearing=  44.0°
+  LM1: range=78.3m, bearing=  39.4°
+  LM52: range=11.2m, bearing=  64.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 180.08s
+Ground Truth:  x=-147.38, y= -15.66, θ= -71.7°
+SLAM Estimate: x=-147.04, y= -15.91, θ= -72.3°
+Error:         Δx=  0.34, Δy= -0.25, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=53.0m, bearing=  43.5°
+  LM1: range=77.8m, bearing=  38.1°
+  LM52: range=11.0m, bearing=  65.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 182.02s
+Ground Truth:  x=-138.90, y= -31.26, θ= -51.1°
+SLAM Estimate: x=-138.57, y= -31.54, θ= -49.5°
+Error:         Δx=  0.33, Δy= -0.28, Δθ=  1.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=39.8m, bearing=  39.3°
+  LM1: range=62.8m, bearing=  26.3°
+  LM2: range=75.2m, bearing=  46.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 182.05s
+Ground Truth:  x=-138.71, y= -31.50, θ= -50.7°
+SLAM Estimate: x=-138.40, y= -31.75, θ= -51.2°
+Error:         Δx=  0.31, Δy= -0.25, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=39.7m, bearing=  35.4°
+  LM1: range=62.4m, bearing=  25.1°
+  LM2: range=74.8m, bearing=  41.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 182.09s
+Ground Truth:  x=-138.50, y= -31.76, θ= -50.3°
+SLAM Estimate: x=-138.14, y= -32.08, θ= -48.2°
+Error:         Δx=  0.36, Δy= -0.32, Δθ=  2.1°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=39.3m, bearing=  41.4°
+  LM1: range=61.9m, bearing=  24.8°
+  LM2: range=74.6m, bearing=  43.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 184.02s
+Ground Truth:  x=-124.92, y= -43.23, θ= -29.9°
+SLAM Estimate: x=-124.59, y= -43.55, θ= -28.7°
+Error:         Δx=  0.33, Δy= -0.32, Δθ=  1.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=25.2m, bearing=  40.4°
+  LM1: range=44.9m, bearing=   6.2°
+  LM2: range=60.7m, bearing=  33.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 184.06s
+Ground Truth:  x=-124.65, y= -43.39, θ= -29.5°
+SLAM Estimate: x=-124.33, y= -43.65, θ= -29.5°
+Error:         Δx=  0.32, Δy= -0.27, Δθ= -0.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=24.9m, bearing=  44.1°
+  LM1: range=44.9m, bearing=   8.2°
+  LM2: range=60.6m, bearing=  30.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 184.09s
+Ground Truth:  x=-124.39, y= -43.54, θ= -29.1°
+SLAM Estimate: x=-124.16, y= -43.73, θ= -27.6°
+Error:         Δx=  0.22, Δy= -0.20, Δθ=  1.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=24.5m, bearing=  39.1°
+  LM1: range=44.6m, bearing=   5.4°
+  LM2: range=60.2m, bearing=  28.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 186.03s
+Ground Truth:  x=-107.57, y= -49.33, θ=  -9.0°
+SLAM Estimate: x=-107.26, y= -49.77, θ=  -8.3°
+Error:         Δx=  0.31, Δy= -0.45, Δθ=  0.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=12.3m, bearing=  61.0°
+  LM1: range=26.4m, bearing= -19.7°
+  LM2: range=44.4m, bearing=  25.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 186.06s
+Ground Truth:  x=-107.27, y= -49.38, θ=  -8.7°
+SLAM Estimate: x=-106.98, y= -49.70, θ=  -9.3°
+Error:         Δx=  0.29, Δy= -0.32, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=12.0m, bearing=  66.3°
+  LM1: range=26.2m, bearing= -18.0°
+  LM2: range=43.8m, bearing=  25.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 186.10s
+Ground Truth:  x=-106.97, y= -49.42, θ=  -8.4°
+SLAM Estimate: x=-106.57, y= -49.62, θ= -10.8°
+Error:         Δx=  0.40, Δy= -0.20, Δθ= -2.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM0: range=12.0m, bearing=  64.9°
+  LM1: range=26.0m, bearing= -19.7°
+  LM2: range=43.7m, bearing=  22.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 188.00s
+Ground Truth:  x= -84.39, y= -50.34, θ=   0.7°
+SLAM Estimate: x= -84.08, y= -50.55, θ=  -1.2°
+Error:         Δx=  0.31, Δy= -0.21, Δθ= -1.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM1: range=10.1m, bearing= -80.8°
+  LM2: range=22.6m, bearing=  29.2°
+  LM3: range=40.4m, bearing= -10.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 188.04s
+Ground Truth:  x= -83.96, y= -50.33, θ=   0.8°
+SLAM Estimate: x= -83.68, y= -50.40, θ=  -1.1°
+Error:         Δx=  0.28, Δy= -0.07, Δθ= -1.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM1: range=10.1m, bearing= -87.1°
+  LM2: range=22.3m, bearing=  21.8°
+  LM3: range=39.8m, bearing= -12.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 188.07s
+Ground Truth:  x= -83.45, y= -50.32, θ=   0.8°
+SLAM Estimate: x= -83.15, y= -50.49, θ=   0.7°
+Error:         Δx=  0.30, Δy= -0.17, Δθ= -0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM2: range=21.9m, bearing=  27.2°
+  LM3: range=39.4m, bearing= -16.8°
+  LM4: range=55.8m, bearing=   7.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 190.01s
+Ground Truth:  x= -55.99, y= -49.98, θ=   0.2°
+SLAM Estimate: x= -55.77, y= -50.15, θ=   2.1°
+Error:         Δx=  0.22, Δy= -0.18, Δθ=  1.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM3: range=14.8m, bearing= -43.3°
+  LM4: range=29.1m, bearing=  19.3°
+  LM5: range=47.6m, bearing= -10.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 190.04s
+Ground Truth:  x= -55.63, y= -49.98, θ=   0.2°
+SLAM Estimate: x= -55.32, y= -50.20, θ=  -1.0°
+Error:         Δx=  0.31, Δy= -0.22, Δθ= -1.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM3: range=14.7m, bearing= -42.6°
+  LM4: range=28.9m, bearing=  24.7°
+  LM5: range=47.1m, bearing=  -7.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 190.08s
+Ground Truth:  x= -55.12, y= -49.97, θ=   0.2°
+SLAM Estimate: x= -54.82, y= -50.20, θ=  -2.5°
+Error:         Δx=  0.30, Δy= -0.23, Δθ= -2.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM3: range=14.3m, bearing= -41.8°
+  LM4: range=28.4m, bearing=  19.2°
+  LM5: range=46.7m, bearing= -11.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 192.01s
+Ground Truth:  x= -27.66, y= -49.99, θ=  -0.1°
+SLAM Estimate: x= -27.26, y= -50.48, θ=  -0.7°
+Error:         Δx=  0.40, Δy= -0.49, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM5: range=20.8m, bearing= -31.4°
+  LM6: range=38.6m, bearing=  16.5°
+  LM7: range=54.9m, bearing= -12.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 192.05s
+Ground Truth:  x= -27.22, y= -49.99, θ=  -0.1°
+SLAM Estimate: x= -26.92, y= -50.35, θ=  -0.7°
+Error:         Δx=  0.31, Δy= -0.36, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM5: range=20.4m, bearing= -31.7°
+  LM6: range=38.1m, bearing=  13.5°
+  LM7: range=54.3m, bearing=  -6.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 192.08s
+Ground Truth:  x= -26.79, y= -49.99, θ=  -0.1°
+SLAM Estimate: x= -26.44, y= -50.49, θ=  -0.5°
+Error:         Δx=  0.35, Δy= -0.50, Δθ= -0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM5: range=20.0m, bearing= -32.3°
+  LM6: range=37.8m, bearing=  11.1°
+  LM7: range=53.9m, bearing= -13.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 194.02s
+Ground Truth:  x=   0.67, y= -50.00, θ=   0.0°
+SLAM Estimate: x=   0.97, y= -50.56, θ=   0.1°
+Error:         Δx=  0.29, Δy= -0.56, Δθ=  0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM6: range=13.4m, bearing=  49.4°
+  LM7: range=27.2m, bearing= -22.1°
+  LM8: range=45.7m, bearing=  12.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 194.05s
+Ground Truth:  x=   1.18, y= -50.00, θ=   0.0°
+SLAM Estimate: x=   1.61, y= -50.47, θ=  -0.8°
+Error:         Δx=  0.43, Δy= -0.46, Δθ= -0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM6: range=13.2m, bearing=  47.2°
+  LM7: range=26.9m, bearing= -18.0°
+  LM8: range=45.2m, bearing=  12.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 194.09s
+Ground Truth:  x=   1.54, y= -50.00, θ=   0.0°
+SLAM Estimate: x=   1.93, y= -50.56, θ=  -1.9°
+Error:         Δx=  0.39, Δy= -0.56, Δθ= -1.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM6: range=12.9m, bearing=  50.3°
+  LM7: range=26.6m, bearing= -24.7°
+  LM8: range=44.8m, bearing=  12.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 196.03s
+Ground Truth:  x=  29.08, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  29.46, y= -50.34, θ=  -0.6°
+Error:         Δx=  0.38, Δy= -0.34, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM8: range=19.0m, bearing=  35.4°
+  LM9: range=36.6m, bearing= -13.0°
+  LM10: range=52.9m, bearing=  12.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 196.06s
+Ground Truth:  x=  29.59, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  29.89, y= -50.39, θ=  -1.6°
+Error:         Δx=  0.30, Δy= -0.39, Δθ= -1.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM8: range=18.6m, bearing=  32.9°
+  LM9: range=36.1m, bearing= -17.2°
+  LM10: range=52.3m, bearing=  13.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 196.09s
+Ground Truth:  x=  29.95, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  30.31, y= -50.47, θ=  -0.3°
+Error:         Δx=  0.37, Δy= -0.47, Δθ= -0.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM8: range=18.4m, bearing=  27.5°
+  LM9: range=35.8m, bearing= -15.0°
+  LM10: range=52.0m, bearing=   7.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 198.03s
+Ground Truth:  x=  57.41, y= -50.00, θ=  -0.0°
+SLAM Estimate: x=  57.68, y= -50.38, θ=   1.6°
+Error:         Δx=  0.26, Δy= -0.38, Δθ=  1.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 8 landmarks
+  LM9: range=12.3m, bearing= -53.5°
+  LM10: range=25.7m, bearing=  24.8°
+  LM11: range=44.1m, bearing= -12.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 198.07s
+Ground Truth:  x=  57.92, y= -50.00, θ=  -0.0°
+SLAM Estimate: x=  58.19, y= -50.50, θ=  -0.6°
+Error:         Δx=  0.27, Δy= -0.50, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 8 landmarks
+  LM9: range=12.2m, bearing= -58.4°
+  LM10: range=25.1m, bearing=  22.5°
+  LM11: range=43.5m, bearing= -12.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 200.00s
+Ground Truth:  x=  85.23, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  85.61, y= -50.56, θ=  -0.6°
+Error:         Δx=  0.38, Δy= -0.56, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM11: range=17.9m, bearing= -35.2°
+  LM12: range=22.6m, bearing=  27.5°
+  LM13: range=27.8m, bearing= -16.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 200.04s
+Ground Truth:  x=  85.74, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  86.13, y= -50.71, θ=   0.0°
+Error:         Δx=  0.39, Δy= -0.71, Δθ=  0.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM11: range=17.8m, bearing= -38.3°
+  LM12: range=22.3m, bearing=  26.0°
+  LM13: range=27.6m, bearing= -17.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 200.07s
+Ground Truth:  x=  86.25, y= -50.00, θ=   0.0°
+SLAM Estimate: x=  86.50, y= -50.55, θ=   0.5°
+Error:         Δx=  0.25, Δy= -0.55, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM11: range=17.3m, bearing= -37.9°
+  LM12: range=21.9m, bearing=  27.5°
+  LM13: range=26.8m, bearing= -22.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 202.01s
+Ground Truth:  x= 108.76, y= -48.93, θ=  10.2°
+SLAM Estimate: x= 109.05, y= -49.57, θ=  10.4°
+Error:         Δx=  0.29, Δy= -0.64, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM13: range=10.5m, bearing= -89.0°
+  LM14: range=13.0m, bearing=  56.4°
+  LM15: range=23.9m, bearing= -14.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 202.04s
+Ground Truth:  x= 109.06, y= -48.88, θ=  10.5°
+SLAM Estimate: x= 109.41, y= -49.52, θ=  10.9°
+Error:         Δx=  0.34, Δy= -0.64, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM13: range=10.6m, bearing= -88.9°
+  LM14: range=12.9m, bearing=  56.4°
+  LM15: range=23.9m, bearing=  -9.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 202.08s
+Ground Truth:  x= 109.36, y= -48.82, θ=  10.7°
+SLAM Estimate: x= 109.57, y= -49.40, θ=   9.3°
+Error:         Δx=  0.21, Δy= -0.58, Δθ= -1.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM13: range=10.4m, bearing= -86.3°
+  LM14: range=12.9m, bearing=  54.1°
+  LM15: range=23.2m, bearing= -14.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 204.02s
+Ground Truth:  x= 126.09, y= -42.49, θ=  31.2°
+SLAM Estimate: x= 126.53, y= -43.27, θ=  29.8°
+Error:         Δx=  0.44, Δy= -0.78, Δθ= -1.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM15: range=10.4m, bearing= -80.5°
+  LM16: range=12.2m, bearing=  58.5°
+  LM17: range=24.3m, bearing= -17.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 204.05s
+Ground Truth:  x= 126.37, y= -42.32, θ=  31.6°
+SLAM Estimate: x= 126.67, y= -42.99, θ=  31.6°
+Error:         Δx=  0.30, Δy= -0.67, Δθ=  0.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM15: range=10.3m, bearing= -84.1°
+  LM16: range=12.1m, bearing=  64.2°
+  LM17: range=23.8m, bearing= -11.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 204.08s
+Ground Truth:  x= 126.63, y= -42.16, θ=  31.9°
+SLAM Estimate: x= 126.98, y= -42.83, θ=  32.1°
+Error:         Δx=  0.35, Δy= -0.67, Δθ=  0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 12 landmarks
+  LM15: range=10.3m, bearing= -87.6°
+  LM16: range=12.1m, bearing=  59.7°
+  LM17: range=23.6m, bearing= -14.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 206.02s
+Ground Truth:  x= 139.79, y= -30.14, θ=  53.0°
+SLAM Estimate: x= 140.17, y= -30.91, θ=  51.6°
+Error:         Δx=  0.38, Δy= -0.77, Δθ= -1.4°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM17: range=10.5m, bearing= -79.2°
+  LM18: range=10.5m, bearing=  77.1°
+  LM19: range=14.1m, bearing= -44.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 206.06s
+Ground Truth:  x= 139.99, y= -29.87, θ=  53.4°
+SLAM Estimate: x= 140.29, y= -30.62, θ=  53.0°
+Error:         Δx=  0.30, Δy= -0.75, Δθ= -0.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM17: range=10.3m, bearing= -83.5°
+  LM18: range=10.4m, bearing=  75.9°
+  LM19: range=13.8m, bearing= -42.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 206.09s
+Ground Truth:  x= 140.19, y= -29.61, θ=  53.7°
+SLAM Estimate: x= 140.57, y= -30.36, θ=  52.7°
+Error:         Δx=  0.38, Δy= -0.76, Δθ= -1.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 12 landmarks
+  LM17: range=10.3m, bearing= -84.9°
+  LM18: range=10.4m, bearing=  83.5°
+  LM19: range=13.6m, bearing= -44.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 208.03s
+Ground Truth:  x= 147.99, y= -13.68, θ=  74.2°
+SLAM Estimate: x= 148.40, y= -14.41, θ=  73.4°
+Error:         Δx=  0.41, Δy= -0.72, Δθ= -0.8°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=14.6m, bearing= -41.7°
+  LM22: range=14.1m, bearing=  55.4°
+  LM23: range=25.2m, bearing= -10.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 208.06s
+Ground Truth:  x= 148.07, y= -13.39, θ=  74.6°
+SLAM Estimate: x= 148.47, y= -14.10, θ=  75.1°
+Error:         Δx=  0.39, Δy= -0.71, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=14.2m, bearing= -41.7°
+  LM22: range=14.0m, bearing=  60.5°
+  LM23: range=25.0m, bearing= -15.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 208.10s
+Ground Truth:  x= 148.15, y= -13.09, θ=  75.0°
+SLAM Estimate: x= 148.61, y= -13.89, θ=  75.8°
+Error:         Δx=  0.46, Δy= -0.80, Δθ=  0.9°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM21: range=14.0m, bearing= -40.3°
+  LM22: range=13.8m, bearing=  54.1°
+  LM23: range=24.6m, bearing= -11.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 210.00s
+Ground Truth:  x= 149.71, y=   4.47, θ=  95.2°
+SLAM Estimate: x= 150.18, y=   3.71, θ=  95.1°
+Error:         Δx=  0.47, Δy= -0.76, Δθ= -0.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 9 landmarks
+  LM23: range=10.6m, bearing= -72.0°
+  LM24: range=11.9m, bearing=  56.1°
+  LM25: range=30.7m, bearing=  -1.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 210.03s
+Ground Truth:  x= 149.68, y=   4.77, θ=  95.6°
+SLAM Estimate: x= 150.15, y=   4.00, θ=  96.0°
+Error:         Δx=  0.47, Δy= -0.77, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 9 landmarks
+  LM23: range=10.6m, bearing= -77.0°
+  LM24: range=11.7m, bearing=  61.9°
+  LM25: range=30.4m, bearing=  -0.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 210.07s
+Ground Truth:  x= 149.65, y=   5.08, θ=  95.9°
+SLAM Estimate: x= 150.08, y=   4.28, θ=  96.4°
+Error:         Δx=  0.43, Δy= -0.80, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 9 landmarks
+  LM23: range=10.5m, bearing= -74.3°
+  LM24: range=11.5m, bearing=  64.5°
+  LM25: range=30.1m, bearing=  -8.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 212.01s
+Ground Truth:  x= 144.71, y=  22.16, θ= 116.5°
+SLAM Estimate: x= 145.17, y=  21.46, θ= 116.6°
+Error:         Δx=  0.45, Δy= -0.69, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=13.8m, bearing= -40.9°
+  LM26: range=23.8m, bearing=  39.2°
+  LM27: range=31.2m, bearing=  -2.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 212.04s
+Ground Truth:  x= 144.58, y=  22.43, θ= 116.8°
+SLAM Estimate: x= 145.01, y=  21.61, θ= 116.2°
+Error:         Δx=  0.44, Δy= -0.82, Δθ= -0.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=13.3m, bearing= -46.0°
+  LM26: range=23.4m, bearing=  37.7°
+  LM27: range=30.9m, bearing=  -6.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 212.07s
+Ground Truth:  x= 144.44, y=  22.70, θ= 117.1°
+SLAM Estimate: x= 144.91, y=  22.00, θ= 116.9°
+Error:         Δx=  0.48, Δy= -0.70, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM25: range=13.2m, bearing= -43.0°
+  LM26: range=23.2m, bearing=  38.6°
+  LM27: range=30.5m, bearing=   3.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 214.01s
+Ground Truth:  x= 133.59, y=  36.92, θ= 137.8°
+SLAM Estimate: x= 134.03, y=  36.11, θ= 136.8°
+Error:         Δx=  0.44, Δy= -0.80, Δθ= -1.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM26: range=11.3m, bearing=  64.8°
+  LM27: range=13.8m, bearing= -41.2°
+  LM28: range=13.9m, bearing=  46.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 214.05s
+Ground Truth:  x= 133.32, y=  37.15, θ= 138.2°
+SLAM Estimate: x= 133.85, y=  36.45, θ= 138.7°
+Error:         Δx=  0.53, Δy= -0.71, Δθ=  0.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM26: range=11.1m, bearing=  66.9°
+  LM27: range=13.7m, bearing= -43.9°
+  LM28: range=13.7m, bearing=  52.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 214.08s
+Ground Truth:  x= 133.09, y=  37.36, θ= 138.5°
+SLAM Estimate: x= 133.59, y=  36.61, θ= 138.1°
+Error:         Δx=  0.49, Δy= -0.75, Δθ= -0.4°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM26: range=10.8m, bearing=  69.0°
+  LM27: range=13.6m, bearing= -46.0°
+  LM28: range=13.3m, bearing=  59.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 216.02s
+Ground Truth:  x= 117.94, y=  46.57, θ= 159.1°
+SLAM Estimate: x= 118.40, y=  45.94, θ= 158.9°
+Error:         Δx=  0.46, Δy= -0.63, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 4 landmarks
+  LM30: range=11.5m, bearing=  60.6°
+  LM31: range=28.8m, bearing= -10.7°
+  LM32: range=44.7m, bearing=  33.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 216.05s
+Ground Truth:  x= 117.66, y=  46.67, θ= 159.4°
+SLAM Estimate: x= 118.24, y=  45.76, θ= 159.8°
+Error:         Δx=  0.59, Δy= -0.91, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 5 landmarks
+  LM30: range=11.3m, bearing=  64.3°
+  LM31: range=28.3m, bearing=  -0.8°
+  LM32: range=44.3m, bearing=  30.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 216.09s
+Ground Truth:  x= 117.34, y=  46.79, θ= 159.8°
+SLAM Estimate: x= 117.87, y=  45.90, θ= 157.3°
+Error:         Δx=  0.52, Δy= -0.89, Δθ= -2.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 5 landmarks
+  LM30: range=11.2m, bearing=  65.9°
+  LM31: range=27.9m, bearing=  -7.0°
+  LM32: range=44.1m, bearing=  29.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 218.02s
+Ground Truth:  x=  98.66, y=  50.20, θ= 177.2°
+SLAM Estimate: x=  99.25, y=  49.59, θ= 178.6°
+Error:         Δx=  0.59, Δy= -0.61, Δθ=  1.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM31: range=11.6m, bearing= -58.8°
+  LM32: range=26.9m, bearing=  16.5°
+  LM33: range=42.7m, bearing= -14.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 218.06s
+Ground Truth:  x=  98.28, y=  50.21, θ= 177.4°
+SLAM Estimate: x=  98.75, y=  49.33, θ=-179.1°
+Error:         Δx=  0.47, Δy= -0.88, Δθ=  3.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM31: range=11.4m, bearing= -62.7°
+  LM32: range=26.6m, bearing=  26.5°
+  LM33: range=42.3m, bearing= -12.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 218.09s
+Ground Truth:  x=  97.87, y=  50.23, θ= 177.6°
+SLAM Estimate: x=  98.31, y=  49.45, θ=-179.9°
+Error:         Δx=  0.45, Δy= -0.79, Δθ=  2.6°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM31: range=11.1m, bearing= -60.5°
+  LM32: range=26.3m, bearing=  31.1°
+  LM33: range=42.1m, bearing=  -8.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 220.03s
+Ground Truth:  x=  71.89, y=  50.13, θ=-179.1°
+SLAM Estimate: x=  72.33, y=  49.43, θ=-177.7°
+Error:         Δx=  0.44, Δy= -0.71, Δθ=  1.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM33: range=17.9m, bearing= -34.7°
+  LM34: range=35.3m, bearing=  16.6°
+  LM35: range=53.8m, bearing= -11.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 220.06s
+Ground Truth:  x=  71.38, y=  50.13, θ=-179.1°
+SLAM Estimate: x=  71.86, y=  49.35, θ=-179.2°
+Error:         Δx=  0.49, Δy= -0.77, Δθ= -0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM33: range=17.5m, bearing= -35.7°
+  LM34: range=34.7m, bearing=  15.7°
+  LM35: range=53.2m, bearing= -10.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 220.10s
+Ground Truth:  x=  70.87, y=  50.12, θ=-179.1°
+SLAM Estimate: x=  71.22, y=  49.16, θ=-180.0°
+Error:         Δx=  0.36, Δy= -0.96, Δθ= -0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM33: range=17.1m, bearing= -38.9°
+  LM34: range=34.5m, bearing=  12.8°
+  LM35: range=52.8m, bearing= -10.6°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 222.00s
+Ground Truth:  x=  43.99, y=  49.96, θ= 179.9°
+SLAM Estimate: x=  44.50, y=  49.40, θ= 179.8°
+Error:         Δx=  0.50, Δy= -0.56, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM34: range=11.9m, bearing=  64.1°
+  LM35: range=26.9m, bearing= -25.4°
+  LM36: range=42.7m, bearing=  11.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 222.04s
+Ground Truth:  x=  43.56, y=  49.96, θ= 179.9°
+SLAM Estimate: x=  43.99, y=  49.49, θ=-179.5°
+Error:         Δx=  0.43, Δy= -0.48, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM34: range=11.5m, bearing=  59.7°
+  LM35: range=26.6m, bearing= -22.2°
+  LM36: range=42.4m, bearing=   8.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 222.07s
+Ground Truth:  x=  43.05, y=  49.96, θ= 179.9°
+SLAM Estimate: x=  43.56, y=  49.32, θ=-178.6°
+Error:         Δx=  0.51, Δy= -0.64, Δθ=  1.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM34: range=11.4m, bearing=  62.4°
+  LM35: range=26.1m, bearing= -28.9°
+  LM36: range=41.8m, bearing=  11.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 224.01s
+Ground Truth:  x=  15.58, y=  50.00, θ= 180.0°
+SLAM Estimate: x=  16.05, y=  49.51, θ=-179.5°
+Error:         Δx=  0.46, Δy= -0.49, Δθ=  0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM36: range=16.8m, bearing=  38.5°
+  LM37: range=33.8m, bearing= -17.0°
+  LM38: range=52.4m, bearing=  17.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 224.04s
+Ground Truth:  x=  15.23, y=  50.00, θ= 180.0°
+SLAM Estimate: x=  15.75, y=  49.65, θ= 176.7°
+Error:         Δx=  0.52, Δy= -0.35, Δθ= -3.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM36: range=16.4m, bearing=  40.5°
+  LM37: range=33.4m, bearing= -15.0°
+  LM38: range=52.0m, bearing=  16.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 224.08s
+Ground Truth:  x=  14.72, y=  50.00, θ= 180.0°
+SLAM Estimate: x=  15.20, y=  49.57, θ= 177.7°
+Error:         Δx=  0.49, Δy= -0.44, Δθ= -2.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 4 landmarks
+  LM36: range=15.9m, bearing=  41.7°
+  LM37: range=33.0m, bearing= -19.6°
+  LM38: range=51.6m, bearing=   7.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 226.01s
+Ground Truth:  x= -12.75, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -12.18, y=  49.70, θ=-178.6°
+Error:         Δx=  0.57, Δy= -0.30, Δθ=  1.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM37: range=10.8m, bearing= -68.7°
+  LM38: range=25.1m, bearing=  21.7°
+  LM39: range=40.9m, bearing= -17.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 226.05s
+Ground Truth:  x= -13.18, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -12.70, y=  49.60, θ=-178.4°
+Error:         Δx=  0.48, Δy= -0.40, Δθ=  1.6°
+Uncertainty (σ): x=0.81m, y=0.81m, θ=6.5°
+Detections: 5 landmarks
+  LM37: range=10.8m, bearing= -70.1°
+  LM38: range=24.7m, bearing=  25.7°
+  LM39: range=40.5m, bearing= -10.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 226.08s
+Ground Truth:  x= -13.61, y=  50.00, θ=-180.0°
+SLAM Estimate: x= -13.15, y=  49.61, θ= 178.7°
+Error:         Δx=  0.46, Δy= -0.39, Δθ= -1.3°
+Uncertainty (σ): x=0.81m, y=0.81m, θ=6.5°
+Detections: 5 landmarks
+  LM37: range=10.5m, bearing= -72.9°
+  LM38: range=24.4m, bearing=  27.1°
+  LM39: range=40.0m, bearing= -16.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 228.02s
+Ground Truth:  x= -41.08, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -40.61, y=  49.50, θ= 179.0°
+Error:         Δx=  0.46, Δy= -0.50, Δθ= -1.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM39: range=15.1m, bearing= -39.9°
+  LM40: range=32.0m, bearing=  21.3°
+  LM41: range=50.5m, bearing= -13.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 228.05s
+Ground Truth:  x= -41.59, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -41.05, y=  49.70, θ= 178.7°
+Error:         Δx=  0.54, Δy= -0.30, Δθ= -1.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM39: range=14.8m, bearing= -41.3°
+  LM40: range=31.4m, bearing=  16.0°
+  LM41: range=49.9m, bearing= -17.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 228.09s
+Ground Truth:  x= -41.94, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -41.43, y=  49.64, θ=-179.3°
+Error:         Δx=  0.52, Δy= -0.36, Δθ=  0.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 6 landmarks
+  LM39: range=14.6m, bearing= -49.2°
+  LM40: range=31.1m, bearing=  13.2°
+  LM41: range=49.6m, bearing=  -9.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 230.03s
+Ground Truth:  x= -69.41, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -68.88, y=  49.69, θ= 179.3°
+Error:         Δx=  0.52, Δy= -0.31, Δθ= -0.7°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 8 landmarks
+  LM40: range=10.5m, bearing=  77.3°
+  LM41: range=23.6m, bearing= -22.4°
+  LM42: range=35.6m, bearing=  13.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 230.06s
+Ground Truth:  x= -69.92, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -69.35, y=  49.68, θ= 179.8°
+Error:         Δx=  0.57, Δy= -0.32, Δθ= -0.2°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 8 landmarks
+  LM40: range=10.4m, bearing=  78.1°
+  LM41: range=23.0m, bearing= -27.0°
+  LM42: range=35.1m, bearing=  16.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 230.09s
+Ground Truth:  x= -70.35, y=  50.00, θ= 180.0°
+SLAM Estimate: x= -69.82, y=  49.66, θ= 180.0°
+Error:         Δx=  0.53, Δy= -0.34, Δθ= -0.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 8 landmarks
+  LM40: range=10.3m, bearing=  79.6°
+  LM41: range=22.6m, bearing= -26.9°
+  LM42: range=34.8m, bearing=  14.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 232.03s
+Ground Truth:  x= -97.33, y=  49.94, θ=-178.6°
+SLAM Estimate: x= -96.84, y=  49.72, θ=-178.2°
+Error:         Δx=  0.49, Δy= -0.21, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM42: range=11.9m, bearing=  54.4°
+  LM43: range=15.0m, bearing= -41.1°
+  LM44: range=26.9m, bearing=  32.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 232.07s
+Ground Truth:  x= -97.74, y=  49.93, θ=-178.4°
+SLAM Estimate: x= -97.25, y=  49.70, θ=-178.5°
+Error:         Δx=  0.48, Δy= -0.23, Δθ= -0.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM42: range=11.8m, bearing=  64.1°
+  LM43: range=14.6m, bearing= -43.9°
+  LM44: range=26.8m, bearing=  36.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 234.00s
+Ground Truth:  x=-116.35, y=  47.00, θ=-161.3°
+SLAM Estimate: x=-116.01, y=  46.87, θ=-160.6°
+Error:         Δx=  0.35, Δy= -0.13, Δθ=  0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM44: range=12.8m, bearing=  54.0°
+  LM45: range=27.9m, bearing=  -5.3°
+  LM46: range=26.6m, bearing=  36.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 234.04s
+Ground Truth:  x=-116.64, y=  46.90, θ=-160.9°
+SLAM Estimate: x=-116.22, y=  46.82, θ=-161.0°
+Error:         Δx=  0.43, Δy= -0.08, Δθ= -0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM44: range=12.5m, bearing=  62.4°
+  LM45: range=27.8m, bearing=  -7.8°
+  LM46: range=26.5m, bearing=  44.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 234.07s
+Ground Truth:  x=-116.93, y=  46.80, θ=-160.6°
+SLAM Estimate: x=-116.33, y=  46.63, θ=-161.7°
+Error:         Δx=  0.60, Δy= -0.17, Δθ= -1.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 9 landmarks
+  LM44: range=12.5m, bearing=  57.1°
+  LM45: range=27.4m, bearing=  -8.1°
+  LM46: range=26.3m, bearing=  39.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 236.01s
+Ground Truth:  x=-132.48, y=  37.88, θ=-139.5°
+SLAM Estimate: x=-132.01, y=  37.75, θ=-140.3°
+Error:         Δx=  0.47, Δy= -0.13, Δθ= -0.8°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM45: range=11.7m, bearing= -57.6°
+  LM46: range=13.4m, bearing=  57.0°
+  LM47: range=26.0m, bearing= -15.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 236.04s
+Ground Truth:  x=-132.71, y=  37.69, θ=-139.1°
+SLAM Estimate: x=-132.22, y=  37.65, θ=-138.1°
+Error:         Δx=  0.49, Δy= -0.03, Δθ=  1.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 10 landmarks
+  LM45: range=11.6m, bearing= -64.1°
+  LM46: range=13.1m, bearing=  56.8°
+  LM47: range=25.6m, bearing=  -8.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 236.08s
+Ground Truth:  x=-132.95, y=  37.48, θ=-138.7°
+SLAM Estimate: x=-132.46, y=  37.32, θ=-137.5°
+Error:         Δx=  0.48, Δy= -0.16, Δθ=  1.3°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 11 landmarks
+  LM45: range=11.4m, bearing= -64.1°
+  LM46: range=12.7m, bearing=  55.2°
+  LM47: range=25.4m, bearing= -15.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 238.02s
+Ground Truth:  x=-144.04, y=  23.49, θ=-118.0°
+SLAM Estimate: x=-143.59, y=  23.35, θ=-118.5°
+Error:         Δx=  0.44, Δy= -0.14, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=77.1m, bearing=  60.4°
+  LM47: range=10.7m, bearing= -67.9°
+  LM48: range=12.1m, bearing=  59.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 238.05s
+Ground Truth:  x=-144.18, y=  23.22, θ=-117.7°
+SLAM Estimate: x=-143.77, y=  23.09, θ=-117.5°
+Error:         Δx=  0.41, Δy= -0.14, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=76.9m, bearing=  61.6°
+  LM47: range=10.9m, bearing= -73.2°
+  LM48: range=11.9m, bearing=  59.8°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 238.08s
+Ground Truth:  x=-144.32, y=  22.95, θ=-117.3°
+SLAM Estimate: x=-143.81, y=  22.86, θ=-116.5°
+Error:         Δx=  0.51, Δy= -0.10, Δθ=  0.9°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 10 landmarks
+  LM0: range=76.7m, bearing=  63.1°
+  LM47: range=10.8m, bearing= -71.8°
+  LM48: range=11.9m, bearing=  62.2°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 240.02s
+Ground Truth:  x=-149.55, y=   5.96, θ= -96.7°
+SLAM Estimate: x=-149.15, y=   5.89, θ= -95.4°
+Error:         Δx=  0.39, Δy= -0.07, Δθ=  1.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 9 landmarks
+  LM0: range=67.4m, bearing=  52.0°
+  LM49: range=13.9m, bearing= -43.3°
+  LM50: range=15.4m, bearing=  53.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 240.06s
+Ground Truth:  x=-149.59, y=   5.60, θ= -96.4°
+SLAM Estimate: x=-149.28, y=   5.47, θ= -95.6°
+Error:         Δx=  0.31, Δy= -0.13, Δθ=  0.7°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 9 landmarks
+  LM0: range=67.4m, bearing=  52.9°
+  LM49: range=13.4m, bearing= -47.6°
+  LM50: range=15.0m, bearing=  52.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 240.09s
+Ground Truth:  x=-149.62, y=   5.30, θ= -96.0°
+SLAM Estimate: x=-149.43, y=   5.07, θ= -95.7°
+Error:         Δx=  0.19, Δy= -0.23, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 9 landmarks
+  LM0: range=67.0m, bearing=  53.0°
+  LM49: range=13.6m, bearing= -44.5°
+  LM50: range=14.8m, bearing=  57.0°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 242.03s
+Ground Truth:  x=-148.33, y= -12.43, θ= -75.5°
+SLAM Estimate: x=-148.11, y= -12.66, θ= -73.9°
+Error:         Δx=  0.22, Δy= -0.22, Δθ=  1.6°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=55.5m, bearing=  46.0°
+  LM52: range=12.7m, bearing=  57.7°
+  LM53: range=29.6m, bearing=  -6.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 242.06s
+Ground Truth:  x=-148.25, y= -12.73, θ= -75.1°
+SLAM Estimate: x=-147.92, y= -12.84, θ= -74.1°
+Error:         Δx=  0.33, Δy= -0.11, Δθ=  1.0°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=55.2m, bearing=  47.4°
+  LM52: range=12.4m, bearing=  59.4°
+  LM53: range=29.6m, bearing=  -1.7°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 242.10s
+Ground Truth:  x=-148.16, y= -13.08, θ= -74.7°
+SLAM Estimate: x=-147.69, y= -12.98, θ= -76.2°
+Error:         Δx=  0.47, Δy=  0.10, Δθ= -1.4°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=55.0m, bearing=  41.8°
+  LM52: range=12.4m, bearing=  59.6°
+  LM53: range=28.9m, bearing=  -3.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 244.00s
+Ground Truth:  x=-140.68, y= -28.90, θ= -54.5°
+SLAM Estimate: x=-140.40, y= -29.17, θ= -54.8°
+Error:         Δx=  0.28, Δy= -0.27, Δθ= -0.3°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=41.8m, bearing=  42.4°
+  LM1: range=65.2m, bearing=  22.6°
+  LM2: range=77.0m, bearing=  45.4°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 244.03s
+Ground Truth:  x=-140.51, y= -29.15, θ= -54.2°
+SLAM Estimate: x=-140.16, y= -29.32, θ= -54.0°
+Error:         Δx=  0.35, Δy= -0.17, Δθ=  0.2°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=42.0m, bearing=  38.0°
+  LM1: range=64.9m, bearing=  29.3°
+  LM2: range=77.0m, bearing=  45.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 244.07s
+Ground Truth:  x=-140.33, y= -29.40, θ= -53.8°
+SLAM Estimate: x=-140.08, y= -29.72, θ= -54.2°
+Error:         Δx=  0.24, Δy= -0.32, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.83m, θ=6.5°
+Detections: 8 landmarks
+  LM0: range=41.6m, bearing=  41.1°
+  LM1: range=65.0m, bearing=  22.2°
+  LM2: range=76.8m, bearing=  43.1°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 246.01s
+Ground Truth:  x=-127.44, y= -41.68, θ= -33.3°
+SLAM Estimate: x=-127.14, y= -41.89, θ= -32.9°
+Error:         Δx=  0.30, Δy= -0.21, Δθ=  0.4°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=27.5m, bearing=  37.5°
+  LM1: range=47.8m, bearing=   7.7°
+  LM2: range=63.2m, bearing=  38.9°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 246.04s
+Ground Truth:  x=-127.18, y= -41.85, θ= -33.0°
+SLAM Estimate: x=-126.92, y= -42.25, θ= -33.9°
+Error:         Δx=  0.26, Δy= -0.40, Δθ= -0.9°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=27.1m, bearing=  36.4°
+  LM1: range=47.8m, bearing=  11.6°
+  LM2: range=63.1m, bearing=  34.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 246.07s
+Ground Truth:  x=-126.92, y= -42.01, θ= -32.6°
+SLAM Estimate: x=-126.75, y= -42.27, θ= -33.0°
+Error:         Δx=  0.18, Δy= -0.26, Δθ= -0.5°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 7 landmarks
+  LM0: range=27.0m, bearing=  30.5°
+  LM1: range=47.3m, bearing=   9.9°
+  LM2: range=62.6m, bearing=  33.3°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 248.01s
+Ground Truth:  x=-110.43, y= -48.80, θ= -12.1°
+SLAM Estimate: x=-110.28, y= -49.02, θ= -14.1°
+Error:         Δx=  0.15, Δy= -0.22, Δθ= -2.0°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM0: range=13.8m, bearing=  55.0°
+  LM1: range=29.3m, bearing=  -8.3°
+  LM2: range=47.0m, bearing=  18.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 248.05s
+Ground Truth:  x=-110.11, y= -48.87, θ= -11.7°
+SLAM Estimate: x=-109.84, y= -49.04, θ= -11.8°
+Error:         Δx=  0.26, Δy= -0.17, Δθ= -0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM0: range=13.6m, bearing=  56.8°
+  LM1: range=29.0m, bearing= -12.9°
+  LM2: range=46.5m, bearing=  19.5°
+Mapped landmarks: 58
+============================================================
+
+============================================================
+Time: 248.08s
+Ground Truth:  x=-109.81, y= -48.93, θ= -11.4°
+SLAM Estimate: x=-109.47, y= -49.24, θ= -11.3°
+Error:         Δx=  0.34, Δy= -0.30, Δθ=  0.1°
+Uncertainty (σ): x=0.81m, y=0.82m, θ=6.5°
+Detections: 5 landmarks
+  LM0: range=13.5m, bearing=  45.9°
+  LM1: range=28.8m, bearing=  -7.4°
+  LM2: range=46.4m, bearing=  20.1°
+Mapped landmarks: 58
+============================================================
