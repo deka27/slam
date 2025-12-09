@@ -9,7 +9,6 @@
 Navigate to the SLAM directory and install all required packages:
 
 ```bash
-cd /home/han/Desktop/Code/SLAM
 pip install -r requirements.txt
 ```
 
