@@ -47,7 +47,7 @@ class RobotSimulation:
         dt : float
             Time step (seconds)
         enable_noise : bool
-            Whether to enable motion noise
+            Whether to enable motion and sensor noise
         camera_mode : str
             'follow' for 3rd person camera, 'overview' for static top view
         """
@@ -55,6 +55,7 @@ class RobotSimulation:
         self.landmarks = landmarks
         self.dt = dt
         self.camera_mode = camera_mode
+        self.enable_noise = enable_noise  # Store noise setting for sensor measurements
 
         # Initialize robot at start of track
         start_x = track_centerline[0, 0]
@@ -179,7 +180,7 @@ class RobotSimulation:
         self.latest_measurements = self.robot.sensor.measure(
             self.robot.x, self.robot.y, self.robot.theta,
             self.landmarks,
-            add_noise=True
+            add_noise=self.enable_noise  # Use simulation noise setting
         )
 
         # EKF-SLAM Measurement Update at reduced rate
@@ -772,7 +773,7 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
     Parameters:
     -----------
     enable_noise : bool
-        Whether to enable motion noise
+        Whether to enable motion and sensor noise
     num_laps : int
         Number of laps to run
     camera_mode : str
@@ -820,7 +821,7 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
     print("=" * 60)
     print(f"Track: Simple Oval ({len(track_centerline)} points)")
     print(f"Path: {path_name}")
-    print(f"Motion noise: {'Enabled' if enable_noise else 'Disabled'}")
+    print(f"Noise (motion + sensor): {'Enabled' if enable_noise else 'Disabled'}")
     print(f"Camera mode: {camera_mode}")
     print(f"Target laps: {num_laps}")
     print("=" * 60)
@@ -1093,4 +1094,4 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
 if __name__ == "__main__":
     # Run without noise, using centerline (not racing line) on simple track
     # 4 laps to show convergence over multiple circuits
-    run_simulation(enable_noise=False, num_laps=4, use_racing_line=False)
+    run_simulation(enable_noise=True, num_laps=4, use_racing_line=False)
