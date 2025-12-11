@@ -138,12 +138,22 @@ class RobotSimulation:
 
         # Initialize EKF-SLAM
         initial_pose = np.array([start_x, start_y, start_theta])
-        # Tuned motion noise - balanced uncertainty
-        # Higher values = trust measurements more, lower values = trust odometry more
-        motion_noise = np.diag([0.5, 0.5, 0.08])**2  # Increased: less trust in odometry
-        # Measurement noise - trust sensor readings
-        # Lower multiplier = trust sensors more
-        measurement_noise = self.robot.sensor.Q * 0.3  # 30% - trust sensors more
+
+        # Set noise covariances based on whether noise is enabled
+        if enable_noise:
+            # With noise: Use realistic noise parameters
+            # Tuned motion noise - balanced uncertainty
+            # Higher values = trust measurements more, lower values = trust odometry more
+            motion_noise = np.diag([0.5, 0.5, 0.08])**2  # Increased: less trust in odometry
+            # Measurement noise - trust sensor readings
+            # Lower multiplier = trust sensors more
+            measurement_noise = self.robot.sensor.Q * 0.3  # 30% - trust sensors more
+        else:
+            # Without noise: Use very small noise parameters (near-perfect sensors/odometry)
+            # Use small but non-zero values to prevent numerical issues
+            motion_noise = np.diag([0.01, 0.01, 0.001])**2  # Very small motion uncertainty
+            measurement_noise = self.robot.sensor.Q * 0.01  # 1% - nearly perfect sensors
+
         self.ekf_slam = EKF_SLAM(initial_pose, motion_noise, measurement_noise)
 
         # SLAM update counter (update measurements at higher rate for better tracking)
@@ -1260,4 +1270,4 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
 if __name__ == "__main__":
     # Run without noise, using centerline (not racing line) on simple track
     # 4 laps to show convergence over multiple circuits
-    run_simulation(enable_noise=True, num_laps=4, use_racing_line=False)
+    run_simulation(enable_noise=False, num_laps=4, use_racing_line=False)
