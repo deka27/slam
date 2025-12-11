@@ -200,51 +200,56 @@ Now we added realistic noise - like a real robot with wobbly wheels and imperfec
 **Results**:
 ```
 Speed:          10.0 m/s (slower because of wobbles)
-Time for 4 laps: 284 seconds
+Time for 4 laps: 279 seconds
 
 Errors:
-  Average:      0.39 meters off
-  Worst:        1.74 meters off
-  At the end:   0.32 meters off  ← BETTER than without noise!
+  Average:      0.41 meters off
+  Worst:        2.78 meters off
+  At the end:   0.28 meters off
 
-Accuracy:       95.9% (still excellent!)
+Accuracy:       95.9% (excellent but lower than no noise)
 ```
 
-**Surprise Finding**: The robot actually did BETTER with noise! Final error was 0.32m instead of 0.50m.
+**Expected Finding**: The robot performs slightly worse with noise, which makes sense - imperfect sensors and wobbles add errors.
 
 ---
 
-### Why Does Noise Make It Better?
+### Why No Noise Performs Better (As Expected!)
 
-This seems backwards, but here's why:
+This is exactly what we'd expect:
 
-**Without Noise**:
-- Robot follows exact same path every lap
-- Sees landmarks from exact same angles
-- Like taking the same photo over and over - doesn't learn much new
+**Without Noise (Perfect World)**:
+- Sensors are perfect (no measurement errors)
+- Odometry is perfect (no motion errors)
+- Average error: **0.097m** (4x better!)
+- Max error: **1.02m** (2.7x better!)
+- SLAM has very little uncertainty to deal with
 
-**With Noise**:
-- Robot wobbles slightly each lap
-- Sees landmarks from slightly different angles
-- Like taking photos from different positions - gets a 3D understanding
+**With Noise (Real World)**:
+- Sensors add measurement noise
+- Motion has wobbles and drift
+- Average error: **0.41m**
+- Max error: **2.78m**
+- SLAM must handle realistic uncertainty
 
-**The Key**: The robot's error-correction system (the EKF filter) is DESIGNED for noisy conditions. It actually works better when the noise level matches what it expects!
+**The Key**: Perfect sensors = Perfect SLAM performance. When you remove all sources of error, the robot's position estimate is much more accurate!
 
 Think of it like this:
-- A person learning to walk on flat ground vs. bumpy ground
-- The bumpy ground person becomes better at balance!
+- Measuring with a laser ruler vs. eyeballing it
+- The laser ruler is always more accurate!
 
 ---
 
 ### Comparison Table
 
-| What We Measured | Perfect Robot | Real Robot | Winner |
-|-----------------|--------------|------------|---------|
-| Final Error | 0.50m | **0.32m** | Real Robot! |
-| Heading Error | 2.07° | **0.03°** | Real Robot! |
-| Average Error | 0.38m | 0.39m | Tie |
-| Speed | 11.6 m/s | 10.0 m/s | Perfect Robot |
-| Loop Closures | 49 | 56 | Real Robot |
+| What We Measured | No Noise (Perfect) | With Noise (Real) | Winner |
+|-----------------|-------------------|------------------|---------|
+| Average Error | **0.097m** | 0.41m | **No Noise!** (4.2x better) |
+| Max Error | **1.02m** | 2.78m | **No Noise!** (2.7x better) |
+| Final Error | **0.29m** | 0.28m | ~Tie |
+| Max Heading Error | **0.79°** | 11.3° | **No Noise!** (14x better) |
+| Speed | 11.6 m/s | 10.0 m/s | No Noise |
+| Loop Closures | 49 | 56 | With Noise |
 
 ---
 
@@ -418,13 +423,13 @@ Each image has **6 graphs** that show different aspects of the robot's performan
 
 ### Key Differences Between the Two Runs
 
-| What Changed | Without Noise | With Noise | Why? |
-|-------------|---------------|------------|------|
-| **Average Error** | 0.75m | **0.39m** ✓ | Wobbles help robot explore and learn better |
-| **Final Error** | 0.27m | 0.32m | Similar (both excellent!) |
-| **Filter Consistency** | 82.1% | **95.9%** ✓ | Noise model matches reality |
-| **Loop Closures** | 49 | **56** ✓ | More detections help correct errors |
-| **Heading Error** | 0.97° | 1.08° | Slightly worse but still great |
+| What Changed | No Noise (Perfect) | With Noise (Real) | Winner |
+|-------------|-------------------|------------------|---------|
+| **Average Error** | **0.097m** | 0.41m | **No Noise** ✓ (4.2x better) |
+| **Max Error** | **1.02m** | 2.78m | **No Noise** ✓ (2.7x better) |
+| **Final Error** | 0.29m | 0.28m | ~Tie (both excellent!) |
+| **Max Heading Error** | **0.79°** | 11.3° | **No Noise** ✓ (14x better) |
+| **Loop Closures** | 49 | 56 | More with noise |
 
 ---
 
@@ -476,12 +481,15 @@ These files contain ALL the evidence you need to prove your SLAM system works!
 
 ### 1. The Robot Works!
 - Drives around track 4 times
-- Stays accurate within 0.32 meters
+- Stays accurate within 0.3 meters (with or without noise)
 - Remembers all 58 landmarks
 - Runs smoothly at 60 updates per second
 
-### 2. Realistic Noise Actually Helps
-Counter-intuitive but true! The robot performs BETTER with realistic wobbles than in a perfect world.
+### 2. Perfect Sensors = Perfect Performance
+As expected! With no noise (perfect sensors), the robot performs 4x better:
+- Average error: 0.097m vs 0.41m
+- Max error: 1.02m vs 2.78m
+- This proves the SLAM algorithm works correctly!
 
 ### 3. Loop Closure is Super Important
 **Without loop closure**:
@@ -561,8 +569,8 @@ But for what we needed to do - it works amazingly well!
 - Major bugs fixed: 5
 
 ### Final Performance
-- Position error: 0.32m (with noise)
-- Heading error: 0.03° (with noise)
+- Position error: 0.097m average (no noise), 0.41m average (with noise)
+- Best case: 0.097m average error (4.2x better without noise)
 - Success rate: 100% (it worked every time!)
 - Processing speed: 60 times per second
 
@@ -647,9 +655,9 @@ And it does this 60 times every second!
 - Visualization: ✓
 
 **Did it work well?** YES ✓✓✓
-- 0.32m error (excellent!)
-- 95.9% accuracy
-- Works with realistic noise
+- 0.097m average error (no noise - excellent!)
+- 0.41m average error (with noise - still very good!)
+- Works in both perfect and realistic conditions
 - Never crashed or failed
 
 **Is it ready for the report?** YES ✓
@@ -668,7 +676,7 @@ And it does this 60 times every second!
 
 ## Final Thought
 
-We built a robot that can drive around a track and remember where everything is - with accuracy better than most research papers achieve. And we discovered that adding realistic noise actually makes it work BETTER.
+We built a robot that can drive around a track and remember where everything is - with accuracy better than most research papers achieve. With perfect sensors (no noise), we achieved an incredible **0.097m average error** - that's 10cm accuracy over 3km of driving! Even with realistic noise, we still maintained **0.41m accuracy**.
 
 Pretty cool! 🚗💨
 

@@ -404,14 +404,20 @@ The implementation followed this approximate timeline:
 
 ---
 
-## **Counter-Intuitive Finding:**
+## **Expected Finding:**
 
-**Noise improves performance!** The system with realistic noise achieved better mean error (0.39 m vs 0.75 m) and significantly better filter consistency (95.9% vs 82.1%) compared to the noise-free case. This occurs because:
+**Perfect sensors = Perfect performance!** As expected, the system without noise achieved dramatically better results:
 
-1. **Improved observability:** Trajectory variation provides diverse landmark viewing angles
-2. **Proper filter calibration:** Noise model matches reality, enabling optimal Kalman gain computation
-3. **Realistic uncertainty:** Uncertainty estimates accurately reflect actual errors
+**Performance Comparison:**
+- **Average error:** 0.097m (no noise) vs 0.41m (with noise) - **4.2x better!**
+- **Max error:** 1.02m (no noise) vs 2.78m (with noise) - **2.7x better!**
+- **Max heading error:** 0.79° (no noise) vs 11.3° (with noise) - **14x better!**
 
-This demonstrates the importance of proper noise modeling in Kalman filtering applications.
+**Why this makes sense:**
+1. **Perfect measurements:** No sensor noise means exact landmark observations
+2. **Perfect odometry:** No motion errors means accurate dead reckoning
+3. **Minimal uncertainty:** EKF has less error to correct
+
+This validates that the SLAM algorithm works correctly - perfect inputs produce near-perfect outputs.
 
 ---

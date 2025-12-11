@@ -19,7 +19,7 @@ class EKF_SLAM:
     - Landmark associations
     """
 
-    def __init__(self, initial_pose, motion_noise, measurement_noise):
+    def __init__(self, initial_pose, motion_noise, measurement_noise, validation_gate=3.0):
         """
         Initialize EKF-SLAM.
 
@@ -31,6 +31,8 @@ class EKF_SLAM:
             Motion model noise covariance
         measurement_noise : np.array (2, 2)
             Measurement noise covariance
+        validation_gate : float, optional
+            Mahalanobis distance threshold for outlier rejection (default: 3.0 sigma)
         """
         # State vector: [x, y, theta, landmarks...]
         self.state = initial_pose.copy()
@@ -43,9 +45,16 @@ class EKF_SLAM:
         self.R = motion_noise  # Process noise
         self.Q = measurement_noise  # Measurement noise
 
+        # Validation gate for outlier rejection
+        self.validation_gate = validation_gate
+
         # Landmark bookkeeping
         self.landmark_ids = []  # List of landmark IDs in state
         self.num_landmarks = 0
+
+        # Statistics
+        self.measurements_accepted = 0
+        self.measurements_rejected = 0
 
         # Loop closure detection
         self.pose_history = []  # Store poses for loop closure detection
@@ -230,6 +239,21 @@ class EKF_SLAM:
         # Innovation covariance
         S = H @ self.covariance @ H.T + self.Q
 
+        # ========== VALIDATION GATE: Reject outliers ==========
+        # Compute Mahalanobis distance (how many std devs away is the measurement?)
+        mahalanobis = np.sqrt(innovation.T @ np.linalg.inv(S) @ innovation)
+
+        # Reject measurement if it's too far from expected (likely wrong association or outlier)
+        if mahalanobis > self.validation_gate:
+            self.measurements_rejected += 1
+            # Optionally log the rejection for debugging
+            # print(f"[SLAM] Rejected measurement for landmark {landmark_id}: "
+            #       f"Mahalanobis distance = {mahalanobis:.2f} > {self.validation_gate}")
+            return  # Skip this measurement
+
+        self.measurements_accepted += 1
+        # =======================================================
+
         # Kalman gain
         K = self.covariance @ H.T @ np.linalg.inv(S)
 
@@ -315,6 +339,25 @@ class EKF_SLAM:
             })
 
         return landmarks
+
+    def get_rejection_stats(self):
+        """
+        Get measurement acceptance/rejection statistics.
+
+        Returns:
+        --------
+        stats : dict
+            Statistics including accepted, rejected, and rejection rate
+        """
+        total = self.measurements_accepted + self.measurements_rejected
+        rejection_rate = (self.measurements_rejected / total * 100) if total > 0 else 0
+
+        return {
+            'accepted': self.measurements_accepted,
+            'rejected': self.measurements_rejected,
+            'total': total,
+            'rejection_rate': rejection_rate
+        }
 
     def detect_loop_closure(self, current_landmarks, distance_threshold=5.0, landmark_threshold=3):
         """

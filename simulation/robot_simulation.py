@@ -655,6 +655,11 @@ class RobotSimulation:
 
         # Number of mapped landmarks
         self.log_file.write(f"Mapped landmarks: {self.ekf_slam.num_landmarks}\n")
+
+        # Measurement rejection statistics
+        stats = self.ekf_slam.get_rejection_stats()
+        self.log_file.write(f"Measurement Stats: Accepted={stats['accepted']}, Rejected={stats['rejected']}, Rate={stats['rejection_rate']:.1f}%\n")
+
         self.log_file.write(f"{'='*60}\n")
         self.log_file.flush()  # Ensure data is written immediately
 
@@ -977,12 +982,18 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
         title=f"Robot Simulation - {'With Noise' if enable_noise else 'No Noise'}"
     )
 
-    # Real-time plotting setup with platform-specific approach
-    import platform
-    import matplotlib
+    # Real-time plotting setup
     import matplotlib.pyplot as plt
+    plt.ion()  # Interactive mode
+    fig, axes = plt.subplots(2, 3, figsize=(15, 8))
+    fig.suptitle(f'SLAM Performance Metrics - {"With Noise" if enable_noise else "No Noise"}', fontsize=14, fontweight='bold')
 
-    IS_WINDOWS = platform.system() == 'Windows'
+    ax_pos_error = axes[0, 0]
+    ax_heading_error = axes[0, 1]
+    ax_landmarks = axes[0, 2]
+    ax_uncertainty = axes[1, 0]
+    ax_rejection = axes[1, 1]
+    ax_loop_closures = axes[1, 2]
 
     # Initialize empty plot data
     times = []
@@ -990,133 +1001,17 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
     heading_errors = []
     landmarks_mapped = []
     uncertainties = []
+    rejection_rates = []
+    loop_closures = []
 
-    if IS_WINDOWS:
-        # Windows: Use threading to avoid VTK/matplotlib event loop conflicts
-        import threading
-        import queue
-        import atexit
+    # Setup plot styling
+    for ax in axes.flat:
+        ax.grid(True, alpha=0.3)
 
-        matplotlib.use('Agg')  # Use non-interactive backend initially
+    plt.tight_layout()
+    plt.show(block=False)
 
-        # Disable matplotlib's automatic cleanup to avoid issues with threading
-        import matplotlib._pylab_helpers
-        atexit.unregister(matplotlib._pylab_helpers.Gcf.destroy_all)
-
-        # Queue for thread-safe communication
-        plot_queue = queue.Queue()
-        plot_thread_running = threading.Event()
-        plot_thread_running.set()
-
-        def plot_updater_thread():
-            """Separate thread for matplotlib to avoid VTK event loop conflicts on Windows"""
-            # Suppress warnings about GUI in non-main thread (we know what we're doing)
-            import warnings
-            warnings.filterwarnings('ignore', message='.*Matplotlib GUI.*main thread.*')
-
-            # Create figure in this thread
-            matplotlib.use('TkAgg')  # Now use TkAgg in separate thread
-            import matplotlib.pyplot as plt
-
-            fig, axes = plt.subplots(2, 2, figsize=(10, 8))
-            fig.suptitle(f'SLAM Performance Metrics - {"With Noise" if enable_noise else "No Noise"}',
-                         fontsize=14, fontweight='bold')
-
-            ax_pos_error = axes[0, 0]
-            ax_heading_error = axes[0, 1]
-            ax_landmarks = axes[1, 0]
-            ax_uncertainty = axes[1, 1]
-
-            for ax in axes.flat:
-                ax.grid(True, alpha=0.3)
-
-            plt.tight_layout()
-            plt.ion()
-            plt.show()
-
-            while plot_thread_running.is_set():
-                try:
-                    # Get data from queue with timeout
-                    data = plot_queue.get(timeout=0.1)
-                    if data is None:  # Poison pill to stop thread
-                        break
-
-                    t, pe, he, lm, unc = data
-
-                    # Update all plots
-                    ax_pos_error.clear()
-                    ax_pos_error.plot(t, pe, 'b-', linewidth=2)
-                    ax_pos_error.set_title('Position Error', fontweight='bold')
-                    ax_pos_error.set_xlabel('Time (s)')
-                    ax_pos_error.set_ylabel('Error (m)')
-                    ax_pos_error.grid(True, alpha=0.3)
-
-                    ax_heading_error.clear()
-                    ax_heading_error.plot(t, he, 'r-', linewidth=2)
-                    ax_heading_error.set_title('Heading Error', fontweight='bold')
-                    ax_heading_error.set_xlabel('Time (s)')
-                    ax_heading_error.set_ylabel('Error (deg)')
-                    ax_heading_error.grid(True, alpha=0.3)
-
-                    ax_landmarks.clear()
-                    ax_landmarks.plot(t, lm, 'g-', linewidth=2)
-                    ax_landmarks.set_title('Landmarks Mapped', fontweight='bold')
-                    ax_landmarks.set_xlabel('Time (s)')
-                    ax_landmarks.set_ylabel('Count')
-                    ax_landmarks.grid(True, alpha=0.3)
-
-                    ax_uncertainty.clear()
-                    ax_uncertainty.plot(t, unc, 'm-', linewidth=2)
-                    ax_uncertainty.set_title('Position Uncertainty', fontweight='bold')
-                    ax_uncertainty.set_xlabel('Time (s)')
-                    ax_uncertainty.set_ylabel('Uncertainty (m)')
-                    ax_uncertainty.grid(True, alpha=0.3)
-
-                    plt.tight_layout()
-                    plt.pause(0.01)  # Safe in separate thread
-
-                except queue.Empty:
-                    continue
-                except Exception as e:
-                    print(f"Plot update error: {e}")
-                    continue
-
-            # Clean up matplotlib properly
-            try:
-                plt.ioff()
-                plt.close('all')
-            except:
-                pass
-
-        # Start plot update thread (non-daemon so we can wait for proper cleanup)
-        plot_thread = threading.Thread(target=plot_updater_thread, daemon=False)
-        plot_thread.start()
-
-        import time
-        time.sleep(1)  # Give plot thread time to initialize
-
-        print("Real-time plots enabled! Plots window will update every 0.5 seconds (Windows threading mode).\n")
-
-    else:
-        # Mac/Linux: Direct plotting (simpler, works fine on these platforms)
-        matplotlib.use('TkAgg')
-        plt.ion()  # Interactive mode
-        fig, axes = plt.subplots(2, 2, figsize=(10, 8))
-        fig.suptitle(f'SLAM Performance Metrics - {"With Noise" if enable_noise else "No Noise"}',
-                     fontsize=14, fontweight='bold')
-
-        ax_pos_error = axes[0, 0]
-        ax_heading_error = axes[0, 1]
-        ax_landmarks = axes[1, 0]
-        ax_uncertainty = axes[1, 1]
-
-        for ax in axes.flat:
-            ax.grid(True, alpha=0.3)
-
-        plt.tight_layout()
-        plt.show(block=False)
-
-        print("Real-time plots enabled! Plots window will update every 0.5 seconds.\n")
+    print("Real-time plots enabled! Plots window will update every 0.5 seconds.\n")
 
     # Simulation loop
     counter = 0
@@ -1145,61 +1040,65 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
 
             uncertainty = np.sqrt(np.trace(sim.ekf_slam.robot_covariance[:2, :2]))
 
+            # Get rejection statistics
+            stats = sim.ekf_slam.get_rejection_stats()
+            rejection_rate = stats['rejection_rate']
+
             # Collect metrics
             times.append(sim.time)
             pos_errors.append(pos_error)
             heading_errors.append(heading_error)
             landmarks_mapped.append(sim.ekf_slam.num_landmarks)
             uncertainties.append(uncertainty)
+            rejection_rates.append(rejection_rate)
+            loop_closures.append(sim.ekf_slam.loop_closures_detected)
 
-            # Update plots based on platform
-            if IS_WINDOWS:
-                # Windows: Send data to plot thread (thread-safe, non-blocking)
-                try:
-                    plot_queue.put_nowait((
-                        times.copy(),
-                        pos_errors.copy(),
-                        heading_errors.copy(),
-                        landmarks_mapped.copy(),
-                        uncertainties.copy()
-                    ))
-                except queue.Full:
-                    pass  # Skip this update if queue is full
-            else:
-                # Mac/Linux: Direct plotting
-                try:
-                    ax_pos_error.clear()
-                    ax_pos_error.plot(times, pos_errors, 'b-', linewidth=2)
-                    ax_pos_error.set_title('Position Error', fontweight='bold')
-                    ax_pos_error.set_xlabel('Time (s)')
-                    ax_pos_error.set_ylabel('Error (m)')
-                    ax_pos_error.grid(True, alpha=0.3)
+            # Update plots
+            ax_pos_error.clear()
+            ax_pos_error.plot(times, pos_errors, 'b-', linewidth=2)
+            ax_pos_error.set_title('Position Error', fontweight='bold')
+            ax_pos_error.set_xlabel('Time (s)')
+            ax_pos_error.set_ylabel('Error (m)')
+            ax_pos_error.grid(True, alpha=0.3)
 
-                    ax_heading_error.clear()
-                    ax_heading_error.plot(times, heading_errors, 'r-', linewidth=2)
-                    ax_heading_error.set_title('Heading Error', fontweight='bold')
-                    ax_heading_error.set_xlabel('Time (s)')
-                    ax_heading_error.set_ylabel('Error (deg)')
-                    ax_heading_error.grid(True, alpha=0.3)
+            ax_heading_error.clear()
+            ax_heading_error.plot(times, heading_errors, 'r-', linewidth=2)
+            ax_heading_error.set_title('Heading Error', fontweight='bold')
+            ax_heading_error.set_xlabel('Time (s)')
+            ax_heading_error.set_ylabel('Error (deg)')
+            ax_heading_error.grid(True, alpha=0.3)
 
-                    ax_landmarks.clear()
-                    ax_landmarks.plot(times, landmarks_mapped, 'g-', linewidth=2)
-                    ax_landmarks.set_title('Landmarks Mapped', fontweight='bold')
-                    ax_landmarks.set_xlabel('Time (s)')
-                    ax_landmarks.set_ylabel('Count')
-                    ax_landmarks.grid(True, alpha=0.3)
+            ax_landmarks.clear()
+            ax_landmarks.plot(times, landmarks_mapped, 'g-', linewidth=2)
+            ax_landmarks.set_title('Landmarks Mapped', fontweight='bold')
+            ax_landmarks.set_xlabel('Time (s)')
+            ax_landmarks.set_ylabel('Count')
+            ax_landmarks.grid(True, alpha=0.3)
 
-                    ax_uncertainty.clear()
-                    ax_uncertainty.plot(times, uncertainties, 'm-', linewidth=2)
-                    ax_uncertainty.set_title('Position Uncertainty', fontweight='bold')
-                    ax_uncertainty.set_xlabel('Time (s)')
-                    ax_uncertainty.set_ylabel('Uncertainty (m)')
-                    ax_uncertainty.grid(True, alpha=0.3)
+            ax_uncertainty.clear()
+            ax_uncertainty.plot(times, uncertainties, 'm-', linewidth=2)
+            ax_uncertainty.set_title('Position Uncertainty', fontweight='bold')
+            ax_uncertainty.set_xlabel('Time (s)')
+            ax_uncertainty.set_ylabel('Uncertainty (m)')
+            ax_uncertainty.grid(True, alpha=0.3)
 
-                    fig.canvas.draw_idle()
-                    fig.canvas.flush_events()
-                except Exception:
-                    pass  # Silently ignore any errors
+            ax_rejection.clear()
+            ax_rejection.plot(times, rejection_rates, 'r-', linewidth=2)
+            ax_rejection.set_title('Measurement Rejection Rate', fontweight='bold')
+            ax_rejection.set_xlabel('Time (s)')
+            ax_rejection.set_ylabel('Rejection (%)')
+            ax_rejection.grid(True, alpha=0.3)
+
+            ax_loop_closures.clear()
+            ax_loop_closures.plot(times, loop_closures, 'c-', linewidth=2)
+            ax_loop_closures.set_title('Loop Closures Detected', fontweight='bold')
+            ax_loop_closures.set_xlabel('Time (s)')
+            ax_loop_closures.set_ylabel('Count')
+            ax_loop_closures.grid(True, alpha=0.3)
+
+            plt.tight_layout()
+            fig.canvas.draw()
+            fig.canvas.flush_events()
 
         counter += 1
 
@@ -1211,18 +1110,16 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
             print(f"Final position: ({sim.robot.x:.1f}, {sim.robot.y:.1f})")
             print(f"Log saved to: logs/slam_log.txt")
 
-            # Handle plot window based on platform
-            if IS_WINDOWS:
-                # Stop plot thread gracefully
-                plot_thread_running.clear()
-                plot_queue.put(None)  # Poison pill
-                print("\nCleaning up...")
-                plot_thread.join(timeout=2.0)  # Wait up to 2 seconds for thread to finish
-                print("Simulation complete. You can close the windows.")
-            else:
-                # Mac/Linux: Just turn off interactive mode
-                plt.ioff()
-                plt.close(fig)
+            # Show measurement rejection statistics
+            stats = sim.ekf_slam.get_rejection_stats()
+            print(f"\n=== SLAM Measurement Statistics ===")
+            print(f"Accepted: {stats['accepted']}")
+            print(f"Rejected: {stats['rejected']}")
+            print(f"Rejection rate: {stats['rejection_rate']:.1f}%")
+
+            # Close matplotlib window
+            plt.ioff()
+            plt.close(fig)
 
             sim.close()  # Close log file
             showm.exit()
@@ -1234,21 +1131,13 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
     def cleanup_and_exit():
         """Clean shutdown of simulation"""
         print("\n\nShutting down simulation...")
-
-        # Handle plot window based on platform
-        if IS_WINDOWS:
-            plot_thread_running.clear()
-            plot_queue.put(None)  # Poison pill
-            plot_thread.join(timeout=2.0)
-        else:
-            plt.ioff()
-            plt.close(fig)
-
+        plt.ioff()
+        plt.close(fig)
         sim.close()
         print("Simulation stopped. Final metrics saved.")
         showm.exit()
 
-    def keyboard_callback(obj, event):
+    def keyboard_callback(obj, _event):
         """Handle keyboard events"""
         key = obj.GetKeySym()
         if key.lower() in ['q', 'escape']:
@@ -1270,4 +1159,4 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
 if __name__ == "__main__":
     # Run without noise, using centerline (not racing line) on simple track
     # 4 laps to show convergence over multiple circuits
-    run_simulation(enable_noise=False, num_laps=4, use_racing_line=False)
+    run_simulation(enable_noise=True, num_laps=4, use_racing_line=False)
