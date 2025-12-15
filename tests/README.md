@@ -172,7 +172,5 @@ python run_simulation_tests.py --test my_custom_test
 
 ## Performance Notes
 
-- Each test runs ~40-50 seconds (4 laps @ 60 Hz)
-- Full test suite (13 tests): ~10 minutes
 - Headless mode (no 3D visualization) for faster execution
 - Results are automatically saved
