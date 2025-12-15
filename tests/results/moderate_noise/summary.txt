@@ -1,0 +1,33 @@
+SLAM Performance Summary - moderate_noise
+============================================================
+
+Position Error Statistics:
+  Mean:     0.5338 m
+  Std Dev:  0.3660 m
+  Max:      2.7539 m
+  Final:    0.3945 m
+
+Heading Error Statistics:
+  Mean:     -0.1072 deg
+  Std Dev:  1.3500 deg
+  Max:      7.5097 deg
+  Final:    0.3130 deg
+
+Filter Consistency (NEES):
+  Mean:     2.1407 (expected: 3.0)
+  Std Dev:  2.2931
+  % in 95% bounds [0.35, 7.81]: 93.1%
+
+Measurement Consistency (NIS):
+  Mean:     1.6681 (expected: 2.0)
+  Std Dev:  0.6846
+  % in 95% bounds [0.05, 5.99]: 100.0%
+
+Landmarks:
+  Total mapped: 58
+  Loop closures: 56
+
+Measurement Statistics:
+  Accepted: 58156
+  Rejected: 753
+  Rejection rate: 1.3%

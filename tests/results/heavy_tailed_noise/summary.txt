@@ -1,0 +1,33 @@
+SLAM Performance Summary - heavy_tailed_noise
+============================================================
+
+Position Error Statistics:
+  Mean:     1.7051 m
+  Std Dev:  0.7562 m
+  Max:      3.6397 m
+  Final:    1.8544 m
+
+Heading Error Statistics:
+  Mean:     0.9226 deg
+  Std Dev:  1.1848 deg
+  Max:      7.5128 deg
+  Final:    0.5682 deg
+
+Filter Consistency (NEES):
+  Mean:     15.4927 (expected: 3.0)
+  Std Dev:  10.2317
+  % in 95% bounds [0.35, 7.81]: 26.9%
+
+Measurement Consistency (NIS):
+  Mean:     1.1716 (expected: 2.0)
+  Std Dev:  0.6659
+  % in 95% bounds [0.05, 5.99]: 100.0%
+
+Landmarks:
+  Total mapped: 58
+  Loop closures: 56
+
+Measurement Statistics:
+  Accepted: 57815
+  Rejected: 1350
+  Rejection rate: 2.3%

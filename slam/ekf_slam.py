@@ -56,6 +56,10 @@ class EKF_SLAM:
         self.measurements_accepted = 0
         self.measurements_rejected = 0
 
+        # Consistency metrics
+        self.latest_nis_values = []  # Store NIS for each measurement update
+        self.latest_nees = 0.0  # Store latest NEES value
+
         # Loop closure detection
         self.pose_history = []  # Store poses for loop closure detection
         self.pose_history_interval = 30  # Store pose every N updates
@@ -150,6 +154,9 @@ class EKF_SLAM:
             If provided, new landmarks are initialized using this pose instead
             of the estimated pose to prevent feedback loops.
         """
+        # Clear NIS values for this update batch
+        self.latest_nis_values = []
+
         for measurement in measurements:
             landmark_id = measurement['landmark_id']
             z = np.array([measurement['range'], measurement['bearing']])
@@ -239,9 +246,23 @@ class EKF_SLAM:
         # Innovation covariance
         S = H @ self.covariance @ H.T + self.Q
 
+        # Ensure S is symmetric (numerical stability)
+        S = (S + S.T) / 2
+
         # ========== VALIDATION GATE: Reject outliers ==========
         # Compute Mahalanobis distance (how many std devs away is the measurement?)
-        mahalanobis = np.sqrt(innovation.T @ np.linalg.inv(S) @ innovation)
+        # NIS (Normalized Innovation Squared) = innovation^T * S^-1 * innovation
+        # Use solve instead of inv for numerical stability
+        try:
+            S_inv_innovation = np.linalg.solve(S, innovation)
+            nis = float(innovation.T @ S_inv_innovation)
+            # Ensure NIS is non-negative (numerical errors can make it slightly negative)
+            nis = max(0.0, nis)
+            mahalanobis = np.sqrt(nis)
+        except np.linalg.LinAlgError:
+            # S is singular, reject measurement
+            self.measurements_rejected += 1
+            return
 
         # Reject measurement if it's too far from expected (likely wrong association or outlier)
         if mahalanobis > self.validation_gate:
@@ -252,10 +273,22 @@ class EKF_SLAM:
             return  # Skip this measurement
 
         self.measurements_accepted += 1
+
+        # Store NIS value for accepted measurements (for consistency checking)
+        self.latest_nis_values.append(float(nis))
         # =======================================================
 
         # Kalman gain
-        K = self.covariance @ H.T @ np.linalg.inv(S)
+        # K = P @ H.T @ inv(S)
+        # More stable: solve S @ x = H.T for each column, then multiply by P
+        # Or equivalently: K = P @ H.T @ inv(S) = (inv(S) @ H @ P).T = solve(S, H @ P).T
+        # But to avoid dimension issues, use: K = P @ H.T @ inv(S) directly with pinv for stability
+        try:
+            S_inv = np.linalg.inv(S)
+        except np.linalg.LinAlgError:
+            # Use pseudoinverse if S is singular
+            S_inv = np.linalg.pinv(S)
+        K = self.covariance @ H.T @ S_inv
 
         # Update state
         self.state = self.state + K @ innovation
@@ -450,6 +483,63 @@ class EKF_SLAM:
             # Limit history size to prevent memory issues
             if len(self.pose_history) > 200:
                 self.pose_history.pop(0)
+
+    def compute_nees(self, ground_truth_pose):
+        """
+        Compute NEES (Normalized Estimation Error Squared) for filter consistency.
+
+        NEES measures whether the estimation error is consistent with the
+        estimated covariance. It should be chi-squared distributed with
+        degrees of freedom = dimension of state (3 for robot pose).
+
+        Expected value ≈ 3 for a consistent filter.
+        95% confidence interval for chi-squared(3): [0.35, 7.81]
+
+        Parameters:
+        -----------
+        ground_truth_pose : np.array (3,)
+            True robot pose [x, y, theta]
+
+        Returns:
+        --------
+        nees : float
+            NEES value
+        """
+        # Estimation error
+        error = self.robot_pose - ground_truth_pose
+        error[2] = self._wrap_angle(error[2])  # Wrap angle error
+
+        # NEES = error^T * P^(-1) * error
+        # Only compute for robot pose (not landmarks)
+        P_robot = self.robot_covariance
+
+        try:
+            nees = error.T @ np.linalg.inv(P_robot) @ error
+            self.latest_nees = float(nees)
+        except np.linalg.LinAlgError:
+            # Covariance is singular, return large value
+            self.latest_nees = 999.0
+
+        return self.latest_nees
+
+    def get_average_nis(self):
+        """
+        Get average NIS from latest measurement updates.
+
+        NIS should be chi-squared distributed with degrees of freedom = 2
+        (for range-bearing measurements).
+
+        Expected value ≈ 2 for a consistent filter.
+        95% confidence interval for chi-squared(2): [0.05, 5.99]
+
+        Returns:
+        --------
+        avg_nis : float
+            Average NIS value, or 0 if no measurements
+        """
+        if len(self.latest_nis_values) == 0:
+            return 0.0
+        return float(np.mean(self.latest_nis_values))
 
     @staticmethod
     def _wrap_angle(angle):

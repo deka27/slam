@@ -1,0 +1,33 @@
+SLAM Performance Summary - asymmetric_noise
+============================================================
+
+Position Error Statistics:
+  Mean:     1.4044 m
+  Std Dev:  0.5349 m
+  Max:      3.3584 m
+  Final:    1.7105 m
+
+Heading Error Statistics:
+  Mean:     0.8017 deg
+  Std Dev:  1.3657 deg
+  Max:      11.5252 deg
+  Final:    0.9540 deg
+
+Filter Consistency (NEES):
+  Mean:     10.3877 (expected: 3.0)
+  Std Dev:  6.1180
+  % in 95% bounds [0.35, 7.81]: 34.1%
+
+Measurement Consistency (NIS):
+  Mean:     1.3295 (expected: 2.0)
+  Std Dev:  0.7788
+  % in 95% bounds [0.05, 5.99]: 99.9%
+
+Landmarks:
+  Total mapped: 58
+  Loop closures: 55
+
+Measurement Statistics:
+  Accepted: 56344
+  Rejected: 1907
+  Rejection rate: 3.3%

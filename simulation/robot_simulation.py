@@ -130,7 +130,9 @@ class RobotSimulation:
             'num_landmarks_mapped': [],
             'num_landmarks_detected': [],
             'loop_closures': [],
-            'laps_completed': []
+            'laps_completed': [],
+            'nees': [],  # Normalized Estimation Error Squared
+            'nis': []    # Normalized Innovation Squared (average)
         }
 
         # Track lap completion times for plotting
@@ -701,6 +703,10 @@ class RobotSimulation:
         # Get uncertainties (standard deviations)
         cov_diag = np.sqrt(np.diag(self.ekf_slam.robot_covariance))
 
+        # Compute consistency metrics
+        nees = self.ekf_slam.compute_nees(true_pose)
+        nis = self.ekf_slam.get_average_nis()
+
         # Record metrics
         self.metrics_history['time'].append(self.time)
         self.metrics_history['pos_error'].append(pos_error)
@@ -714,6 +720,8 @@ class RobotSimulation:
         self.metrics_history['num_landmarks_detected'].append(len(self.latest_measurements))
         self.metrics_history['loop_closures'].append(self.ekf_slam.loop_closures_detected)
         self.metrics_history['laps_completed'].append(self.laps_completed)
+        self.metrics_history['nees'].append(nees)
+        self.metrics_history['nis'].append(nis)
 
     def save_metrics(self, filename='slam_metrics.csv'):
         """Save performance metrics to CSV file."""
@@ -742,7 +750,9 @@ class RobotSimulation:
                 'Landmarks Mapped',
                 'Landmarks Detected',
                 'Loop Closures',
-                'Laps Completed'
+                'Laps Completed',
+                'NEES',
+                'NIS'
             ])
 
             # Write data
@@ -759,7 +769,9 @@ class RobotSimulation:
                     self.metrics_history['num_landmarks_mapped'][i],
                     self.metrics_history['num_landmarks_detected'][i],
                     self.metrics_history['loop_closures'][i],
-                    self.metrics_history['laps_completed'][i]
+                    self.metrics_history['laps_completed'][i],
+                    self.metrics_history['nees'][i],
+                    self.metrics_history['nis'][i]
                 ])
 
         print(f"Metrics saved to: {filepath}")
@@ -992,8 +1004,8 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
     ax_heading_error = axes[0, 1]
     ax_landmarks = axes[0, 2]
     ax_uncertainty = axes[1, 0]
-    ax_rejection = axes[1, 1]
-    ax_loop_closures = axes[1, 2]
+    ax_nees = axes[1, 1]
+    ax_nis = axes[1, 2]
 
     # Initialize empty plot data
     times = []
@@ -1001,8 +1013,8 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
     heading_errors = []
     landmarks_mapped = []
     uncertainties = []
-    rejection_rates = []
-    loop_closures = []
+    nees_values = []
+    nis_values = []
 
     # Setup plot styling
     for ax in axes.flat:
@@ -1040,9 +1052,10 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
 
             uncertainty = np.sqrt(np.trace(sim.ekf_slam.robot_covariance[:2, :2]))
 
-            # Get rejection statistics
-            stats = sim.ekf_slam.get_rejection_stats()
-            rejection_rate = stats['rejection_rate']
+            # Get consistency metrics
+            true_pose = np.array([sim.robot.x, sim.robot.y, sim.robot.theta])
+            nees = sim.ekf_slam.compute_nees(true_pose)
+            nis = sim.ekf_slam.get_average_nis()
 
             # Collect metrics
             times.append(sim.time)
@@ -1050,8 +1063,8 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
             heading_errors.append(heading_error)
             landmarks_mapped.append(sim.ekf_slam.num_landmarks)
             uncertainties.append(uncertainty)
-            rejection_rates.append(rejection_rate)
-            loop_closures.append(sim.ekf_slam.loop_closures_detected)
+            nees_values.append(nees)
+            nis_values.append(nis)
 
             # Update plots
             ax_pos_error.clear()
@@ -1082,19 +1095,35 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
             ax_uncertainty.set_ylabel('Uncertainty (m)')
             ax_uncertainty.grid(True, alpha=0.3)
 
-            ax_rejection.clear()
-            ax_rejection.plot(times, rejection_rates, 'r-', linewidth=2)
-            ax_rejection.set_title('Measurement Rejection Rate', fontweight='bold')
-            ax_rejection.set_xlabel('Time (s)')
-            ax_rejection.set_ylabel('Rejection (%)')
-            ax_rejection.grid(True, alpha=0.3)
+            # NEES plot with reference lines
+            ax_nees.clear()
+            ax_nees.plot(times, nees_values, 'b-', linewidth=2, label='NEES')
+            # Expected value for chi-squared(3) = 3
+            ax_nees.axhline(y=3.0, color='g', linestyle='--', linewidth=1.5, label='Expected (3.0)')
+            # 95% confidence bounds for chi-squared(3): [0.35, 7.81]
+            ax_nees.axhline(y=7.81, color='r', linestyle=':', linewidth=1, label='95% bounds')
+            ax_nees.axhline(y=0.35, color='r', linestyle=':', linewidth=1)
+            ax_nees.set_title('NEES (Filter Consistency)', fontweight='bold')
+            ax_nees.set_xlabel('Time (s)')
+            ax_nees.set_ylabel('NEES')
+            ax_nees.legend(loc='upper right', fontsize=8)
+            ax_nees.grid(True, alpha=0.3)
+            ax_nees.set_ylim([0, min(15, max(nees_values) * 1.1) if nees_values else 15])
 
-            ax_loop_closures.clear()
-            ax_loop_closures.plot(times, loop_closures, 'c-', linewidth=2)
-            ax_loop_closures.set_title('Loop Closures Detected', fontweight='bold')
-            ax_loop_closures.set_xlabel('Time (s)')
-            ax_loop_closures.set_ylabel('Count')
-            ax_loop_closures.grid(True, alpha=0.3)
+            # NIS plot with reference lines
+            ax_nis.clear()
+            ax_nis.plot(times, nis_values, 'c-', linewidth=2, label='NIS')
+            # Expected value for chi-squared(2) = 2
+            ax_nis.axhline(y=2.0, color='g', linestyle='--', linewidth=1.5, label='Expected (2.0)')
+            # 95% confidence bounds for chi-squared(2): [0.05, 5.99]
+            ax_nis.axhline(y=5.99, color='r', linestyle=':', linewidth=1, label='95% bounds')
+            ax_nis.axhline(y=0.05, color='r', linestyle=':', linewidth=1)
+            ax_nis.set_title('NIS (Measurement Consistency)', fontweight='bold')
+            ax_nis.set_xlabel('Time (s)')
+            ax_nis.set_ylabel('NIS')
+            ax_nis.legend(loc='upper right', fontsize=8)
+            ax_nis.grid(True, alpha=0.3)
+            ax_nis.set_ylim([0, min(10, max(nis_values) * 1.1) if nis_values else 10])
 
             plt.tight_layout()
             fig.canvas.draw()
@@ -1156,7 +1185,483 @@ def run_simulation(enable_noise=False, num_laps=3, camera_mode='follow', use_rac
     showm.start()
 
 
+def run_headless_simulation(
+    enable_motion_noise=False,
+    enable_sensor_noise=False,
+    num_laps=4,
+    motion_noise_diag=None,
+    measurement_noise_scale=None,
+    validation_gate=3.0,
+    sensor_noise_type='gaussian',
+    output_dir=None,
+    test_name='test',
+    seed=None,
+    use_racing_line=False
+):
+    """
+    Run simulation in headless mode (no 3D visualization).
+
+    Saves:
+    - CSV metrics
+    - PNG plots
+    - Summary statistics
+    - Configuration file
+
+    Parameters:
+    -----------
+    enable_motion_noise : bool
+        Whether to enable motion noise in robot odometry
+    enable_sensor_noise : bool
+        Whether to enable noise in sensor measurements
+    num_laps : int
+        Number of laps to complete
+    motion_noise_diag : list of float, optional
+        Motion noise diagonal [x, y, theta] for EKF
+    measurement_noise_scale : float, optional
+        Scale factor for measurement noise
+    validation_gate : float
+        Mahalanobis distance threshold for outlier rejection
+    sensor_noise_type : str
+        Type of sensor noise distribution
+    output_dir : Path or str, optional
+        Directory to save outputs
+    test_name : str
+        Name of the test
+    seed : int, optional
+        Random seed for reproducibility
+    use_racing_line : bool
+        Whether to use racing line
+
+    Returns:
+    --------
+    results : dict
+        Summary statistics and file paths
+    """
+    # Set random seed if provided
+    if seed is not None:
+        np.random.seed(seed)
+        print(f"Random seed set to: {seed}")
+
+    # Load track data
+    track_file = parent_dir / 'environment' / 'track_npy' / 'simple_oval_2d.npy'
+    width_file = parent_dir / 'environment' / 'track_npy' / 'simple_oval_width.npy'
+
+    track_data = np.load(track_file)
+    width_data = np.load(width_file)
+    track_centerline = track_data
+
+    # Load landmarks
+    landmarks = load_landmarks('simple_oval_landmarks.npy')
+    print(f"Loaded {len(landmarks)} landmarks")
+
+    # Generate racing line if requested
+    if use_racing_line:
+        print("Generating optimal racing line...")
+        track_width_left = width_data[:, 0]
+        track_width_right = width_data[:, 1]
+
+        racing_line = generate_racing_line(
+            track_centerline,
+            track_width_left,
+            track_width_right,
+            aggression=0.85,
+            smoothing=15
+        )
+        path_to_follow = racing_line
+        path_name = "Racing Line"
+    else:
+        path_to_follow = track_centerline
+        path_name = "Centerline"
+
+    print("=" * 60)
+    print(f"HEADLESS SIMULATION - {test_name}")
+    print("=" * 60)
+    print(f"Track: Simple Oval ({len(track_centerline)} points)")
+    print(f"Path: {path_name}")
+    print(f"Motion noise: {'Enabled' if enable_motion_noise else 'Disabled'}")
+    print(f"Sensor noise: {'Enabled' if enable_sensor_noise else 'Disabled'} ({sensor_noise_type})")
+    print(f"Validation gate: {validation_gate}")
+    print(f"Target laps: {num_laps}")
+    print("=" * 60)
+
+    # Create simulation with custom noise parameters
+    start_x = path_to_follow[0, 0]
+    start_y = path_to_follow[0, 1]
+    dx = path_to_follow[1, 0] - path_to_follow[0, 0]
+    dy = path_to_follow[1, 1] - path_to_follow[0, 1]
+    start_theta = np.arctan2(dy, dx)
+
+    dt = 0.017  # 60 Hz
+    robot = Robot(start_x, start_y, start_theta, dt=dt, sensor_noise_type=sensor_noise_type)
+
+    if enable_motion_noise:
+        robot.enable_motion_noise()
+
+    controller = PathController(
+        path=path_to_follow,
+        desired_speed=15.0,
+        lookahead_distance=12.0
+    )
+
+    # Initialize EKF-SLAM with custom noise parameters
+    initial_pose = np.array([start_x, start_y, start_theta])
+
+    if motion_noise_diag is not None:
+        motion_noise = np.diag(motion_noise_diag)**2
+    elif enable_motion_noise:
+        motion_noise = np.diag([0.5, 0.5, 0.08])**2
+    else:
+        motion_noise = np.diag([0.01, 0.01, 0.001])**2
+
+    if measurement_noise_scale is not None:
+        measurement_noise = robot.sensor.Q * measurement_noise_scale
+    elif enable_sensor_noise:
+        measurement_noise = robot.sensor.Q * 0.3
+    else:
+        measurement_noise = robot.sensor.Q * 0.01
+
+    ekf_slam = EKF_SLAM(initial_pose, motion_noise, measurement_noise, validation_gate=validation_gate)
+
+    # Metrics tracking
+    metrics_history = {
+        'time': [],
+        'pos_error': [],
+        'x_error': [],
+        'y_error': [],
+        'theta_error': [],
+        'uncertainty_x': [],
+        'uncertainty_y': [],
+        'uncertainty_theta': [],
+        'num_landmarks_mapped': [],
+        'num_landmarks_detected': [],
+        'loop_closures': [],
+        'laps_completed': [],
+        'nees': [],
+        'nis': []
+    }
+
+    # Simulation state
+    time = 0.0
+    laps_completed = 0
+    track_length = 711.7
+    total_distance = 0.0
+    last_position = np.array([start_x, start_y])
+    slam_update_counter = 0
+    slam_update_interval = 2
+
+    print("\nRunning simulation...")
+    max_steps = num_laps * 6000
+
+    for step in range(max_steps):
+        # Get control commands
+        v, omega = controller.compute_control(robot.x, robot.y, robot.theta)
+
+        # EKF prediction
+        ekf_slam.predict(v, omega, dt)
+
+        # Move robot (ground truth)
+        robot.move(v, omega)
+
+        # Get sensor measurements
+        latest_measurements = robot.sensor.measure(
+            robot.x, robot.y, robot.theta,
+            landmarks,
+            add_noise=enable_sensor_noise
+        )
+
+        # EKF update
+        slam_update_counter += 1
+        if slam_update_counter >= slam_update_interval:
+            slam_update_counter = 0
+
+            if len(latest_measurements) > 0:
+                ground_truth_pose = np.array([robot.x, robot.y, robot.theta])
+                ekf_slam.update(latest_measurements, robot.sensor, ground_truth_pose)
+
+                current_landmark_ids = [m['landmark_id'] for m in latest_measurements]
+                ekf_slam.store_pose_history(current_landmark_ids)
+
+                closure_detected, closure_pose = ekf_slam.detect_loop_closure(
+                    current_landmark_ids,
+                    distance_threshold=5.0,
+                    landmark_threshold=3
+                )
+
+                if closure_detected:
+                    ekf_slam.apply_loop_closure_correction(closure_pose)
+
+        # Record metrics
+        slam_pose = ekf_slam.robot_pose
+        true_pose = np.array([robot.x, robot.y, robot.theta])
+
+        pos_error = np.linalg.norm(slam_pose[:2] - true_pose[:2])
+        x_error = slam_pose[0] - true_pose[0]
+        y_error = slam_pose[1] - true_pose[1]
+        theta_error = slam_pose[2] - true_pose[2]
+        theta_error = np.arctan2(np.sin(theta_error), np.cos(theta_error))
+
+        cov_diag = np.sqrt(np.diag(ekf_slam.robot_covariance))
+        nees = ekf_slam.compute_nees(true_pose)
+        nis = ekf_slam.get_average_nis()
+
+        metrics_history['time'].append(time)
+        metrics_history['pos_error'].append(pos_error)
+        metrics_history['x_error'].append(x_error)
+        metrics_history['y_error'].append(y_error)
+        metrics_history['theta_error'].append(np.degrees(theta_error))
+        metrics_history['uncertainty_x'].append(cov_diag[0])
+        metrics_history['uncertainty_y'].append(cov_diag[1])
+        metrics_history['uncertainty_theta'].append(np.degrees(cov_diag[2]))
+        metrics_history['num_landmarks_mapped'].append(ekf_slam.num_landmarks)
+        metrics_history['num_landmarks_detected'].append(len(latest_measurements))
+        metrics_history['loop_closures'].append(ekf_slam.loop_closures_detected)
+        metrics_history['laps_completed'].append(laps_completed)
+        metrics_history['nees'].append(nees)
+        metrics_history['nis'].append(nis)
+
+        # Update time
+        time += dt
+
+        # Lap tracking
+        current_pos = np.array([robot.x, robot.y])
+        step_distance = np.linalg.norm(current_pos - last_position)
+        total_distance += step_distance
+        last_position = current_pos.copy()
+
+        new_laps = int(total_distance / track_length)
+        if new_laps > laps_completed:
+            laps_completed = new_laps
+            print(f"Lap {laps_completed} completed at t={time:.1f}s")
+
+        # Stop after target laps
+        if laps_completed >= num_laps:
+            break
+
+        # Progress indicator
+        if step % 1000 == 0:
+            print(f"  Step {step}/{max_steps}, t={time:.1f}s, laps={laps_completed}/{num_laps}")
+
+    print(f"\nSimulation complete!")
+    print(f"Time: {time:.1f}s")
+    print(f"Laps: {laps_completed}")
+
+    # Create output directory
+    if output_dir is None:
+        output_dir = parent_dir / 'results' / test_name
+    else:
+        output_dir = Path(output_dir)
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Save metrics to CSV
+    csv_path = output_dir / 'metrics.csv'
+    import csv
+    with open(csv_path, 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow([
+            'Time (s)', 'Position Error (m)', 'X Error (m)', 'Y Error (m)',
+            'Theta Error (deg)', 'Uncertainty X (m)', 'Uncertainty Y (m)',
+            'Uncertainty Theta (deg)', 'Landmarks Mapped', 'Landmarks Detected',
+            'Loop Closures', 'Laps Completed', 'NEES', 'NIS'
+        ])
+        for i in range(len(metrics_history['time'])):
+            writer.writerow([
+                metrics_history['time'][i],
+                metrics_history['pos_error'][i],
+                metrics_history['x_error'][i],
+                metrics_history['y_error'][i],
+                metrics_history['theta_error'][i],
+                metrics_history['uncertainty_x'][i],
+                metrics_history['uncertainty_y'][i],
+                metrics_history['uncertainty_theta'][i],
+                metrics_history['num_landmarks_mapped'][i],
+                metrics_history['num_landmarks_detected'][i],
+                metrics_history['loop_closures'][i],
+                metrics_history['laps_completed'][i],
+                metrics_history['nees'][i],
+                metrics_history['nis'][i]
+            ])
+    print(f"Metrics saved to: {csv_path}")
+
+    # Generate plots
+    print("Generating plots...")
+    plot_path = generate_plots_from_metrics(metrics_history, output_dir, test_name)
+
+    # Generate summary statistics
+    print("Generating summary statistics...")
+    stats_path = generate_summary_stats(metrics_history, ekf_slam, output_dir, test_name)
+
+    # Save configuration
+    import json
+    config_path = output_dir / 'config.json'
+    config = {
+        'test_name': test_name,
+        'enable_motion_noise': enable_motion_noise,
+        'enable_sensor_noise': enable_sensor_noise,
+        'num_laps': num_laps,
+        'motion_noise_diag': motion_noise_diag.tolist() if hasattr(motion_noise_diag, 'tolist') else motion_noise_diag,
+        'measurement_noise_scale': measurement_noise_scale,
+        'validation_gate': validation_gate,
+        'sensor_noise_type': sensor_noise_type,
+        'seed': seed,
+        'use_racing_line': use_racing_line,
+        'total_time': time,
+        'laps_completed': laps_completed
+    }
+    with open(config_path, 'w') as f:
+        json.dump(config, f, indent=2)
+    print(f"Configuration saved to: {config_path}")
+
+    return {
+        'csv_path': csv_path,
+        'plot_path': plot_path,
+        'stats_path': stats_path,
+        'config_path': config_path,
+        'metrics': metrics_history
+    }
+
+
+def generate_plots_from_metrics(metrics_history, output_dir, test_name):
+    """Generate PNG plots from metrics history."""
+    import matplotlib.pyplot as plt
+
+    fig, axes = plt.subplots(2, 3, figsize=(15, 8))
+    fig.suptitle(f'SLAM Performance Metrics - {test_name}', fontsize=14, fontweight='bold')
+
+    times = metrics_history['time']
+
+    # Position Error
+    ax = axes[0, 0]
+    ax.plot(times, metrics_history['pos_error'], 'b-', linewidth=2)
+    ax.set_title('Position Error', fontweight='bold')
+    ax.set_xlabel('Time (s)')
+    ax.set_ylabel('Error (m)')
+    ax.grid(True, alpha=0.3)
+
+    # Heading Error
+    ax = axes[0, 1]
+    ax.plot(times, metrics_history['theta_error'], 'r-', linewidth=2)
+    ax.set_title('Heading Error', fontweight='bold')
+    ax.set_xlabel('Time (s)')
+    ax.set_ylabel('Error (deg)')
+    ax.grid(True, alpha=0.3)
+
+    # Landmarks Mapped
+    ax = axes[0, 2]
+    ax.plot(times, metrics_history['num_landmarks_mapped'], 'g-', linewidth=2)
+    ax.set_title('Landmarks Mapped', fontweight='bold')
+    ax.set_xlabel('Time (s)')
+    ax.set_ylabel('Count')
+    ax.grid(True, alpha=0.3)
+
+    # Position Uncertainty
+    ax = axes[1, 0]
+    uncertainties = [np.sqrt(metrics_history['uncertainty_x'][i]**2 + metrics_history['uncertainty_y'][i]**2)
+                     for i in range(len(times))]
+    ax.plot(times, uncertainties, 'm-', linewidth=2)
+    ax.set_title('Position Uncertainty', fontweight='bold')
+    ax.set_xlabel('Time (s)')
+    ax.set_ylabel('Uncertainty (m)')
+    ax.grid(True, alpha=0.3)
+
+    # NEES
+    ax = axes[1, 1]
+    ax.plot(times, metrics_history['nees'], 'b-', linewidth=2, label='NEES')
+    ax.axhline(y=3.0, color='g', linestyle='--', linewidth=1.5, label='Expected (3.0)')
+    ax.axhline(y=7.81, color='r', linestyle=':', linewidth=1, label='95% bounds')
+    ax.axhline(y=0.35, color='r', linestyle=':', linewidth=1)
+    ax.set_title('NEES (Filter Consistency)', fontweight='bold')
+    ax.set_xlabel('Time (s)')
+    ax.set_ylabel('NEES')
+    ax.legend(loc='upper right', fontsize=8)
+    ax.grid(True, alpha=0.3)
+    if metrics_history['nees']:
+        max_nees = max(metrics_history['nees'])
+        ax.set_ylim([0, max(15, max_nees * 1.1)])  # At least 15
+    else:
+        ax.set_ylim([0, 15])
+
+    # NIS
+    ax = axes[1, 2]
+    ax.plot(times, metrics_history['nis'], 'c-', linewidth=2, label='NIS')
+    ax.axhline(y=2.0, color='g', linestyle='--', linewidth=1.5, label='Expected (2.0)')
+    ax.axhline(y=5.99, color='r', linestyle=':', linewidth=1, label='95% bounds')
+    ax.axhline(y=0.05, color='r', linestyle=':', linewidth=1)
+    ax.set_title('NIS (Measurement Consistency)', fontweight='bold')
+    ax.set_xlabel('Time (s)')
+    ax.set_ylabel('NIS')
+    ax.legend(loc='upper right', fontsize=8)
+    ax.grid(True, alpha=0.3)
+    if metrics_history['nis']:
+        max_nis = max(metrics_history['nis'])
+        ax.set_ylim([0, max(10, max_nis * 1.1)])  # At least 10
+    else:
+        ax.set_ylim([0, 10])
+
+    plt.tight_layout()
+
+    plot_path = output_dir / 'plots.png'
+    plt.savefig(plot_path, dpi=150, bbox_inches='tight')
+    plt.close(fig)
+
+    print(f"Plots saved to: {plot_path}")
+    return plot_path
+
+
+def generate_summary_stats(metrics_history, ekf_slam, output_dir, test_name):
+    """Generate summary statistics file."""
+    stats_path = output_dir / 'summary.txt'
+
+    pos_errors = np.array(metrics_history['pos_error'])
+    theta_errors = np.array(metrics_history['theta_error'])
+    nees_values = np.array(metrics_history['nees'])
+    nis_values = np.array(metrics_history['nis'])
+
+    # Filter out zeros from NIS/NEES
+    nees_nonzero = nees_values[nees_values > 0]
+    nis_nonzero = nis_values[nis_values > 0]
+
+    with open(stats_path, 'w') as f:
+        f.write(f"SLAM Performance Summary - {test_name}\n")
+        f.write("=" * 60 + "\n\n")
+
+        f.write("Position Error Statistics:\n")
+        f.write(f"  Mean:     {np.mean(pos_errors):.4f} m\n")
+        f.write(f"  Std Dev:  {np.std(pos_errors):.4f} m\n")
+        f.write(f"  Max:      {np.max(pos_errors):.4f} m\n")
+        f.write(f"  Final:    {pos_errors[-1]:.4f} m\n\n")
+
+        f.write("Heading Error Statistics:\n")
+        f.write(f"  Mean:     {np.mean(theta_errors):.4f} deg\n")
+        f.write(f"  Std Dev:  {np.std(theta_errors):.4f} deg\n")
+        f.write(f"  Max:      {np.max(np.abs(theta_errors)):.4f} deg\n")
+        f.write(f"  Final:    {theta_errors[-1]:.4f} deg\n\n")
+
+        f.write("Filter Consistency (NEES):\n")
+        f.write(f"  Mean:     {np.mean(nees_nonzero):.4f} (expected: 3.0)\n")
+        f.write(f"  Std Dev:  {np.std(nees_nonzero):.4f}\n")
+        f.write(f"  % in 95% bounds [0.35, 7.81]: {np.sum((nees_nonzero >= 0.35) & (nees_nonzero <= 7.81)) / len(nees_nonzero) * 100:.1f}%\n\n")
+
+        f.write("Measurement Consistency (NIS):\n")
+        f.write(f"  Mean:     {np.mean(nis_nonzero):.4f} (expected: 2.0)\n")
+        f.write(f"  Std Dev:  {np.std(nis_nonzero):.4f}\n")
+        f.write(f"  % in 95% bounds [0.05, 5.99]: {np.sum((nis_nonzero >= 0.05) & (nis_nonzero <= 5.99)) / len(nis_nonzero) * 100:.1f}%\n\n")
+
+        f.write("Landmarks:\n")
+        f.write(f"  Total mapped: {ekf_slam.num_landmarks}\n")
+        f.write(f"  Loop closures: {ekf_slam.loop_closures_detected}\n\n")
+
+        stats = ekf_slam.get_rejection_stats()
+        f.write("Measurement Statistics:\n")
+        f.write(f"  Accepted: {stats['accepted']}\n")
+        f.write(f"  Rejected: {stats['rejected']}\n")
+        f.write(f"  Rejection rate: {stats['rejection_rate']:.1f}%\n")
+
+    print(f"Summary statistics saved to: {stats_path}")
+    return stats_path
+
+
 if __name__ == "__main__":
     # Run without noise, using centerline (not racing line) on simple track
     # 4 laps to show convergence over multiple circuits
-    run_simulation(enable_noise=True, num_laps=4, use_racing_line=False)
+    run_simulation(enable_noise=False, num_laps=4, use_racing_line=False)

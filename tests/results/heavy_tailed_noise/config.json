@@ -1,0 +1,18 @@
+{
+  "test_name": "heavy_tailed_noise",
+  "enable_motion_noise": true,
+  "enable_sensor_noise": true,
+  "num_laps": 4,
+  "motion_noise_diag": [
+    0.25,
+    0.25,
+    0.04
+  ],
+  "measurement_noise_scale": 0.9,
+  "validation_gate": 3.0,
+  "sensor_noise_type": "heavy_tailed",
+  "seed": 2,
+  "use_racing_line": false,
+  "total_time": 283.50899999995215,
+  "laps_completed": 4
+}

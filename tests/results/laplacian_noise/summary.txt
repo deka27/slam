@@ -1,0 +1,33 @@
+SLAM Performance Summary - laplacian_noise
+============================================================
+
+Position Error Statistics:
+  Mean:     0.9603 m
+  Std Dev:  0.4740 m
+  Max:      3.1615 m
+  Final:    0.5822 m
+
+Heading Error Statistics:
+  Mean:     -0.4952 deg
+  Std Dev:  1.3827 deg
+  Max:      9.8733 deg
+  Final:    -1.4296 deg
+
+Filter Consistency (NEES):
+  Mean:     5.5263 (expected: 3.0)
+  Std Dev:  4.3800
+  % in 95% bounds [0.35, 7.81]: 70.3%
+
+Measurement Consistency (NIS):
+  Mean:     1.4856 (expected: 2.0)
+  Std Dev:  0.7428
+  % in 95% bounds [0.05, 5.99]: 100.0%
+
+Landmarks:
+  Total mapped: 58
+  Loop closures: 55
+
+Measurement Statistics:
+  Accepted: 56562
+  Rejected: 1689
+  Rejection rate: 2.9%

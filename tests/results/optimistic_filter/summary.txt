@@ -1,0 +1,33 @@
+SLAM Performance Summary - optimistic_filter
+============================================================
+
+Position Error Statistics:
+  Mean:     0.5307 m
+  Std Dev:  0.9225 m
+  Max:      9.4600 m
+  Final:    0.4367 m
+
+Heading Error Statistics:
+  Mean:     -0.2679 deg
+  Std Dev:  2.7517 deg
+  Max:      27.7026 deg
+  Final:    1.0956 deg
+
+Filter Consistency (NEES):
+  Mean:     5.5177 (expected: 3.0)
+  Std Dev:  14.5301
+  % in 95% bounds [0.35, 7.81]: 79.4%
+
+Measurement Consistency (NIS):
+  Mean:     3.1736 (expected: 2.0)
+  Std Dev:  1.1594
+  % in 95% bounds [0.05, 5.99]: 98.4%
+
+Landmarks:
+  Total mapped: 58
+  Loop closures: 56
+
+Measurement Statistics:
+  Accepted: 44296
+  Rejected: 14613
+  Rejection rate: 24.8%

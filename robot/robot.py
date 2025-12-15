@@ -19,7 +19,7 @@ class Robot:
     - omega: angular velocity (rad/s)
     """
 
-    def __init__(self, x=0.0, y=0.0, theta=0.0, dt=0.1):
+    def __init__(self, x=0.0, y=0.0, theta=0.0, dt=0.1, sensor_noise_type='gaussian'):
         """
         Initialize robot.
 
@@ -31,6 +31,8 @@ class Robot:
             Initial heading angle (radians)
         dt : float
             Time step for simulation (seconds)
+        sensor_noise_type : str
+            Type of sensor noise distribution
         """
         self.state = np.array([x, y, theta])
         self.dt = dt
@@ -44,7 +46,8 @@ class Robot:
             max_range=80.0,  # Increased range to see more landmarks
             field_of_view=np.pi,  # 180 degrees
             range_noise_std=0.1,
-            bearing_noise_std=0.05
+            bearing_noise_std=0.05,
+            noise_type=sensor_noise_type
         )
 
         # History for visualization

@@ -1,0 +1,33 @@
+SLAM Performance Summary - bimodal_noise
+============================================================
+
+Position Error Statistics:
+  Mean:     1.7228 m
+  Std Dev:  0.6317 m
+  Max:      4.5616 m
+  Final:    1.6932 m
+
+Heading Error Statistics:
+  Mean:     0.7858 deg
+  Std Dev:  2.1186 deg
+  Max:      19.3690 deg
+  Final:    -0.1413 deg
+
+Filter Consistency (NEES):
+  Mean:     15.4442 (expected: 3.0)
+  Std Dev:  9.4339
+  % in 95% bounds [0.35, 7.81]: 23.5%
+
+Measurement Consistency (NIS):
+  Mean:     2.3331 (expected: 2.0)
+  Std Dev:  1.2238
+  % in 95% bounds [0.05, 5.99]: 98.9%
+
+Landmarks:
+  Total mapped: 58
+  Loop closures: 56
+
+Measurement Statistics:
+  Accepted: 42542
+  Rejected: 16521
+  Rejection rate: 28.0%

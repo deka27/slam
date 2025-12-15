@@ -1,0 +1,18 @@
+{
+  "test_name": "baseline_perfect",
+  "enable_motion_noise": false,
+  "enable_sensor_noise": false,
+  "num_laps": 4,
+  "motion_noise_diag": [
+    0.01,
+    0.01,
+    0.001
+  ],
+  "measurement_noise_scale": 0.01,
+  "validation_gate": 3.0,
+  "sensor_noise_type": "gaussian",
+  "seed": 2,
+  "use_racing_line": false,
+  "total_time": 248.42099999996057,
+  "laps_completed": 4
+}

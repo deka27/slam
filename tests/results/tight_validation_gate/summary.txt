@@ -1,0 +1,33 @@
+SLAM Performance Summary - tight_validation_gate
+============================================================
+
+Position Error Statistics:
+  Mean:     0.5756 m
+  Std Dev:  0.2794 m
+  Max:      1.9781 m
+  Final:    0.5190 m
+
+Heading Error Statistics:
+  Mean:     0.1277 deg
+  Std Dev:  1.4869 deg
+  Max:      9.2588 deg
+  Final:    0.5225 deg
+
+Filter Consistency (NEES):
+  Mean:     2.4084 (expected: 3.0)
+  Std Dev:  1.9460
+  % in 95% bounds [0.35, 7.81]: 94.0%
+
+Measurement Consistency (NIS):
+  Mean:     1.2185 (expected: 2.0)
+  Std Dev:  0.4510
+  % in 95% bounds [0.05, 5.99]: 100.0%
+
+Landmarks:
+  Total mapped: 58
+  Loop closures: 56
+
+Measurement Statistics:
+  Accepted: 50843
+  Rejected: 8066
+  Rejection rate: 13.7%

@@ -1,0 +1,33 @@
+SLAM Performance Summary - loose_validation_gate
+============================================================
+
+Position Error Statistics:
+  Mean:     0.5844 m
+  Std Dev:  0.4058 m
+  Max:      2.9135 m
+  Final:    0.4827 m
+
+Heading Error Statistics:
+  Mean:     -0.2051 deg
+  Std Dev:  1.3193 deg
+  Max:      7.5019 deg
+  Final:    0.2363 deg
+
+Filter Consistency (NEES):
+  Mean:     2.4592 (expected: 3.0)
+  Std Dev:  2.5623
+  % in 95% bounds [0.35, 7.81]: 88.8%
+
+Measurement Consistency (NIS):
+  Mean:     1.7612 (expected: 2.0)
+  Std Dev:  0.7829
+  % in 95% bounds [0.05, 5.99]: 100.0%
+
+Landmarks:
+  Total mapped: 58
+  Loop closures: 56
+
+Measurement Statistics:
+  Accepted: 58908
+  Rejected: 1
+  Rejection rate: 0.0%

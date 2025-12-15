@@ -16,7 +16,7 @@ class RangeBearingSensor:
     """
 
     def __init__(self, max_range=50.0, field_of_view=np.pi,
-                 range_noise_std=0.1, bearing_noise_std=0.05):
+                 range_noise_std=0.1, bearing_noise_std=0.05, noise_type='gaussian'):
         """
         Initialize range-bearing sensor.
 
@@ -30,17 +30,72 @@ class RangeBearingSensor:
             Standard deviation of range measurement noise (meters)
         bearing_noise_std : float
             Standard deviation of bearing measurement noise (radians)
+        noise_type : str
+            Type of noise distribution: 'gaussian', 'uniform', 'heavy_tailed',
+            'laplacian', 'bimodal', 'asymmetric'
         """
         self.max_range = max_range
         self.field_of_view = field_of_view
         self.range_noise_std = range_noise_std
         self.bearing_noise_std = bearing_noise_std
+        self.noise_type = noise_type
 
-        # Measurement noise covariance matrix
+        # Measurement noise covariance matrix (always Gaussian for EKF)
         self.Q = np.array([
             [range_noise_std**2, 0],
             [0, bearing_noise_std**2]
         ])
+
+    def _generate_noise(self, std):
+        """
+        Generate noise sample based on configured noise type.
+
+        Parameters:
+        -----------
+        std : float
+            Standard deviation (or scale parameter)
+
+        Returns:
+        --------
+        noise : float
+            Noise sample
+        """
+        if self.noise_type == 'gaussian':
+            return np.random.normal(0, std)
+
+        elif self.noise_type == 'uniform':
+            # Uniform distribution with same variance as Gaussian
+            # For uniform(-a, a), variance = a^2/3, so a = std*sqrt(3)
+            a = std * np.sqrt(3)
+            return np.random.uniform(-a, a)
+
+        elif self.noise_type == 'heavy_tailed':
+            # Student's t-distribution with df=3 (heavier tails)
+            # Scale to match std
+            return np.random.standard_t(df=3) * std / np.sqrt(3)
+
+        elif self.noise_type == 'laplacian':
+            # Laplace distribution (sharper peak, heavier tails)
+            # For Laplace(0, b), std = b*sqrt(2), so b = std/sqrt(2)
+            b = std / np.sqrt(2)
+            return np.random.laplace(0, b)
+
+        elif self.noise_type == 'bimodal':
+            # Mixture: 80% N(0, std) + 20% N(0, 5*std)
+            if np.random.rand() < 0.8:
+                return np.random.normal(0, std)
+            else:
+                return np.random.normal(0, 5 * std)
+
+        elif self.noise_type == 'asymmetric':
+            # Exponential distribution (always positive) - mean shifted to 0
+            # For Exp(lambda), std = 1/lambda
+            scale = std
+            return np.random.exponential(scale) - scale  # Shift to zero mean
+
+        else:
+            # Default to Gaussian
+            return np.random.normal(0, std)
 
     def measure(self, robot_x, robot_y, robot_theta, landmarks, add_noise=True):
         """
@@ -92,8 +147,8 @@ class RangeBearingSensor:
 
             # Add measurement noise if requested
             if add_noise:
-                measured_range = true_range + np.random.normal(0, self.range_noise_std)
-                measured_bearing = true_bearing + np.random.normal(0, self.bearing_noise_std)
+                measured_range = true_range + self._generate_noise(self.range_noise_std)
+                measured_bearing = true_bearing + self._generate_noise(self.bearing_noise_std)
             else:
                 measured_range = true_range
                 measured_bearing = true_bearing

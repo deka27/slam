@@ -1,0 +1,33 @@
+SLAM Performance Summary - baseline_perfect
+============================================================
+
+Position Error Statistics:
+  Mean:     0.0973 m
+  Std Dev:  0.1281 m
+  Max:      1.0180 m
+  Final:    0.2880 m
+
+Heading Error Statistics:
+  Mean:     -0.0364 deg
+  Std Dev:  0.0801 deg
+  Max:      0.7904 deg
+  Final:    0.1986 deg
+
+Filter Consistency (NEES):
+  Mean:     0.2177 (expected: 3.0)
+  Std Dev:  0.8731
+  % in 95% bounds [0.35, 7.81]: 13.6%
+
+Measurement Consistency (NIS):
+  Mean:     0.0080 (expected: 2.0)
+  Std Dev:  0.1309
+  % in 95% bounds [0.05, 5.99]: 0.8%
+
+Landmarks:
+  Total mapped: 58
+  Loop closures: 49
+
+Measurement Statistics:
+  Accepted: 52988
+  Rejected: 240
+  Rejection rate: 0.5%

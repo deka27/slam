@@ -1,0 +1,79 @@
+SLAM Test Suite Summary
+============================================================
+Run date: 2025-12-14 20:45:45
+Total tests: 13
+Successful: 13
+Failed: 0
+Total time: 141.2s
+
+Test Results:
+------------------------------------------------------------
+baseline_perfect: success (8.7s)
+sensor_noise_only: success (8.6s)
+moderate_noise: success (13.7s)
+high_noise: success (9.9s)
+optimistic_filter: success (9.2s)
+pessimistic_filter: success (13.8s)
+tight_validation_gate: success (10.0s)
+loose_validation_gate: success (10.4s)
+uniform_noise: success (13.4s)
+heavy_tailed_noise: success (10.8s)
+laplacian_noise: success (10.1s)
+bimodal_noise: success (12.1s)
+asymmetric_noise: success (10.5s)
+
+
+Successful Tests:
+------------------------------------------------------------
+
+baseline_perfect:
+  Results directory: /home/maile/code/slam/tests/results/baseline_perfect
+  Elapsed time: 8.7s
+
+sensor_noise_only:
+  Results directory: /home/maile/code/slam/tests/results/sensor_noise_only
+  Elapsed time: 8.6s
+
+moderate_noise:
+  Results directory: /home/maile/code/slam/tests/results/moderate_noise
+  Elapsed time: 13.7s
+
+high_noise:
+  Results directory: /home/maile/code/slam/tests/results/high_noise
+  Elapsed time: 9.9s
+
+optimistic_filter:
+  Results directory: /home/maile/code/slam/tests/results/optimistic_filter
+  Elapsed time: 9.2s
+
+pessimistic_filter:
+  Results directory: /home/maile/code/slam/tests/results/pessimistic_filter
+  Elapsed time: 13.8s
+
+tight_validation_gate:
+  Results directory: /home/maile/code/slam/tests/results/tight_validation_gate
+  Elapsed time: 10.0s
+
+loose_validation_gate:
+  Results directory: /home/maile/code/slam/tests/results/loose_validation_gate
+  Elapsed time: 10.4s
+
+uniform_noise:
+  Results directory: /home/maile/code/slam/tests/results/uniform_noise
+  Elapsed time: 13.4s
+
+heavy_tailed_noise:
+  Results directory: /home/maile/code/slam/tests/results/heavy_tailed_noise
+  Elapsed time: 10.8s
+
+laplacian_noise:
+  Results directory: /home/maile/code/slam/tests/results/laplacian_noise
+  Elapsed time: 10.1s
+
+bimodal_noise:
+  Results directory: /home/maile/code/slam/tests/results/bimodal_noise
+  Elapsed time: 12.1s
+
+asymmetric_noise:
+  Results directory: /home/maile/code/slam/tests/results/asymmetric_noise
+  Elapsed time: 10.5s

@@ -1,0 +1,18 @@
+{
+  "test_name": "pessimistic_filter",
+  "enable_motion_noise": true,
+  "enable_sensor_noise": true,
+  "num_laps": 4,
+  "motion_noise_diag": [
+    1.0,
+    1.0,
+    0.15
+  ],
+  "measurement_noise_scale": 2.0,
+  "validation_gate": 3.0,
+  "sensor_noise_type": "gaussian",
+  "seed": 2,
+  "use_racing_line": false,
+  "total_time": 282.70999999995234,
+  "laps_completed": 4
+}
